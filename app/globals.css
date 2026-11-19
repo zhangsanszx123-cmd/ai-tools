@@ -287,6 +287,15 @@ html { scroll-padding-top: calc(var(--header-height) + 20px); }
 .login-card .brand-mark { margin-bottom: 16px; }
 .login-card form { margin-top: 22px; }
 .login-card .login-switch { margin: 18px 0 0; }
+.login-card [data-slot='input'] { height: 44px; font-size: 16px; }
+.login-card .password-hint { margin: 0; font-size: 12px; line-height: 1.6; }
+.password-control { position: relative; }
+.password-control [data-slot='input'] { padding-right: 48px; }
+.password-toggle { position: absolute; inset: 0 0 0 auto; display: grid; place-items: center; width: 44px; color: var(--subtle); border-radius: 8px; }
+.password-toggle:hover:not(:disabled) { background: var(--muted); }
+.password-toggle:disabled { opacity: .5; }
+.login-card .auth-submit { min-height: 44px; width: 100%; }
+.login-switch .text-action { min-height: 44px; }
 .account-tabs { display: flex; flex-wrap: wrap; align-items: center; gap: 5px; margin: 20px 0 14px; }
 .account-tabs a { display: flex; align-items: center; gap: 6px; padding: 9px 14px; border-radius: 8px; color: var(--subtle); font-size: 14px; }
 .account-tabs a[aria-current='page'] { background: var(--brand-tint); color: var(--brand); font-weight: 700; }

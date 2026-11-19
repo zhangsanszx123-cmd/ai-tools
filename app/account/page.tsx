@@ -39,7 +39,8 @@ export default async function AccountPage({ searchParams }: { searchParams: Prom
 }
 
 async function SubmissionHistory({ userId, submitted }: { userId: string; submitted: boolean }) {
-  const history = await getSubmissionHistory(userId)
+  const history = await getSubmissionHistory(userId).catch(() => null)
+  if (!history) return <section className="surface account-panel"><h2>提交历史</h2><Alert><AlertDescription>暂时无法加载提交记录。你仍可查看个人信息，或稍后重试。</AlertDescription></Alert></section>
   return <section className="surface account-panel"><h2>提交历史</h2>
     {submitted && <Alert className="mb-3"><CircleCheck aria-hidden="true" /><AlertDescription>已提交，等待管理员审核。</AlertDescription></Alert>}
     {history.length ? <ul>{history.map((item) => <li key={item.slug} className="history-row"><div>{item.status === 'published' ? <Link className="text-action" href={`/tools/${item.slug}`}>{item.name}</Link> : <strong>{item.name}</strong>}<time dateTime={item.createdAt.toISOString()}>{dateFormat.format(item.createdAt)}</time></div><span className="history-status" data-status={item.status}>{item.status === 'published' ? '已发布' : '审核中'}</span></li>)}</ul> : <div className="catalog-empty">还没有提交记录。 <Link className="text-action" href="/account?tab=submit">推荐第一款工具</Link></div>}

@@ -40,7 +40,7 @@ function FeaturedSection({ id, title, description, icon: Icon, tools, emptyMessa
   </section>
 }
 
-export function Directory({ tools, signedIn, unavailable }: { tools: CatalogTool[]; signedIn: boolean; unavailable: boolean }) {
+export function Directory({ tools, signedIn, unavailable }: { tools: CatalogTool[]; signedIn: boolean; unavailable: 'configuration' | 'connection' | null }) {
   const [query, setQuery] = useState('')
   const [active, setActive] = useState('home')
   const [drawer, setDrawer] = useState(false)
@@ -113,7 +113,9 @@ export function Directory({ tools, signedIn, unavailable }: { tools: CatalogTool
             </label>
           </div>
         </div>
-        {unavailable ? <div className="catalog-empty" role="status">目录暂时无法加载，请刷新页面重试。</div> : isFiltered ? <section className="tool-section" aria-labelledby="search-title">
+        {unavailable ? <div className="catalog-empty" role="status">{unavailable === 'configuration' && process.env.NODE_ENV === 'development'
+          ? '目录数据库尚未配置。请在 .env.local 中设置 DATABASE_URL，按 README 初始化数据表，然后重启开发服务。'
+          : '目录暂时无法加载，请稍后刷新页面重试。'}</div> : isFiltered ? <section className="tool-section" aria-labelledby="search-title">
           <div className="section-head"><div className="section-title"><span className="section-icon"><Search size={20} aria-hidden="true" /></span><div><h2 id="search-title" ref={resultHeading} tabIndex={-1}>搜索结果</h2><p aria-live="polite">找到 {matches.length} 款工具</p></div></div><button type="button" onClick={() => { setQuery(''); setCategoryFilter('') }} className="text-action">清除筛选 <X size={15} aria-hidden="true" /></button></div>
           {matches.length ? <div className="tool-grid">{matches.map((tool) => <ToolCard key={tool.slug} tool={tool} />)}</div> : <div className="catalog-empty">没有找到匹配的工具，试试其他关键词或分类。</div>}
         </section> : <>

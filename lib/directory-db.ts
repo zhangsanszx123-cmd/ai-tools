@@ -3,6 +3,7 @@ import { and, desc, eq, sql } from 'drizzle-orm'
 import { drizzle } from 'drizzle-orm/node-postgres'
 import { customType, integer, pgTable, text, timestamp } from 'drizzle-orm/pg-core'
 import { Pool } from 'pg'
+import { postgresConfig } from './postgres-config'
 
 const bytea = customType<{ data: Buffer }>({ dataType: () => 'bytea' })
 
@@ -26,7 +27,8 @@ export const tools = pgTable('ai_directory_tools', {
 })
 
 const globalPool = globalThis as typeof globalThis & { directoryPool?: Pool }
-const pool = globalPool.directoryPool ?? new Pool({ connectionString: process.env.DATABASE_URL, max: 4, connectionTimeoutMillis: 5000 })
+export const pool = globalPool.directoryPool ?? new Pool(process.env.DATABASE_URL ? postgresConfig() : { max: 4 })
+pool.on('error', () => console.error('Directory database connection interrupted'))
 if (process.env.NODE_ENV !== 'production') globalPool.directoryPool = pool
 
 export const db = drizzle(pool)

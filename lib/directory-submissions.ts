@@ -1,11 +1,10 @@
 import 'server-only'
 import { and, asc, desc, eq, sql } from 'drizzle-orm'
-import { pgSchema, text, uuid } from 'drizzle-orm/pg-core'
+import { pgTable, text } from 'drizzle-orm/pg-core'
 import sharp from 'sharp'
 import { db, tools } from '@/lib/directory-db'
 
-const neonAuth = pgSchema('neon_auth')
-const authUsers = neonAuth.table('user', { id: uuid('id').primaryKey(), role: text('role') })
+const authUsers = pgTable('ai_directory_users', { id: text('id').primaryKey(), role: text('role') })
 
 export async function isAdmin(userId: string) {
   const [user] = await db.select({ role: authUsers.role }).from(authUsers).where(eq(authUsers.id, userId)).limit(1)

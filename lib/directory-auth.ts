@@ -1,25 +1,37 @@
 import 'server-only'
-import { createNeonAuth } from '@neon/auth/next/server'
+import { betterAuth } from 'better-auth'
+import { nextCookies } from 'better-auth/next-js'
+import { headers } from 'next/headers'
 import { cache } from 'react'
+import { pool } from './directory-db'
+import { directoryAuthOptions } from './auth-options'
+
+export function isAuthConfigured() {
+  return Boolean(process.env.DATABASE_URL && (process.env.BETTER_AUTH_SECRET?.length ?? 0) >= 32)
+}
+
+function createDirectoryAuth() {
+  return betterAuth({
+    ...directoryAuthOptions(pool),
+    plugins: [nextCookies()],
+  })
+}
+
+let auth: ReturnType<typeof createDirectoryAuth> | undefined
 
 export function getDirectoryAuth() {
-  const baseUrl = process.env.NEON_AUTH_BASE_URL
-  const secret = process.env.NEON_AUTH_COOKIE_SECRET
-  if (!baseUrl || !secret || secret.length < 32) return null
-  return createNeonAuth({
-    baseUrl,
-    cookies: { secret, sameSite: process.env.NODE_ENV === 'development' ? 'none' : 'lax' },
-  })
+  if (!isAuthConfigured()) return null
+  return auth ??= createDirectoryAuth()
 }
 
 export const getCurrentUser = cache(async () => {
   const auth = getDirectoryAuth()
   if (!auth) return null
   try {
-    const { data } = await auth.getSession()
-    return data?.user ?? null
-  } catch (error) {
-    console.error('Could not read directory session:', error instanceof Error ? error.name : 'unknown')
+    const session = await auth.api.getSession({ headers: await headers() })
+    return session?.user ?? null
+  } catch {
+    console.error('Could not read directory session')
     return null
   }
 })
