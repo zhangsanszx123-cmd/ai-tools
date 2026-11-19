@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { AlertCircle, Eye, EyeOff, LoaderCircle } from 'lucide-react'
 import { authClient } from '@/lib/auth-client'
+import { adminAuthClient } from '@/lib/admin-auth-client'
 import { Alert, AlertDescription } from '@/components/ui/alert'
 import { Button } from '@/components/ui/button'
 import { Field, FieldGroup, FieldLabel } from '@/components/ui/field'
@@ -20,7 +21,7 @@ function authError(code: string | undefined, status: number, signup: boolean) {
   return signup ? '注册未完成，请检查填写内容后重试。' : '登录未完成，请检查邮箱和密码后重试。'
 }
 
-export function DirectoryLoginForm({ signup, submit, available }: { signup: boolean; submit: boolean; available: boolean }) {
+export function DirectoryLoginForm({ signup, submit, available, destination, admin = false }: { signup: boolean; submit: boolean; available: boolean; destination?: string; admin?: boolean }) {
   const router = useRouter()
   const [pending, setPending] = useState(false)
   const [error, setError] = useState('')
@@ -46,10 +47,10 @@ export function DirectoryLoginForm({ signup, submit, available }: { signup: bool
     busy.current = true
     setPending(true)
     try {
-      const next = submit ? '/account?tab=submit' : '/account'
+      const next = destination ?? (submit ? '/account?tab=submit' : '/account')
       const result = signup
         ? await authClient.signUp.email({ name: '新用户', email, password })
-        : await authClient.signIn.email({ email, password })
+        : await (admin ? adminAuthClient : authClient).signIn.email({ email, password })
       if (result.error) {
         setError(authError(result.error.code, result.error.status, signup))
         return

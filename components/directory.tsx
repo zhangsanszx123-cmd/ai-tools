@@ -95,7 +95,7 @@ export function Directory({ categories, tools, user, unavailable }: { categories
       <header className="directory-header">
         <button type="button" className="icon-button nav-toggle" onClick={() => setDrawer(!drawer)} aria-label="打开分类导航" aria-expanded={drawer} aria-controls="category-navigation"><Menu size={22} /></button>
         <div className="header-title"><Compass size={17} aria-hidden="true" /><span>探索</span><ChevronRight size={14} aria-hidden="true" /><strong>工具导航</strong></div>
-        <AccountStatus user={user} />
+        <div className="header-actions"><Link className="text-action admin-entry" href="/admin">后台管理</Link><AccountStatus user={user} /></div>
       </header>
       <main className="directory-content" id="main-content">
         <div className="directory-hero">
@@ -130,7 +130,7 @@ export function Directory({ categories, tools, user, unavailable }: { categories
             </section>
           })}
         </>}
-        <footer className="directory-footer"><span>AI 工具箱</span><Link href="/account?tab=submit">推荐一款工具 <ArrowRight size={15} aria-hidden="true" /></Link></footer>
+        <footer className="directory-footer"><span>AI 工具箱</span><Link href="/admin">后台管理</Link><Link href="/account?tab=submit">推荐一款工具 <ArrowRight size={15} aria-hidden="true" /></Link></footer>
       </main>
     </div>
   </div>

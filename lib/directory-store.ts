@@ -1,5 +1,6 @@
 import type { Pool } from 'pg'
 import type { CatalogCategory, CatalogTool } from './catalog'
+import { adminPagination } from './admin-pagination.ts'
 
 export type ToolInput = {
   slug: string; category: string; name: string; website: string; summary: string; content: string
@@ -27,16 +28,15 @@ const submissionFields = `s.id::text AS id, s.requested_slug AS slug, s.name,
   s.category_id AS category, c.name AS "categoryName", c.is_enabled AS "categoryEnabled",
   s.website, s.summary, s.content, s.logo_data IS NOT NULL AS "hasLogo", s.cover_data IS NOT NULL AS "hasCover",
   s.status, s.submitted_at AS "submittedAt", s.reviewed_at AS "reviewedAt", s.rejection_reason AS "rejectionReason",
-  CASE WHEN t.status = 'published' AND tc.is_enabled THEN t.slug END AS "publishedSlug", u.name AS "submitterName"`
+  CASE WHEN t.status = 'published' AND t.deleted_at IS NULL AND tc.is_enabled THEN t.slug END AS "publishedSlug", u.name AS "submitterName"`
 const submissionJoins = `JOIN ai_directory_categories c ON c.id = s.category_id
   LEFT JOIN ai_directory_tools t ON t.id = s.published_tool_id
   LEFT JOIN ai_directory_categories tc ON tc.id = t.category_id
   LEFT JOIN ai_directory_users u ON u.id = s.submitted_by`
 
 // Only interpolate trusted SQL fragments; every user value is a bound parameter.
-const admin = (parameter: string) => `EXISTS (SELECT 1 FROM ai_directory_users a
-  CROSS JOIN LATERAL unnest(string_to_array(coalesce(a.role, ''), ',')) r(value)
-  WHERE a.id = ${parameter} AND btrim(r.value) = 'admin')`
+const admin = (parameter: string) => `EXISTS (SELECT 1 FROM admin_user a
+  WHERE a.id = ${parameter} AND a."isEnabled" = true)`
 const offset = (page: number) => (Math.max(1, Math.min(Math.trunc(page) || 1, 100000)) - 1) * PAGE_SIZE
 function paginated<T>(rows: T[]) { return { items: rows.slice(0, PAGE_SIZE), hasNext: rows.length > PAGE_SIZE } }
 
@@ -52,14 +52,14 @@ export function createDirectoryStore(database: Pick<Pool, 'query'>) {
     async getCatalog() {
       const { rows } = await database.query<CatalogTool>(`SELECT ${publicFields} FROM ai_directory_tools t
         JOIN ai_directory_categories c ON c.id = t.category_id
-        WHERE t.status = 'published' AND c.is_enabled ORDER BY t.published_at DESC, t.id DESC`)
+        WHERE t.status = 'published' AND t.deleted_at IS NULL AND c.is_enabled ORDER BY t.published_at DESC, t.id DESC`)
       return rows
     },
     async getTool(slug: string) {
       const { rows } = await database.query<CatalogTool & { content: string; hasCover: boolean }>(`SELECT ${publicFields},
         t.content, t.cover_data IS NOT NULL AS "hasCover" FROM ai_directory_tools t
         JOIN ai_directory_categories c ON c.id = t.category_id
-        WHERE t.slug = $1 AND t.status = 'published' AND c.is_enabled`, [slug])
+        WHERE t.slug = $1 AND t.status = 'published' AND t.deleted_at IS NULL AND c.is_enabled`, [slug])
       return rows[0]
     },
     async isAdmin(userId: string) {
@@ -97,10 +97,10 @@ export function createDirectoryStore(database: Pick<Pool, 'query'>) {
         FOR UPDATE OF s
       ), published AS (
         INSERT INTO ai_directory_tools
-          (slug, category_id, name, website, summary, content, logo_data, logo_type, cover_data, cover_type, created_by)
+          (slug, category_id, name, website, summary, content, logo_data, logo_type, cover_data, cover_type, created_by_admin)
         SELECT requested_slug, category_id, name, website, summary, content,
           logo_data, logo_type, cover_data, cover_type, $2 FROM candidate RETURNING id, slug
-      ) UPDATE ai_directory_tool_submissions s SET status = 'approved', reviewed_by = $2,
+      ) UPDATE ai_directory_tool_submissions s SET status = 'approved', reviewed_by_admin = $2,
         reviewed_at = statement_timestamp(), published_tool_id = p.id, rejection_reason = NULL,
         updated_at = statement_timestamp() FROM published p WHERE s.id = $1 AND s.status = 'pending'
         RETURNING p.id::text, p.slug`, [id, userId])
@@ -108,7 +108,7 @@ export function createDirectoryStore(database: Pick<Pool, 'query'>) {
     },
     async rejectTool(userId: string, id: string, reason: string) {
       const { rows } = await database.query<{ id: string }>(`UPDATE ai_directory_tool_submissions
-        SET status = 'rejected', reviewed_by = $2, reviewed_at = statement_timestamp(),
+        SET status = 'rejected', reviewed_by_admin = $2, reviewed_at = statement_timestamp(),
           rejection_reason = $3, updated_at = statement_timestamp()
         WHERE id = $1 AND status = 'pending' AND ${admin('$2')} RETURNING id::text`, [id, userId, reason])
       return rows[0]
@@ -117,13 +117,13 @@ export function createDirectoryStore(database: Pick<Pool, 'query'>) {
       const column = kind === 'logo' ? 'logo' : 'cover'
       const { rows } = await database.query<{ data: Buffer; type: string }>(`SELECT t.${column}_data AS data, t.${column}_type AS type
         FROM ai_directory_tools t JOIN ai_directory_categories c ON c.id = t.category_id
-        WHERE t.slug = $1 AND t.status = 'published' AND c.is_enabled`, [slug])
+        WHERE t.slug = $1 AND t.status = 'published' AND t.deleted_at IS NULL AND c.is_enabled`, [slug])
       return rows[0]
     },
-    async getSubmissionMedia(userId: string, id: string, kind: 'logo' | 'cover') {
+    async getSubmissionMedia(userId: string | null, id: string, kind: 'logo' | 'cover', adminId: string | null = null) {
       const column = kind === 'logo' ? 'logo' : 'cover'
       const { rows } = await database.query<{ data: Buffer; type: string }>(`SELECT ${column}_data AS data, ${column}_type AS type
-        FROM ai_directory_tool_submissions WHERE id = $1 AND (submitted_by = $2 OR ${admin('$2')})`, [id, userId])
+        FROM ai_directory_tool_submissions WHERE id = $1 AND (submitted_by = $2 OR ${admin('$3')})`, [id, userId, adminId])
       return rows[0]
     },
     async saveCategory(userId: string, value: CatalogCategory) {
@@ -137,12 +137,43 @@ export function createDirectoryStore(database: Pick<Pool, 'query'>) {
       [userId, value.id, value.name, value.short, value.description, value.iconKey, value.sortOrder, value.isEnabled])
       return rows[0]
     },
-    async getManagedTools(userId: string, page = 1) {
+    async setCategoryStatus(userId: string, id: string, enabled: boolean, expected: boolean) {
+      const { rows } = await database.query<{ id: string }>(`UPDATE ai_directory_categories
+        SET is_enabled = $3, updated_at = statement_timestamp()
+        WHERE id = $2 AND is_enabled = $4 AND ${admin('$1')} RETURNING id`, [userId, id, enabled, expected])
+      return rows[0]
+    },
+    async getManagedTools(userId: string, page = 1, filters: { query?: string; status?: string; category?: string; pageSize?: string | number } = {}) {
+      const args = [userId, filters.query?.trim().slice(0, 100) ?? '', ['published', 'disabled'].includes(filters.status ?? '') ? filters.status : '', filters.category ?? '']
+      const from = `FROM ai_directory_tools t JOIN ai_directory_categories c ON c.id = t.category_id
+        WHERE ${admin('$1')} AND t.deleted_at IS NULL
+          AND ($2::text = '' OR strpos(lower(t.name || ' ' || t.slug || ' ' || t.website), lower($2)) > 0)
+          AND ($3::text = '' OR t.status = $3) AND ($4::text = '' OR t.category_id = $4)`
+      const count = await database.query<{ total: number }>(`SELECT count(*)::integer AS total ${from}`, args)
+      const pagination = adminPagination(count.rows[0].total, page, filters.pageSize)
+      const result = await database.query<CatalogTool & { status: 'published' | 'disabled' }>(`SELECT ${publicFields}, t.status ${from}
+        ORDER BY t.created_at DESC, t.id DESC LIMIT $5 OFFSET $6`, [...args, pagination.pageSize, pagination.offset])
+      return { items: result.rows, ...pagination }
+    },
+    async getManagedTool(userId: string, id: string) {
       const { rows } = await database.query<ManagedTool>(`SELECT ${publicFields}, t.content, t.status,
         t.cover_data IS NOT NULL AS "hasCover" FROM ai_directory_tools t
-        JOIN ai_directory_categories c ON c.id = t.category_id WHERE ${admin('$1')}
-        ORDER BY t.created_at DESC, t.id DESC LIMIT $2 OFFSET $3`, [userId, PAGE_SIZE + 1, offset(page)])
-      return paginated(rows)
+        JOIN ai_directory_categories c ON c.id = t.category_id
+        WHERE t.id::text = $2 AND t.deleted_at IS NULL AND ${admin('$1')}`, [userId, id])
+      return rows[0]
+    },
+    async deleteTool(userId: string, id: string) {
+      const { rows } = await database.query<{ id: string }>(`UPDATE ai_directory_tools
+        SET deleted_at = statement_timestamp(), status = 'disabled', updated_at = statement_timestamp()
+        WHERE id = $2 AND deleted_at IS NULL AND ${admin('$1')} RETURNING id::text`, [userId, id])
+      return rows[0]
+    },
+    async setToolStatus(userId: string, id: string, status: 'published' | 'disabled', expected: 'published' | 'disabled') {
+      const { rows } = await database.query<{ id: string }>(`UPDATE ai_directory_tools SET status = $3::text, updated_at = statement_timestamp()
+        WHERE id = $2 AND deleted_at IS NULL AND status = $4::text AND ${admin('$1')}
+          AND EXISTS (SELECT 1 FROM ai_directory_categories WHERE id = category_id AND (is_enabled OR $3 = 'disabled'))
+        RETURNING id::text`, [userId, id, status, expected])
+      return rows[0]
     },
     async saveTool(userId: string, value: ManagedToolInput) {
       const args = [userId, value.slug, value.category, value.name, value.website, value.summary, value.content,
@@ -156,14 +187,14 @@ export function createDirectoryStore(database: Pick<Pool, 'query'>) {
           cover_data = CASE WHEN $10::bytea IS NOT NULL THEN $10 WHEN $18 THEN NULL ELSE cover_data END,
           cover_type = CASE WHEN $10::bytea IS NOT NULL THEN $11::text WHEN $18 THEN NULL ELSE cover_type END,
           status = $12::text, featured_order = $13, display_order = $14, logo_key = $15::text, updated_at = statement_timestamp()
-          WHERE id = $16 AND slug = $2 AND ${admin('$1')}
+          WHERE id = $16 AND slug = $2 AND deleted_at IS NULL AND ${admin('$1')}
             AND EXISTS (SELECT 1 FROM ai_directory_categories WHERE id = $3 AND (is_enabled OR $12 = 'disabled'))
           RETURNING id::text, slug`, [...args, value.id, value.removeLogo, value.removeCover])
         return rows[0]
       }
       const { rows } = await database.query<{ id: string; slug: string }>(`INSERT INTO ai_directory_tools
         (slug, category_id, name, website, summary, content, logo_data, logo_type, cover_data, cover_type,
-          status, featured_order, display_order, logo_key, created_by)
+          status, featured_order, display_order, logo_key, created_by_admin)
         SELECT $2::text, $3::text, $4::text, $5::text, $6::text, $7::text, $8::bytea, $9::text,
           $10::bytea, $11::text, $12::text, $13::integer, $14::integer, $15::text, $1::text
         WHERE ${admin('$1')} AND EXISTS (SELECT 1 FROM ai_directory_categories WHERE id = $3 AND (is_enabled OR $12 = 'disabled'))

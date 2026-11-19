@@ -4,16 +4,17 @@ import { redirect } from 'next/navigation'
 import { revalidatePath } from 'next/cache'
 import { validRecordId } from '@/lib/catalog'
 import { getCurrentUser } from '@/lib/directory-auth'
+import { getCurrentAdmin } from '@/lib/admin-auth'
 import { directoryStore } from '@/lib/directory-db'
-import { isAdmin, normalizeImage } from '@/lib/directory-submissions'
+import { normalizeImage } from '@/lib/directory-submissions'
 import { databaseErrorCode, formText, parseCategoryForm, parseToolForm, parseToolManagement } from '@/lib/directory-validation'
 
 export type ActionState = { error?: string } | null
 
 async function currentAdmin() {
-  const user = await getCurrentUser()
-  if (!user) redirect('/login')
-  return await isAdmin(user.id) ? user : null
+  const user = await getCurrentAdmin()
+  if (!user) redirect('/admin/login')
+  return user
 }
 
 async function images(form: FormData) {
@@ -27,6 +28,7 @@ async function images(form: FormData) {
 function refreshDirectory() {
   revalidatePath('/')
   revalidatePath('/account')
+  revalidatePath('/admin')
   revalidatePath('/tools/[slug]', 'page')
 }
 
@@ -65,7 +67,7 @@ export async function reviewSubmission(_state: ActionState, form: FormData): Pro
     return { error: code === '23505' ? '站点标识已被其他工具使用。本次未通过审核，请驳回并说明原因。' : '审核暂未完成，请稍后重试。' }
   }
   refreshDirectory()
-  redirect(`/account?tab=review&review=${decision === 'approve' ? 'published' : 'rejected'}`)
+  redirect(`/admin?tab=review&review=${decision === 'approve' ? 'published' : 'rejected'}`)
 }
 
 export async function saveCategory(_state: ActionState, form: FormData): Promise<ActionState> {
@@ -80,7 +82,7 @@ export async function saveCategory(_state: ActionState, form: FormData): Promise
     return { error: '分类暂时无法保存，请稍后重试。' }
   }
   refreshDirectory()
-  redirect('/account?tab=categories&saved=1')
+  redirect('/admin?tab=categories&saved=1')
 }
 
 export async function saveManagedTool(_state: ActionState, form: FormData): Promise<ActionState> {
@@ -98,5 +100,38 @@ export async function saveManagedTool(_state: ActionState, form: FormData): Prom
     return { error: code === '23505' ? '该站点标识已被使用，请更换标识。' : '工具暂时无法保存，请稍后重试。' }
   }
   refreshDirectory()
-  redirect('/account?tab=tools&saved=1')
+  redirect('/admin?tab=tools&saved=1')
+}
+
+export async function changeCategoryStatus(_state: ActionState, form: FormData): Promise<ActionState> {
+  const user = await currentAdmin()
+  const id = formText(form, 'id'), enabled = formText(form, 'enabled'), expected = formText(form, 'expected')
+  if (!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(id) || id.length > 40 || !['true', 'false'].includes(enabled) || !['true', 'false'].includes(expected)) return { error: '分类操作参数无效，请刷新重试。' }
+  if (enabled === 'false' && form.get('confirmDisable') !== 'yes') return { error: '请先确认停用分类及隐藏其下工具。' }
+  try {
+    if (!await directoryStore.setCategoryStatus(user.id, id, enabled === 'true', expected === 'true')) return { error: '分类不存在、状态已变化或你已没有权限，请刷新列表。' }
+  } catch (error) {
+    console.error('Category status error code:', databaseErrorCode(error))
+    return { error: '分类状态暂时无法更新，请稍后重试。' }
+  }
+  refreshDirectory()
+  redirect('/admin?tab=categories&changed=1')
+}
+
+export async function changeManagedTool(_state: ActionState, form: FormData): Promise<ActionState> {
+  const user = await currentAdmin()
+  const id = formText(form, 'id'), intent = formText(form, 'intent'), expected = formText(form, 'expected')
+  if (!validRecordId(id) || !['delete', 'published', 'disabled'].includes(intent)) return { error: '操作参数无效，请刷新后重试。' }
+  if (intent === 'delete' && form.get('confirmDelete') !== 'yes') return { error: '请先勾选确认删除。' }
+  if (intent !== 'delete' && !['published', 'disabled'].includes(expected)) return { error: '工具状态无效，请刷新列表。' }
+  try {
+    const result = intent === 'delete' ? await directoryStore.deleteTool(user.id, id)
+      : await directoryStore.setToolStatus(user.id, id, intent as 'published' | 'disabled', expected as 'published' | 'disabled')
+    if (!result) return { error: '工具已删除、状态已变化、分类已停用或你已没有权限，请刷新列表。' }
+  } catch (error) {
+    console.error('Directory list action error code:', databaseErrorCode(error))
+    return { error: '操作未完成，请稍后重试。' }
+  }
+  refreshDirectory()
+  redirect(`/admin?tab=tools&${intent === 'delete' ? 'deleted=1' : 'changed=1'}`)
 }

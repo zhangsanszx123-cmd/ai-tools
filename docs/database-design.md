@@ -1,10 +1,20 @@
 # AI 工具导航数据库设计方案
 
-> 版本：1.0 · 日期：2026-11-19 · 目标数据库：PostgreSQL 18
+> 版本：1.1 · 日期：2026-11-19 · 目标数据库：PostgreSQL 18
 >
 > 本文包含完整建表、分类初始化及关键业务 SQL。三张业务表与 17 个分类已在用户授权后初始化，当前应用已完成三表接入、动态分类、投稿审核、管理入口与媒体权限适配。三个业务表不包含项目已经存在的 Better Auth 认证表。
 
 配套可审阅脚本：[三表建表及分类初始化 SQL](../db/directory-v2.sql)。该脚本将第 5、6 节合并为一个事务；第 7 节参数化业务 SQL 仍在本文中提供，不混入初始化脚本。若使用 `psql`，加 `-v ON_ERROR_STOP=1`，避免初始化报错后继续执行后续操作。
+
+### 1.1 版本增量：前后台认证分离
+
+工具列表增量：正式工具表新增 `deleted_at timestamptz`，详见 [工具管理增量 SQL](../db/tool-management.sql)。非空表示逻辑删除，前台列表、详情、公开媒体与后台列表均隐藏；保留外键和审核历史，已删除 Slug 不释放。后台支持关键词、分类、状态查询，分页，以及独立新增/编辑表单和行内上下架、确认删除。维护脚本 `pnpm admin:migrate` 包含该增量，不会删除真实记录。
+
+后台不再使用前台用户的 `role`，也不读取前台会话。管理员独立存储于 `admin_user`，密码哈希于 `admin_account`，会话于 `admin_session`，配套 `admin_verification`、`admin_rate_limit`。后台 `/api/admin-auth/*` 与前台 `/api/auth/*` 使用不同 Cookie 和签名域，可同时登录、分别退出；公开接口不能注册管理员。
+
+先初始化三张业务表，再执行 [后台认证表 SQL](../db/admin-auth.sql) 与 [管理员关联增量 SQL](../db/admin-audit-migration.sql)，或由维护者执行 `pnpm admin:migrate`。当前数据库已完成此增量。维护者用 `pnpm admin:create` 在终端交互创建独立管理员，不自动复制或提升前台账号。
+
+下文第 5 节保留三表初始建表结构；旧 `created_by`、`reviewed_by` 保留历史，不能再用来写入新管理员身份。增量新增 `created_by_admin`、`reviewed_by_admin`，均外键关联 `admin_user(id)`；下文审核 SQL 已改用新字段。业务表仍只有三张，新增的是独立认证基础表。
 
 ## 1. 设计结论
 
@@ -531,18 +541,15 @@ WITH candidate AS MATERIALIZED (
     WHERE s.id = $1 AND s.status = 'pending' AND c.is_enabled = true
       AND EXISTS (
           SELECT 1
-          FROM ai_directory_users AS admin_user
-          CROSS JOIN LATERAL unnest(
-              string_to_array(coalesce(admin_user.role, ''), ',')
-          ) AS admin_role(value)
-          WHERE admin_user.id = $2 AND btrim(admin_role.value) = 'admin'
+          FROM admin_user AS a
+          WHERE a.id = $2 AND a."isEnabled" = true
       )
     FOR UPDATE OF s
 ), published AS (
     INSERT INTO ai_directory_tools (
         slug, category_id, name, website, summary, content,
         logo_data, logo_type, cover_data, cover_type,
-        status, created_by, published_at
+        status, created_by_admin, published_at
     )
     SELECT requested_slug, category_id, name, website, summary, content,
            logo_data, logo_type, cover_data, cover_type,
@@ -552,7 +559,7 @@ WITH candidate AS MATERIALIZED (
 )
 UPDATE ai_directory_tool_submissions AS s
 SET status = 'approved',
-    reviewed_by = $2,
+    reviewed_by_admin = $2,
     reviewed_at = CURRENT_TIMESTAMP,
     published_tool_id = p.id,
     rejection_reason = NULL,
@@ -564,7 +571,7 @@ RETURNING s.id AS submission_id, s.status, p.id AS tool_id, p.slug;
 
 处理约定：
 
-1. 返回 1 行：收录成功；事务提交后再更新首页、详情及个人中心缓存。
+1. 返回 1 行：收录成功；事务提交后再更新首页、详情、个人中心及独立后台缓存。管理界面入口为 `/admin`，后台登录入口为 `/admin/login`；审核、分类和工具管理已从个人中心迁入后台。
 2. 返回 0 行：记录不存在、已经处理、分类禁用或操作人无权限。服务端结合权限与状态读取给出提示，不向无权访问的人泄露投稿内容。
 3. 同一投稿重复点击不会再次插入正式工具；行锁和待审核条件让后来的请求不再取得候选记录。若已通过且用户有权查看，可读取并返回已有 `published_tool_id`，提供业务上的幂等结果。
 4. 不同投稿申请相同 Slug：正式表的 Slug 唯一约束让一个成功，另一个得到 `23505`；失败语句整体回滚，原投稿仍是待审核，不会留下“通过但未入库”的状态。
@@ -577,18 +584,15 @@ RETURNING s.id AS submission_id, s.status, p.id AS tool_id, p.slug;
 -- $1 投稿 ID；$2 当前管理员 ID；$3 驳回原因（1～1000 字符，非空白）。
 UPDATE ai_directory_tool_submissions AS s
 SET status = 'rejected',
-    reviewed_by = $2,
+    reviewed_by_admin = $2,
     reviewed_at = CURRENT_TIMESTAMP,
     rejection_reason = btrim($3),
     updated_at = CURRENT_TIMESTAMP
 WHERE s.id = $1 AND s.status = 'pending'
   AND EXISTS (
       SELECT 1
-      FROM ai_directory_users AS admin_user
-      CROSS JOIN LATERAL unnest(
-          string_to_array(coalesce(admin_user.role, ''), ',')
-      ) AS admin_role(value)
-      WHERE admin_user.id = $2 AND btrim(admin_role.value) = 'admin'
+      FROM admin_user AS a
+      WHERE a.id = $2 AND a."isEnabled" = true
   )
 RETURNING s.id, s.status, s.rejection_reason, s.reviewed_at;
 ```

@@ -48,6 +48,7 @@ CREATE TABLE ai_directory_tools (
     featured_order  integer CHECK (featured_order >= 0),
     display_order   integer NOT NULL DEFAULT 0 CHECK (display_order >= 0),
     status          varchar(16) NOT NULL DEFAULT 'published',
+    deleted_at      timestamptz,
     created_by      text REFERENCES ai_directory_users(id) ON DELETE SET NULL,
     created_at      timestamptz NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated_at      timestamptz NOT NULL DEFAULT CURRENT_TIMESTAMP,

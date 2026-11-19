@@ -4,6 +4,18 @@ import { test } from 'node:test'
 // Start the app first. These requests never submit forms or create real users.
 const origin = process.env.AUTH_TEST_ORIGIN || 'http://localhost:3000'
 
+test('admin login has email/password without registration and protects deep links', async () => {
+  const login = await fetch(`${origin}/admin/login`)
+  assert.equal(login.status, 200)
+  const html = await login.text()
+  assert.ok(html.includes('后台管理登录'))
+  assert.ok(html.includes('type="email"'))
+  assert.ok(!html.includes('name="confirmPassword"'))
+  const response = await fetch(`${origin}/admin?tab=tools`, { redirect: 'manual' })
+  assert.equal(response.status, 307)
+  assert.equal(response.headers.get('location'), '/admin/login?tab=tools')
+})
+
 test('login page serves an enabled email/password form', async () => {
   const response = await fetch(`${origin}/login`)
   assert.equal(response.status, 200)
