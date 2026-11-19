@@ -6,7 +6,7 @@ import { cache } from 'react'
 import Markdown from 'react-markdown'
 import { ToolLogo } from '@/components/catalog-elements'
 import { SubHeader } from '@/components/sub-header'
-import { categories, websiteUrl } from '@/lib/catalog'
+import { websiteUrl } from '@/lib/catalog'
 import { getCurrentUser } from '@/lib/directory-auth'
 import { getTool } from '@/lib/directory-db'
 
@@ -24,10 +24,10 @@ export default async function ToolPage({ params }: ToolPageProps) {
   const { slug } = await params
   const [tool, user] = await Promise.all([loadTool(slug), getCurrentUser()])
   if (!tool) notFound()
-  const category = categories.find(({ id }) => id === tool.category)
+  const category = { id: tool.category, name: tool.categoryName }
   const url = websiteUrl(tool.website)
   return <>
-    <SubHeader account={Boolean(user)} />
+    <SubHeader user={user ? { email: user.email } : null} />
     <main className="subpage">
       <nav className="breadcrumb" aria-label="当前位置"><Link href="/">首页</Link><ChevronRight size={14} aria-hidden="true" />{category && <><Link href={`/#${category.id}`}>{category.name}</Link><ChevronRight size={14} aria-hidden="true" /></>}<span aria-current="page">{tool.name}</span></nav>
       {tool.hasCover ? <div className="detail-cover"><img src={`/api/tool-media/${tool.slug}/cover`} alt={`${tool.name} 网站预览`} /></div> : <div className="detail-cover art-cover" aria-hidden="true"><ToolLogo tool={tool} /><span className="cover-label">{tool.name}</span></div>}

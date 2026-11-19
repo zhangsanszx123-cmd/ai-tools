@@ -2,9 +2,10 @@
 
 import Link from 'next/link'
 import { useEffect, useRef, useState, type FormEvent, type MouseEvent } from 'react'
-import { ArrowRight, ChevronRight, Clock3, Compass, Flame, Menu, Plus, Search, Sparkles, UserRound, X } from 'lucide-react'
-import { categories, type CatalogTool, type CategoryId } from '@/lib/catalog'
-import { Brand, categoryIcons, ToolCard } from './catalog-elements'
+import { ArrowRight, ChevronRight, Clock3, Compass, Flame, Menu, Plus, Search, Sparkles, X } from 'lucide-react'
+import { type CatalogCategory, type CatalogTool, type CategoryId } from '@/lib/catalog'
+import { Brand, getCategoryIcon, ToolCard } from './catalog-elements'
+import { AccountStatus, type AccountIdentity } from './account-status'
 
 function SearchBox({ query, onQuery, onSubmit, inputRef }: {
   query: string
@@ -40,7 +41,7 @@ function FeaturedSection({ id, title, description, icon: Icon, tools, emptyMessa
   </section>
 }
 
-export function Directory({ tools, signedIn, unavailable }: { tools: CatalogTool[]; signedIn: boolean; unavailable: 'configuration' | 'connection' | null }) {
+export function Directory({ categories, tools, user, unavailable }: { categories: CatalogCategory[]; tools: CatalogTool[]; user: AccountIdentity | null; unavailable: 'configuration' | 'connection' | null }) {
   const [query, setQuery] = useState('')
   const [active, setActive] = useState('home')
   const [drawer, setDrawer] = useState(false)
@@ -75,7 +76,6 @@ export function Directory({ tools, signedIn, unavailable }: { tools: CatalogTool
   }
 
   function submitSearch() { resultHeading.current?.focus(); resultHeading.current?.scrollIntoView({ block: 'start' }) }
-  const accountLink = signedIn ? '/account' : '/login'
 
   return <div className="directory-shell" id="home">
     <a className="skip-link" href="#main-content">跳到主要内容</a>
@@ -84,8 +84,8 @@ export function Directory({ tools, signedIn, unavailable }: { tools: CatalogTool
       <div className="sidebar-brand"><Brand /><button className="icon-button nav-close" type="button" onClick={() => setDrawer(false)} aria-label="关闭菜单"><X size={20} /></button></div>
       <nav className="sidebar-nav" aria-label="分类导航">
         <p className="nav-label">工具分类</p>
-        {categories.map(({ id, name }) => {
-          const Icon = categoryIcons[id]
+        {categories.map(({ id, name, iconKey }) => {
+          const Icon = getCategoryIcon(iconKey)
           return <a key={id} href={`#${id}`} onClick={(event) => jump(event, id)} data-active={active === id} aria-current={active === id ? 'location' : undefined}><Icon size={17} aria-hidden="true" /><span>{name}</span><ChevronRight className="nav-chevron" size={14} aria-hidden="true" /></a>
         })}
       </nav>
@@ -95,7 +95,7 @@ export function Directory({ tools, signedIn, unavailable }: { tools: CatalogTool
       <header className="directory-header">
         <button type="button" className="icon-button nav-toggle" onClick={() => setDrawer(!drawer)} aria-label="打开分类导航" aria-expanded={drawer} aria-controls="category-navigation"><Menu size={22} /></button>
         <div className="header-title"><Compass size={17} aria-hidden="true" /><span>探索</span><ChevronRight size={14} aria-hidden="true" /><strong>工具导航</strong></div>
-        <Link className="account-link" href={accountLink}><UserRound size={16} aria-hidden="true" />{signedIn ? '个人中心' : '登录'}</Link>
+        <AccountStatus user={user} />
       </header>
       <main className="directory-content" id="main-content">
         <div className="directory-hero">
@@ -121,9 +121,9 @@ export function Directory({ tools, signedIn, unavailable }: { tools: CatalogTool
         </section> : <>
           <FeaturedSection id="popular" title="热门工具" description="从这些广受欢迎的 AI 工具开始" icon={Flame} tools={popularTools} emptyMessage="暂无热门工具。" />
           <FeaturedSection id="latest" title="最新收录" description="最近添加到目录的 AI 工具" icon={Clock3} tools={latestTools} emptyMessage="暂无新收录的工具。" />
-          {categories.map(({ id, name, description }) => {
-            const list = tools.filter((tool) => tool.category === id)
-            const Icon = categoryIcons[id]
+          {categories.map(({ id, name, description, iconKey }) => {
+            const list = tools.filter((tool) => tool.category === id).sort((a, b) => a.displayOrder - b.displayOrder)
+            const Icon = getCategoryIcon(iconKey)
             return <section key={id} id={id} className="tool-section category-section" aria-labelledby={`${id}-title`}>
               <div className="section-head"><div className="section-title"><span className="section-icon"><Icon size={20} aria-hidden="true" /></span><div><h2 id={`${id}-title`}>{name}</h2><p>{description}</p></div></div><span className="collection-count">{list.length} 款工具</span></div>
               {list.length ? <div className="tool-grid">{list.map((tool) => <ToolCard key={tool.slug} tool={tool} />)}</div> : <div className="catalog-empty">此分类暂未收录工具。</div>}

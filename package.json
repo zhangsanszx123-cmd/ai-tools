@@ -2,6 +2,7 @@
   "name": "my-project",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "packageManager": "pnpm@12.3.4",
   "scripts": {
     "dev": "next dev",
@@ -9,6 +10,10 @@
     "start": "next start",
     "test:auth": "node --test tests/auth.test.mjs",
     "test:auth-pages": "node --test tests/auth-pages.test.mjs",
+    "test:directory": "node --test tests/directory-validation.test.mjs",
+    "test:directory-db": "node --test --test-concurrency=1 tests/directory-db.test.mjs",
+    "test:directory-e2e": "node tests/directory-e2e.mjs",
+    "directory:check": "node scripts/directory-check.mjs",
     "auth:check": "node scripts/auth-schema.mjs",
     "auth:migrate": "node scripts/auth-schema.mjs --apply"
   },

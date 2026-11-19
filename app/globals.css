@@ -203,6 +203,15 @@ html { scroll-padding-top: calc(var(--header-height) + 20px); }
 .submit-link:hover { background: var(--brand-tint); }
 .account-link, .primary-action { min-height: 38px; padding: 0 14px; background: var(--brand); color: #fff; }
 .account-link:hover, .primary-action:hover { background: var(--brand-hover); }
+.account-link { min-height: 44px; }
+.account-status { display: flex; align-items: center; gap: 9px; min-height: 44px; max-width: min(280px, 48vw); padding: 4px 9px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); text-decoration: none; }
+.account-status:hover { border-color: var(--brand); }
+.account-status:focus-visible { outline: 2px solid var(--brand); outline-offset: 3px; }
+.account-avatar { display: grid; place-items: center; flex: 0 0 32px; height: 32px; border-radius: 50%; background: var(--brand-tint); color: var(--brand); }
+.account-identity { display: flex; flex-direction: column; min-width: 0; gap: 2px; }
+.account-email { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 13px; font-weight: 650; color: var(--foreground); }
+.account-state { display: flex; align-items: center; white-space: nowrap; font-size: 12px; color: var(--muted-foreground); }
+.account-state > span:first-child { width: 6px; height: 6px; margin-right: 5px; border-radius: 50%; background: var(--brand); }
 .directory-pane { margin-left: var(--sidebar-width); min-width: 0; }
 .directory-header { position: sticky; top: 0; z-index: 4; height: var(--header-height); background: #fff; border-bottom: 1px solid var(--border); padding: 0 clamp(18px, 2.55vw, 40px); display: flex; align-items: center; justify-content: space-between; gap: 14px; }
 .header-title { display: flex; align-items: center; gap: 10px; font-size: 13px; white-space: nowrap; color: var(--subtle); }
@@ -296,11 +305,28 @@ html { scroll-padding-top: calc(var(--header-height) + 20px); }
 .password-toggle:disabled { opacity: .5; }
 .login-card .auth-submit { min-height: 44px; width: 100%; }
 .login-switch .text-action { min-height: 44px; }
+.review-item, .admin-editor { padding: 18px; border: 1px solid var(--border); border-radius: 10px; min-width: 0; }
+.admin-editor summary, .submission-details summary { cursor: pointer; min-height: 44px; align-content: center; font-size: 14px; font-weight: 600; overflow-wrap: anywhere; }
+.admin-editor[open] summary { margin-bottom: 18px; }
+.editor-state { display: inline-block; margin-left: 14px; color: var(--subtle); font-size: 12px; font-weight: 400; }
+.admin-form fieldset, .submission-form fieldset { min-width: 0; }
+.admin-form [data-slot='input'], .submission-form [data-slot='input'] { min-height: 44px; font-size: 16px; }
+.check-label, .review-choices label { display: flex; align-items: center; gap: 9px; min-height: 44px; font-size: 14px; }
+.check-label input, .review-choices input { flex: 0 0 auto; width: 18px; height: 18px; accent-color: var(--brand); }
+.review-choices { display: flex; flex-wrap: wrap; gap: 12px 24px; }
+.review-form { margin-top: 16px; border-top: 1px solid var(--border); padding-top: 16px; }
+.submission-history > li { padding: 0 0 18px; border-bottom: 1px solid var(--border); margin-bottom: 18px; }
+.submission-history > li:last-child { border-bottom: 0; margin-bottom: 0; }
+.review-reason { margin-top: 10px; font-size: 14px; color: var(--foreground); overflow-wrap: anywhere; }
+.account-pagination { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 20px; color: var(--subtle); font-size: 14px; }
+.account-pagination a { min-height: 44px; }
+.history-status[data-status='approved'] { color: #136948; background: #e8f6ef; }
+.history-status[data-status='rejected'] { color: #a32d2d; background: #fff0f0; }
 .account-tabs { display: flex; flex-wrap: wrap; align-items: center; gap: 5px; margin: 20px 0 14px; }
 .account-tabs a { display: flex; align-items: center; gap: 6px; padding: 9px 14px; border-radius: 8px; color: var(--subtle); font-size: 14px; }
 .account-tabs a[aria-current='page'] { background: var(--brand-tint); color: var(--brand); font-weight: 700; }
 .submission-form { margin-top: 17px; }
-.submission-form .native-select { border: 1px solid var(--input); border-radius: 7px; padding: 6px 9px; font-size: 14px; background: white; }
+.submission-form .native-select, .admin-form .native-select { min-height: 44px; width: 100%; min-width: 0; border: 1px solid var(--input); border-radius: 7px; padding: 8px 9px; font-size: 16px; background: var(--surface); }
 .history-row { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 13px 0; border-bottom: 1px solid var(--border); font-size: 14px; }
 .history-row time { display: block; font-size: 12px; color: var(--subtle); margin-top: 4px; }
 .history-row:last-child { border-bottom: 0; }
