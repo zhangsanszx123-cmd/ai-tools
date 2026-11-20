@@ -1,0 +1,2812 @@
+{
+  "source": "https://ai-bot.cn/",
+  "capturedAt": "2026-11-20T11:33:31.726870+00:00",
+  "categories": {
+    "writing": [
+      {
+        "name": "蛙蛙写作",
+        "website": "https://wawawriter.cgref.cn/s/rpexm33k90",
+        "source": "https://ai-bot.cn/sites/8204.html",
+        "sourceId": "8204"
+      },
+      {
+        "name": "Loomy",
+        "website": "https://ai-bot.cn/sites/73695.html",
+        "source": "https://ai-bot.cn/sites/73695.html",
+        "sourceId": "85360"
+      },
+      {
+        "name": "办公小浣熊",
+        "website": "https://xiaohuanxiong.com/work/home?utm_source=blmay1",
+        "source": "https://xiaohuanxiong.com/work/home?utm_source=blmay1",
+        "sourceId": "76458"
+      },
+      {
+        "name": "笔灵AI写作",
+        "website": "https://ibiling.cn/?from=ai-bot",
+        "source": "https://ibiling.cn/?from=ai-bot",
+        "sourceId": "3448"
+      },
+      {
+        "name": "Laper",
+        "website": "https://laper.cgref.cn/s/zdkjqq8n1r",
+        "source": "https://ai-bot.cn/sites/81321.html",
+        "sourceId": "81321"
+      },
+      {
+        "name": "讯飞绘文",
+        "website": "https://turbodesk.cgref.cn/s/1le05l8noq",
+        "source": "https://ai-bot.cn/sites/6242.html",
+        "sourceId": "6242"
+      },
+      {
+        "name": "笔灵AI小说",
+        "website": "https://ibiling.cn/novel-workbench/?from=aibotnovel",
+        "source": "https://ai-bot.cn/sites/22626.html",
+        "sourceId": "22626"
+      },
+      {
+        "name": "沁言学术",
+        "website": "https://qinyanai.cgref.cn/aibot",
+        "source": "https://ai-bot.cn/sites/56573.html",
+        "sourceId": "56573"
+      },
+      {
+        "name": "切问学术",
+        "website": "https://ai-bot.cn/sites/72406.html",
+        "source": "https://ai-bot.cn/sites/72406.html",
+        "sourceId": "82195"
+      },
+      {
+        "name": "稿易AI论文",
+        "website": "https://gaoyiai.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/36409.html",
+        "sourceId": "36409"
+      },
+      {
+        "name": "千笔AI论文",
+        "website": "https://www.qianbixiezuo.com/?pic=g5DP",
+        "source": "https://ai-bot.cn/sites/7358.html",
+        "sourceId": "7358"
+      },
+      {
+        "name": "66AI论文",
+        "website": "https://www.66paper.cn/AI_A2E1C09",
+        "source": "https://ai-bot.cn/sites/14679.html",
+        "sourceId": "14679"
+      },
+      {
+        "name": "剧云",
+        "website": "https://jucloud.cgref.cn/s/zdkj0xoe1r",
+        "source": "https://ai-bot.cn/sites/79219.html",
+        "sourceId": "79219"
+      },
+      {
+        "name": "维普科创助手",
+        "website": "https://super.cqvip.com/?invite=aibot",
+        "source": "https://ai-bot.cn/sites/60799.html",
+        "sourceId": "60799"
+      },
+      {
+        "name": "笔目鱼",
+        "website": "https://www.bmysci.com/?channelCode=aibotad",
+        "source": "https://ai-bot.cn/sites/53972.html",
+        "sourceId": "53972"
+      },
+      {
+        "name": "光速写作",
+        "website": "https://www.guangsuxie.com/static/college-write-web/home",
+        "source": "https://ai-bot.cn/sites/7244.html",
+        "sourceId": "7244"
+      },
+      {
+        "name": "小鱼AI写作",
+        "website": "https://www.xiaoyuxiezuo.com/AI_A2E1C09",
+        "source": "https://ai-bot.cn/sites/18646.html",
+        "sourceId": "18646"
+      },
+      {
+        "name": "墨问",
+        "website": "https://mowen.cn/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/62793.html",
+        "sourceId": "62793"
+      },
+      {
+        "name": "万能小in",
+        "website": "https://xiaoin.com.cn/home/index?sharerUserId=1815301629231030274",
+        "source": "https://ai-bot.cn/sites/14504.html",
+        "sourceId": "14504"
+      },
+      {
+        "name": "标达人",
+        "website": "https://biaodaren.manaont.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/86433.html",
+        "sourceId": "86433"
+      },
+      {
+        "name": "文优小助",
+        "website": "https://wenyouxiaozhu.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/85184.html",
+        "sourceId": "85184"
+      },
+      {
+        "name": "排版小星",
+        "website": "https://paibanxiaoxing.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/82376.html",
+        "sourceId": "82376"
+      },
+      {
+        "name": "新华妙笔",
+        "website": "https://miaobi.xinhuaskl.com/?channel=shuzhi",
+        "source": "https://ai-bot.cn/sites/6498.html",
+        "sourceId": "6498"
+      },
+      {
+        "name": "丹青妙笔",
+        "website": "https://www.danqingmiaobi.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/75420.html",
+        "sourceId": "75420"
+      },
+      {
+        "name": "FeelFish",
+        "website": "https://www.feelfish.com/?fr=aibot",
+        "source": "https://ai-bot.cn/sites/66997.html",
+        "sourceId": "66997"
+      },
+      {
+        "name": "Loomi",
+        "website": "https://loomi.live/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/66375.html",
+        "sourceId": "66375"
+      },
+      {
+        "name": "ReadPo",
+        "website": "https://ai-bot.cn/readpo",
+        "source": "https://ai-bot.cn/readpo/",
+        "sourceId": "36552"
+      },
+      {
+        "name": "落笔AI写作",
+        "website": "https://luobi.net/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/66726.html",
+        "sourceId": "66726"
+      },
+      {
+        "name": "创飞写作",
+        "website": "https://www.chuangfeiai.com/login?invitationCode=MV6433",
+        "source": "https://ai-bot.cn/sites/74592.html",
+        "sourceId": "74592"
+      },
+      {
+        "name": "超级小说家",
+        "website": "https://www.36ma.com/?fr=aibot",
+        "source": "https://ai-bot.cn/sites/72610.html",
+        "sourceId": "72610"
+      }
+    ],
+    "image": [
+      {
+        "name": "即梦",
+        "website": "https://ai-bot.cn/sites/17772.html",
+        "source": "https://ai-bot.cn/sites/17772.html",
+        "sourceId": "6353"
+      },
+      {
+        "name": "PixPix",
+        "website": "https://ai-bot.cn/sites/82119.html",
+        "source": "https://ai-bot.cn/sites/82119.html",
+        "sourceId": "87070"
+      },
+      {
+        "name": "稿定AI",
+        "website": "https://www.gaoding.art/utms/9f9e3162fb274b11810089a93ea547f1",
+        "source": "https://www.gaoding.art/utms/9f9e3162fb274b11810089a93ea547f1",
+        "sourceId": "11927"
+      },
+      {
+        "name": "阿贝智能",
+        "website": "https://abeiai.com/?r=133",
+        "source": "https://ai-bot.cn/sites/17330.html",
+        "sourceId": "17330"
+      },
+      {
+        "name": "Midjourney",
+        "website": "https://www.midjourney.com/home",
+        "source": "https://ai-bot.cn/sites/56.html",
+        "sourceId": "56"
+      },
+      {
+        "name": "Stable Diffusion",
+        "website": "",
+        "source": "https://ai-bot.cn/sites/123.html",
+        "sourceId": "123"
+      },
+      {
+        "name": "美图设计室",
+        "website": "https://ai-bot.cn/sites/2400.html",
+        "source": "https://ai-bot.cn/sites/2400.html",
+        "sourceId": "85138"
+      },
+      {
+        "name": "椒图AI",
+        "website": "https://ai-bot.cn/sites/61891.html",
+        "source": "https://ai-bot.cn/sites/61891.html",
+        "sourceId": "86674"
+      },
+      {
+        "name": "RunningHub",
+        "website": "https://www.runninghub.cn/?inviteCode=bemsxzdr",
+        "source": "https://ai-bot.cn/sites/56061.html",
+        "sourceId": "56061"
+      },
+      {
+        "name": "可灵AI",
+        "website": "https://app.klingai.com/cn/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/13002.html",
+        "sourceId": "13002"
+      },
+      {
+        "name": "呜哩",
+        "website": "https://wuli.art/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/70059.html",
+        "sourceId": "70059"
+      },
+      {
+        "name": "insMind",
+        "website": "https://www.insmind.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/60138.html",
+        "sourceId": "60138"
+      },
+      {
+        "name": "抠抠图",
+        "website": "https://ai-bot.cn/sites/70008.html",
+        "source": "https://ai-bot.cn/sites/70008.html",
+        "sourceId": "77564"
+      },
+      {
+        "name": "135维视",
+        "website": "https://www.135editor.com/inspo/?source=aibot&track_id=40&hmmd=aibot",
+        "source": "https://ai-bot.cn/sites/89433.html",
+        "sourceId": "89433"
+      },
+      {
+        "name": "图改改",
+        "website": "https://tugaigai.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/82771.html",
+        "sourceId": "82771"
+      },
+      {
+        "name": "Epixa",
+        "website": "https://epixa.cn/?adtag=aibot",
+        "source": "https://ai-bot.cn/sites/83981.html",
+        "sourceId": "83981"
+      },
+      {
+        "name": "意流 eluai",
+        "website": "https://eluai.cn/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/87789.html",
+        "sourceId": "87789"
+      },
+      {
+        "name": "改稿鸦",
+        "website": "https://lovepsai.com/?f=aigjj",
+        "source": "https://ai-bot.cn/sites/87527.html",
+        "sourceId": "87527"
+      },
+      {
+        "name": "SciDraw AI",
+        "website": "https://sci-draw.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/86607.html",
+        "sourceId": "86607"
+      },
+      {
+        "name": "千问创作",
+        "website": "https://ai-bot.cn/sites/63437.html",
+        "source": "https://ai-bot.cn/sites/63437.html",
+        "sourceId": "63503"
+      },
+      {
+        "name": "AlphaVow",
+        "website": "https://alphavow.com/?ref=aibot",
+        "source": "https://ai-bot.cn/sites/84884.html",
+        "sourceId": "84884"
+      },
+      {
+        "name": "ChatArt",
+        "website": "https://www.chatartpro.com/tw/?utm_medium=link&utm_source=aibot&utm_campaign=FYTChatArt&utm_term=chatart20260825",
+        "source": "https://ai-bot.cn/sites/84770.html",
+        "sourceId": "84770"
+      },
+      {
+        "name": "Krene",
+        "website": "https://www.krene.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/78196.html",
+        "sourceId": "78196"
+      },
+      {
+        "name": "AI改图神器",
+        "website": "https://img.logosc.cn/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/1412.html",
+        "sourceId": "1412"
+      },
+      {
+        "name": "米粿AI",
+        "website": "https://miguo.ai?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/74842.html",
+        "sourceId": "74842"
+      },
+      {
+        "name": "咖图AI",
+        "website": "https://www.katuai.cn/?from=ai-bot",
+        "source": "https://ai-bot.cn/sites/71738.html",
+        "sourceId": "71738"
+      },
+      {
+        "name": "视觉工厂",
+        "website": "https://d.aijuh.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/70659.html",
+        "sourceId": "70659"
+      },
+      {
+        "name": "秒绘AI",
+        "website": "https://miaohuiai.cc/?from=ai-bot",
+        "source": "https://ai-bot.cn/sites/70073.html",
+        "sourceId": "70073"
+      },
+      {
+        "name": "妙话AI",
+        "website": "https://imiaohua.com/?utm=r2254801",
+        "source": "https://ai-bot.cn/sites/68984.html",
+        "sourceId": "68984"
+      },
+      {
+        "name": "炉米Lumi",
+        "website": "https://ai-bot.cn/lumi",
+        "source": "https://ai-bot.cn/lumi/",
+        "sourceId": "27837"
+      }
+    ],
+    "video": [
+      {
+        "name": "LibTV",
+        "website": "https://libtv.cgref.cn/aibot",
+        "source": "https://ai-bot.cn/sites/73776.html",
+        "sourceId": "73776"
+      },
+      {
+        "name": "Seko",
+        "website": "https://ai-bot.cn/sites/58360.html",
+        "source": "https://ai-bot.cn/sites/58360.html",
+        "sourceId": "78605"
+      },
+      {
+        "name": "即梦AI",
+        "website": "https://jimeng.jianying.com/ai-tool/home/?utm_medium=aitools&utm_source=aibot&utm_campaign=null&utm_content=hw_jm_aibot",
+        "source": "https://ai-bot.cn/sites/17772.html",
+        "sourceId": "17772"
+      },
+      {
+        "name": "updream",
+        "website": "https://updream.cgref.cn/s/1oe71vme23",
+        "source": "https://ai-bot.cn/sites/80357.html",
+        "sourceId": "80357"
+      },
+      {
+        "name": "AniShort",
+        "website": "https://anishort.cgref.cn/s/2znrlqynr7",
+        "source": "https://ai-bot.cn/sites/73422.html",
+        "sourceId": "73422"
+      },
+      {
+        "name": "SoundView",
+        "website": "https://soundviewai.cgref.cn/s/jgemgwwemy",
+        "source": "https://ai-bot.cn/sites/35756.html",
+        "sourceId": "35756"
+      },
+      {
+        "name": "蛙蛙漫剧",
+        "website": "https://wawawriter.cgref.cn/aibot",
+        "source": "https://ai-bot.cn/sites/79821.html",
+        "sourceId": "79821"
+      },
+      {
+        "name": "PixTV",
+        "website": "https://pixtv.cgref.cn/s/2znrdr6er7 ",
+        "source": "https://ai-bot.cn/sites/87074.html",
+        "sourceId": "87074"
+      },
+      {
+        "name": "花生AI",
+        "website": "https://huasheng.cgref.cn/s/41evjv1ev8",
+        "source": "https://ai-bot.cn/sites/67673.html",
+        "sourceId": "67673"
+      },
+      {
+        "name": "白日梦",
+        "website": "https://aibrm.cgref.cn/aibot",
+        "source": "https://ai-bot.cn/sites/13065.html",
+        "sourceId": "13065"
+      },
+      {
+        "name": "有言",
+        "website": "https://www.youyan3d.com/login/?utm_source=zhanwaidaoliu&utm_campaign=zwj&utm_content=aigongjuji&from=aigongjuji",
+        "source": "https://ai-bot.cn/sites/10847.html",
+        "sourceId": "10847"
+      },
+      {
+        "name": "VibeKnow",
+        "website": "https://vibeknow.cgref.cn/s/3mnz07jeo1",
+        "source": "https://ai-bot.cn/sites/74718.html",
+        "sourceId": "74718"
+      },
+      {
+        "name": "蝉镜",
+        "website": "https://www.chanjing.cc/refc/?type=hzBuy&id=BEB41KJUj-n9rTc5kxR5WGKv6bdmvm_rv5Qpxs0XNFc",
+        "source": "https://ai-bot.cn/sites/11290.html",
+        "sourceId": "11290"
+      },
+      {
+        "name": "立刻MV",
+        "website": "https://lickmv.cgref.cn/s/qmnoyy3e29",
+        "source": "https://ai-bot.cn/sites/78606.html",
+        "sourceId": "78606"
+      },
+      {
+        "name": "Seedance",
+        "website": "https://volcengine.cgref.cn/aibot",
+        "source": "https://ai-bot.cn/sites/76349.html",
+        "sourceId": "76349"
+      },
+      {
+        "name": "可灵AI",
+        "website": "https://kling.kuaishou.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/13186.html",
+        "sourceId": "13186"
+      },
+      {
+        "name": "魔珐星云",
+        "website": "https://www.xingyun3d.com/?utm_source=zhanwaidaoliu&utm_campaign=zwj&utm_content=aibot",
+        "source": "https://ai-bot.cn/sites/68669.html",
+        "sourceId": "68669"
+      },
+      {
+        "name": "Fotor",
+        "website": "https://www.fotor.com.cn/agent/?utm_source=CZQD&utm_medium=aibot&utm_campaign=%E5%9E%82%E7%9B%B4%E6%B8%A0%E9%81%93%E6%8E%A8%E5%B9%BF&_channel_track_key=8ydOUtRH",
+        "source": "https://ai-bot.cn/sites/89495.html",
+        "sourceId": "89495"
+      },
+      {
+        "name": "Pollo AI",
+        "website": "https://fas.st/t/nFLHVC4T",
+        "source": "https://ai-bot.cn/sites/70438.html",
+        "sourceId": "70438"
+      },
+      {
+        "name": "Klap",
+        "website": "https://klap.app/?via=aibot",
+        "source": "https://ai-bot.cn/sites/89862.html",
+        "sourceId": "89862"
+      },
+      {
+        "name": "Vivix",
+        "website": "https://vivix.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/86919.html",
+        "sourceId": "86919"
+      },
+      {
+        "name": "立刻成片",
+        "website": "https://lickv.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/84644.html",
+        "sourceId": "84644"
+      },
+      {
+        "name": "Higgsfield",
+        "website": "https://higgsfield.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/59035.html",
+        "sourceId": "59035"
+      },
+      {
+        "name": "TapNow",
+        "website": "https://www.tapnow.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/66332.html",
+        "sourceId": "66332"
+      },
+      {
+        "name": "Pavo",
+        "website": "https://app.pavo-ai.work/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/80706.html",
+        "sourceId": "80706"
+      },
+      {
+        "name": "likli",
+        "website": "https://likli.net/home/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/90133.html",
+        "sourceId": "90133"
+      },
+      {
+        "name": "Filmora.TV",
+        "website": "https://tv.filmora.cn/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/89735.html",
+        "sourceId": "89735"
+      },
+      {
+        "name": "EveryGen AI",
+        "website": "https://everygen-ai.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/88365.html",
+        "sourceId": "88365"
+      },
+      {
+        "name": "OnSolo",
+        "website": "https://onsolo.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/84077.html",
+        "sourceId": "84077"
+      },
+      {
+        "name": "绘梦工坊AI",
+        "website": "https://huimengi.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/86544.html",
+        "sourceId": "86544"
+      }
+    ],
+    "office": [
+      {
+        "name": "Loomy",
+        "website": "https://ai-bot.cn/sites/73695.html",
+        "source": "https://ai-bot.cn/sites/73695.html",
+        "sourceId": "83316"
+      },
+      {
+        "name": "办公小浣熊",
+        "website": "https://xiaohuanxiong.com/work/home?utm_source=blmay1",
+        "source": "https://ai-bot.cn/sites/8516.html",
+        "sourceId": "8516"
+      },
+      {
+        "name": "AiPPT",
+        "website": "https://www.aippt.cn/?utm_type=Navweb&utm_source=ai-bot&utm_page=aippt&utm_plan=ppt&utm_unit=AIPPT&utm_keyword=50608",
+        "source": "https://www.aippt.cn/?utm_type=Navweb&utm_source=ai-bot&utm_page=aippt&utm_plan=ppt&utm_unit=AIPPT&utm_keyword=50608",
+        "sourceId": "2644"
+      },
+      {
+        "name": "文多多AiPPT",
+        "website": "https://docmee.cn/?source=ai-bot",
+        "source": "https://docmee.cn/?source=ai-bot",
+        "sourceId": "18998"
+      },
+      {
+        "name": "千问AIPPT",
+        "website": "https://dis.chatdesks.cn/chatdesk/tyaibot.html",
+        "source": "https://ai-bot.cn/sites/81673.html",
+        "sourceId": "81673"
+      },
+      {
+        "name": "咔片PPT",
+        "website": "https://cappt.cgref.cn/s/ogewxgrkp2",
+        "source": "https://ai-bot.cn/sites/44612.html",
+        "sourceId": "44612"
+      },
+      {
+        "name": "讯飞智文",
+        "website": "https://zhiwen.cgref.cn/s/qyk4w5ln87",
+        "source": "https://ai-bot.cn/sites/6024.html",
+        "sourceId": "6024"
+      },
+      {
+        "name": "博思AIPPT",
+        "website": "https://pptgo.cn/?utm_source=referrals&utm_content=aibot&_channel_track_key=LkU8aJjk",
+        "source": "https://ai-bot.cn/sites/13808.html",
+        "sourceId": "13808"
+      },
+      {
+        "name": "iSlide AIPPT",
+        "website": "https://islide.cgref.cn/aibot",
+        "source": "https://ai-bot.cn/sites/8840.html",
+        "sourceId": "8840"
+      },
+      {
+        "name": "二狗PPT",
+        "website": "https://2dogppt.cgref.cn/s/2znrpzoer7",
+        "source": "https://ai-bot.cn/sites/76405.html",
+        "sourceId": "76405"
+      },
+      {
+        "name": "稿定PPT",
+        "website": "https://www.gaoding.com/utms/c2eb98df0bf24cd9a4b691b0e8d2914e",
+        "source": "https://ai-bot.cn/sites/35715.html",
+        "sourceId": "35715"
+      },
+      {
+        "name": "Pi智能PPT",
+        "website": "https://pi.deepvinci.tech/idea?share_token=CUFCN44CB6WIA",
+        "source": "https://ai-bot.cn/sites/63272.html",
+        "sourceId": "63272"
+      },
+      {
+        "name": "笔格AIPPT",
+        "website": "https://www.bigppt.cn/?hmmd=aibot",
+        "source": "https://ai-bot.cn/sites/7012.html",
+        "sourceId": "7012"
+      },
+      {
+        "name": "百度文库AI助手",
+        "website": "https://wenku.baidu.com/ndlaunch/browse/chat?fr=dist_wk_aiasis&dist_source=kfpt-WD&utm_account=dist&keyword=PPT&searchFr=1&third_id=wkds_98a21f011a37f111f0855b83_400000159",
+        "source": "https://ai-bot.cn/sites/5037.html",
+        "sourceId": "5037"
+      },
+      {
+        "name": "Gamma",
+        "website": "https://try.gamma.app/dlp8wf0pq5r8",
+        "source": "https://ai-bot.cn/sites/995.html",
+        "sourceId": "995"
+      },
+      {
+        "name": "笔灵AIPPT",
+        "website": "https://ibiling.cn/ppt-zone?from=aibotaippt",
+        "source": "https://ai-bot.cn/sites/14213.html",
+        "sourceId": "14213"
+      },
+      {
+        "name": "AiPPT插件",
+        "website": "https://aippt-plugin.cgref.cn/aibot",
+        "source": "https://ai-bot.cn/sites/75247.html",
+        "sourceId": "75247"
+      },
+      {
+        "name": "Napkin",
+        "website": "https://www.napkin.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/16885.html",
+        "sourceId": "16885"
+      },
+      {
+        "name": "Swishy",
+        "website": "https://www.swishy.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/76133.html",
+        "sourceId": "76133"
+      },
+      {
+        "name": "ChartGen",
+        "website": "https://chartgen.ai/zh-CN?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/69545.html",
+        "sourceId": "69545"
+      },
+      {
+        "name": "Diagrimo",
+        "website": "https://www.tenorshare.ai/zh-tw/diagrimo.html?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/68868.html",
+        "sourceId": "68868"
+      },
+      {
+        "name": "PicDoc",
+        "website": "https://www.picdoc.cn/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/53412.html",
+        "sourceId": "53412"
+      },
+      {
+        "name": "Kimi PPT助手",
+        "website": "https://www.kimi.com/slides",
+        "source": "https://ai-bot.cn/sites/57522.html",
+        "sourceId": "57522"
+      },
+      {
+        "name": "夸克PPT",
+        "website": "https://ppt.quark.cn/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/66082.html",
+        "sourceId": "66082"
+      },
+      {
+        "name": "GAIPPT",
+        "website": "https://www.gaippt.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/29253.html",
+        "sourceId": "29253"
+      },
+      {
+        "name": "美图AI PPT",
+        "website": "https://www.designkit.com/ppt/?channel=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/1744.html",
+        "sourceId": "1744"
+      },
+      {
+        "name": "飞象老师",
+        "website": "https://www.feixianglaoshi.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/67628.html",
+        "sourceId": "67628"
+      },
+      {
+        "name": "一点PPT",
+        "website": "https://www.1dppt.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/73154.html",
+        "sourceId": "73154"
+      },
+      {
+        "name": "NarraLand",
+        "website": "https://www.narraland.com?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/72530.html",
+        "sourceId": "72530"
+      },
+      {
+        "name": "课灵 PPT",
+        "website": "https://www.classppt.cn/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/69127.html",
+        "sourceId": "69127"
+      }
+    ],
+    "chat": [
+      {
+        "name": "豆包",
+        "website": "https://www.doubao.com/chat/?channel=hw_db_aibot&source=hw_db_aibot",
+        "source": "https://ai-bot.cn/sites/4189.html",
+        "sourceId": "4189"
+      },
+      {
+        "name": "千问",
+        "website": "https://dis.chatdesks.cn/chatdesk/tyaibot.html",
+        "source": "https://ai-bot.cn/sites/1338.html",
+        "sourceId": "1338"
+      },
+      {
+        "name": "DeepSeek",
+        "website": "https://deepseek.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/54501.html",
+        "sourceId": "54501"
+      },
+      {
+        "name": "ChatGPT",
+        "website": "https://chatgpt.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/30.html",
+        "sourceId": "30"
+      },
+      {
+        "name": "Claude",
+        "website": "https://claude.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/460.html",
+        "sourceId": "460"
+      },
+      {
+        "name": "Gemini",
+        "website": "https://deepmind.google/technologies/gemini",
+        "source": "https://ai-bot.cn/sites/736.html",
+        "sourceId": "736"
+      },
+      {
+        "name": "Kimi智能助手",
+        "website": "https://www.kimi.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/53747.html",
+        "sourceId": "53747"
+      },
+      {
+        "name": "Z.ai",
+        "website": "https://z.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/62950.html",
+        "sourceId": "62950"
+      },
+      {
+        "name": "腾讯元宝",
+        "website": "https://yuanbao.paluai.com/aibot",
+        "source": "https://ai-bot.cn/sites/12946.html",
+        "sourceId": "12946"
+      },
+      {
+        "name": "Grok",
+        "website": "https://grok.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/5368.html",
+        "sourceId": "5368"
+      },
+      {
+        "name": "Duck.ai",
+        "website": "https://duck.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/81824.html",
+        "sourceId": "81824"
+      },
+      {
+        "name": "Knocket",
+        "website": "https://knocket.trtc.io/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/87389.html",
+        "sourceId": "87389"
+      },
+      {
+        "name": "MiniMax",
+        "website": "https://chat.minimaxi.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/8835.html",
+        "sourceId": "8835"
+      },
+      {
+        "name": "讯飞星火",
+        "website": "https://xinghuo.xfyun.cn/desk/?ch=xfxh-aigjtf01",
+        "source": "https://ai-bot.cn/sites/1909.html",
+        "sourceId": "1909"
+      },
+      {
+        "name": "LongCat",
+        "website": "https://longcat.chat/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/61432.html",
+        "sourceId": "61432"
+      },
+      {
+        "name": "文心一言",
+        "website": "https://wenxin.baidu.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/669.html",
+        "sourceId": "669"
+      },
+      {
+        "name": "智谱清言",
+        "website": "https://chatglm.cn/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/2005.html",
+        "sourceId": "2005"
+      },
+      {
+        "name": "逗逗AI",
+        "website": "https://doudou.paluai.com/web_aitool",
+        "source": "https://ai-bot.cn/sites/14769.html",
+        "sourceId": "14769"
+      },
+      {
+        "name": "SealReply",
+        "website": " https://www.sealreply.com/zh-cn?ref=aibot",
+        "source": "https://ai-bot.cn/sites/89731.html",
+        "sourceId": "89731"
+      },
+      {
+        "name": "异见圆桌",
+        "website": "https://www.yijian.chat/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/87488.html",
+        "sourceId": "87488"
+      },
+      {
+        "name": "知达AI",
+        "website": "https://www.zida.school/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/79107.html",
+        "sourceId": "79107"
+      },
+      {
+        "name": "华为小艺",
+        "website": "https://ai-bot.cn/huawei-xiaoyi",
+        "source": "https://ai-bot.cn/huawei-xiaoyi/",
+        "sourceId": "41147"
+      },
+      {
+        "name": "Lorka AI",
+        "website": "https://www.lorka.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/76161.html",
+        "sourceId": "76161"
+      },
+      {
+        "name": "问小白",
+        "website": "https://www.wenxiaobai.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/14215.html",
+        "sourceId": "14215"
+      },
+      {
+        "name": "百灵大模型",
+        "website": "https://ling.tbox.cn/chat?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/64622.html",
+        "sourceId": "64622"
+      },
+      {
+        "name": "书生大模型",
+        "website": "https://ai-bot.cn/sites/53308.html",
+        "source": "https://ai-bot.cn/sites/53308.html",
+        "sourceId": "53373"
+      },
+      {
+        "name": "阶跃AI",
+        "website": "https://www.stepfun.com/chats/new?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/9802.html",
+        "sourceId": "9802"
+      },
+      {
+        "name": "百小医",
+        "website": "https://ying.baichuan-ai.com/chat?from=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/12663.html",
+        "sourceId": "12663"
+      },
+      {
+        "name": "天工AI",
+        "website": "https://www.tiangong.cn/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/1784.html",
+        "sourceId": "1784"
+      },
+      {
+        "name": "商量SenseChat",
+        "website": "https://chat.sensetime.com/wb/home?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/11529.html",
+        "sourceId": "11529"
+      }
+    ],
+    "agents": [
+      {
+        "name": "Teamily AI",
+        "website": "https://teamily.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/90363.html",
+        "sourceId": "90363"
+      },
+      {
+        "name": "Loomy",
+        "website": "https://loomy.cgref.cn/s/ogewwjvep2",
+        "source": "https://ai-bot.cn/sites/73695.html",
+        "sourceId": "73695"
+      },
+      {
+        "name": "Seko",
+        "website": "https://seko.cgref.cn/s/1oe7lzgn23",
+        "source": "https://ai-bot.cn/sites/58360.html",
+        "sourceId": "58360"
+      },
+      {
+        "name": "WorkBuddy",
+        "website": "https://dis.chatdesks.cn/workbuddy/?channel=aibot",
+        "source": "https://ai-bot.cn/sites/73160.html",
+        "sourceId": "73160"
+      },
+      {
+        "name": "豆包工作",
+        "website": "https://dis.csqixiang.cn/dbwork?channel=aibot",
+        "source": "https://ai-bot.cn/sites/84606.html",
+        "sourceId": "84606"
+      },
+      {
+        "name": "爱派AiPy",
+        "website": "https://aipyaipy.cgref.cn/aibot",
+        "source": "https://ai-bot.cn/sites/63774.html",
+        "sourceId": "63774"
+      },
+      {
+        "name": "百度搭子",
+        "website": "https://dumate.cn/download?track=1063479t&sub_track=02bh&dutoken=3.s%3A%2F%C2%A5%5EJD%24aiO4fnh%5E%25",
+        "source": "https://ai-bot.cn/sites/74011.html",
+        "sourceId": "74011"
+      },
+      {
+        "name": "码上飞",
+        "website": "https://ai-bot.cn/sites/60995.html",
+        "source": "https://ai-bot.cn/sites/60995.html",
+        "sourceId": "61123"
+      },
+      {
+        "name": "ArkClaw",
+        "website": "https://volcengine.cgref.cn/aibottt",
+        "source": "https://ai-bot.cn/sites/74340.html",
+        "sourceId": "74340"
+      },
+      {
+        "name": "超级麦吉",
+        "website": "https://letsmagic.cgref.cn/s/5ln12ygerw ",
+        "source": "https://ai-bot.cn/sites/88427.html",
+        "sourceId": "88427"
+      },
+      {
+        "name": "Grok Bot",
+        "website": "https://x.ai/bot?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/88592.html",
+        "sourceId": "88592"
+      },
+      {
+        "name": "DeepSeek Harness",
+        "website": "https://www.deepseek.com/harness/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/87212.html",
+        "sourceId": "87212"
+      },
+      {
+        "name": "Muse",
+        "website": "https://muse.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/86852.html",
+        "sourceId": "86852"
+      },
+      {
+        "name": "Flowith",
+        "website": "https://flowith.cgref.cn/s/rpe38l9n05",
+        "source": "https://ai-bot.cn/sites/11395.html",
+        "sourceId": "11395"
+      },
+      {
+        "name": "切问学术",
+        "website": "https://qiewenpaper.cgref.cn/s/rpex7zvk90",
+        "source": "https://ai-bot.cn/sites/72406.html",
+        "sourceId": "72406"
+      },
+      {
+        "name": "AirJelly",
+        "website": "https://www.airjelly.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/87069.html",
+        "sourceId": "87069"
+      },
+      {
+        "name": "椒图AI",
+        "website": "https://www.jiaotuai.cn/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/61891.html",
+        "sourceId": "61891"
+      },
+      {
+        "name": "元空AI Work",
+        "website": "https://www.yuankongai.com?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/89262.html",
+        "sourceId": "89262"
+      },
+      {
+        "name": "AIPRD",
+        "website": "https://aiprd.zuoxue.com/go/i3QmU5aZ",
+        "source": "https://ai-bot.cn/sites/89854.html",
+        "sourceId": "89854"
+      },
+      {
+        "name": "PatX知小寻",
+        "website": "https://www.aigrow.cn/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/88790.html",
+        "sourceId": "88790"
+      },
+      {
+        "name": "Tokeny",
+        "website": "https://tokeny-ai.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/88709.html",
+        "sourceId": "88709"
+      },
+      {
+        "name": "Rena览财",
+        "website": "https://rena.qq.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/88008.html",
+        "sourceId": "88008"
+      },
+      {
+        "name": "AStudio",
+        "website": "https://agent.xfyun.cn/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/86184.html",
+        "sourceId": "86184"
+      },
+      {
+        "name": "OpenClaw",
+        "website": "https://clawd.bot/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/70880.html",
+        "sourceId": "70880"
+      },
+      {
+        "name": "Tabbit",
+        "website": "https://www.tabbit.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/72614.html",
+        "sourceId": "72614"
+      },
+      {
+        "name": "TraeWork",
+        "website": "https://www.trae.cn/sem/?utm_source=advertising&utm_medium=aibot_ug_cpa&utm_term=hw_trae_aibot",
+        "source": "https://ai-bot.cn/sites/79473.html",
+        "sourceId": "79473"
+      },
+      {
+        "name": "元空AI Science",
+        "website": "https://www.e2sci.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/89266.html",
+        "sourceId": "89266"
+      },
+      {
+        "name": "百雀智能",
+        "website": "https://www.larkagent.cn/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/87855.html",
+        "sourceId": "87855"
+      },
+      {
+        "name": "LightVela",
+        "website": "https://lightvela.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/87016.html",
+        "sourceId": "87016"
+      },
+      {
+        "name": "nashnova",
+        "website": "https://www.nashnova.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/86169.html",
+        "sourceId": "86169"
+      }
+    ],
+    "code": [
+      {
+        "name": "TRAE-AI编程",
+        "website": "https://www.trae.cn/sem/?utm_source=advertising&utm_medium=aibot_ug_cpa&utm_term=hw_trae_aibot",
+        "source": "https://ai-bot.cn/sites/65814.html",
+        "sourceId": "65814"
+      },
+      {
+        "name": "码上飞",
+        "website": "https://ai-bot.cn/sites/60995.html",
+        "source": "https://ai-bot.cn/sites/60995.html",
+        "sourceId": "40218"
+      },
+      {
+        "name": "Codex",
+        "website": "https://openai.com/codex/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/53.html",
+        "sourceId": "53"
+      },
+      {
+        "name": "Claude Code",
+        "website": "https://www.anthropic.com/claude-code?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/56948.html",
+        "sourceId": "56948"
+      },
+      {
+        "name": "OpenCode",
+        "website": "https://opencode.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/69806.html",
+        "sourceId": "69806"
+      },
+      {
+        "name": "ZCode",
+        "website": "https://zcode-ai.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/69134.html",
+        "sourceId": "69134"
+      },
+      {
+        "name": "Agent.Space",
+        "website": "https://agentspace.cgref.cn/s/omkl2mve4d",
+        "source": "https://ai-bot.cn/sites/85038.html",
+        "sourceId": "85038"
+      },
+      {
+        "name": "Qoder",
+        "website": "https://qoder.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/60584.html",
+        "sourceId": "60584"
+      },
+      {
+        "name": "Kimi Code",
+        "website": "https://www.kimi.com/code?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/84853.html",
+        "sourceId": "84853"
+      },
+      {
+        "name": "Kilo Code",
+        "website": "https://kilo.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/69903.html",
+        "sourceId": "69903"
+      },
+      {
+        "name": "Google Antigravity",
+        "website": "https://antigravity.google/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/66843.html",
+        "sourceId": "66843"
+      },
+      {
+        "name": "Kiro",
+        "website": "https://kiro.dev/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/57086.html",
+        "sourceId": "57086"
+      },
+      {
+        "name": "Cursor",
+        "website": "https://www.cursor.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/906.html",
+        "sourceId": "906"
+      },
+      {
+        "name": "Cline",
+        "website": "https://cline.bot/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/83558.html",
+        "sourceId": "83558"
+      },
+      {
+        "name": "MiniMax Code",
+        "website": " https://agent.minimaxi.com/download?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/90025.html",
+        "sourceId": "90025"
+      },
+      {
+        "name": "MiMo Code",
+        "website": "https://mimo.xiaomi.com/mimocode",
+        "source": "https://ai-bot.cn/sites/79441.html",
+        "sourceId": "79441"
+      },
+      {
+        "name": "YouWare",
+        "website": "https://www.youware.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/70432.html",
+        "sourceId": "70432"
+      },
+      {
+        "name": "CodeBuddy IDE",
+        "website": "https://www.codebuddy.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/57753.html",
+        "sourceId": "57753"
+      },
+      {
+        "name": "Lovable",
+        "website": "https://lovable.dev/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/60798.html",
+        "sourceId": "60798"
+      },
+      {
+        "name": "CatPaw",
+        "website": "https://catpaw.meituan.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/65836.html",
+        "sourceId": "65836"
+      },
+      {
+        "name": "网易CodeWave",
+        "website": "https://codewave.163.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/86058.html",
+        "sourceId": "86058"
+      },
+      {
+        "name": "Augment Code",
+        "website": "https://www.augmentcode.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/11625.html",
+        "sourceId": "11625"
+      },
+      {
+        "name": "AgnesCode",
+        "website": "https://agnes-ai.com/agnescode?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/81764.html",
+        "sourceId": "81764"
+      },
+      {
+        "name": "通义灵码",
+        "website": "https://lingma.aliyun.com/lingma",
+        "source": "https://ai-bot.cn/sites/5269.html",
+        "sourceId": "5269"
+      },
+      {
+        "name": "GitHub Copilot",
+        "website": "https://github.com/features/copilot",
+        "source": "https://ai-bot.cn/sites/45.html",
+        "sourceId": "45"
+      },
+      {
+        "name": "Firebase Studio",
+        "website": "https://ai-bot.cn/firebase-studio",
+        "source": "https://ai-bot.cn/firebase-studio/",
+        "sourceId": "48022"
+      },
+      {
+        "name": "Windsurf",
+        "website": "https://ai-bot.cn/windsurf",
+        "source": "https://ai-bot.cn/windsurf/",
+        "sourceId": "31409"
+      },
+      {
+        "name": "Bolt.new",
+        "website": "https://ai-bot.cn/bolt%E2%80%A4new",
+        "source": "https://ai-bot.cn/bolt%E2%80%A4new/",
+        "sourceId": "23573"
+      },
+      {
+        "name": "InfCode",
+        "website": "https://www.tokfinity.com/infcode?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/69316.html",
+        "sourceId": "69316"
+      },
+      {
+        "name": "CodeFlicker",
+        "website": "https://www.codeflicker.ai",
+        "source": "https://ai-bot.cn/sites/64617.html",
+        "sourceId": "64617"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "秒悟Meoo",
+        "website": "https://click.meoo.com/m/20000000664",
+        "source": "https://ai-bot.cn/sites/75263.html",
+        "sourceId": "75263"
+      },
+      {
+        "name": "码上飞",
+        "website": "https://codeflying.cgref.cn/aibot",
+        "source": "https://ai-bot.cn/sites/60995.html",
+        "sourceId": "60995"
+      },
+      {
+        "name": "Zion",
+        "website": "https://functorz.cgref.cn/s/p3kq687nol",
+        "source": "https://ai-bot.cn/sites/87909.html",
+        "sourceId": "87909"
+      },
+      {
+        "name": "ZenMux",
+        "website": "https://zenmux.ai/invite/5MQIGW",
+        "source": "https://ai-bot.cn/sites/71548.html",
+        "sourceId": "71548"
+      },
+      {
+        "name": "BigModel",
+        "website": "https://www.bigmodel.cn/invite?icode=8%2FRtwp%2FTVGbptzuiAgmqdX3uFJ1nZ0jLLgipQkYjpcA%3D",
+        "source": "https://ai-bot.cn/sites/15446.html",
+        "sourceId": "15446"
+      },
+      {
+        "name": "阿里云百炼",
+        "website": "https://www.aliyun.com/minisite/goods?userCode=ex9ez2fz",
+        "source": "https://ai-bot.cn/sites/50019.html",
+        "sourceId": "50019"
+      },
+      {
+        "name": "方舟 Coding Plan",
+        "website": "https://volcengine.cgref.cn/codingplan",
+        "source": "https://ai-bot.cn/sites/74447.html",
+        "sourceId": "74447"
+      },
+      {
+        "name": "Google AI Studio",
+        "website": "https://aistudio.google.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/61081.html",
+        "sourceId": "61081"
+      },
+      {
+        "name": "FastGPT",
+        "website": "https://cloud.fastgpt.cn/dashboard/templateMarket?utm_source=ad&utm_medium=aibot&utm_content=aibot",
+        "source": "https://ai-bot.cn/sites/65189.html",
+        "sourceId": "65189"
+      },
+      {
+        "name": "n8n",
+        "website": "https://n8n.io/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/62594.html",
+        "sourceId": "62594"
+      },
+      {
+        "name": "Dify",
+        "website": "https://dify.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/87916.html",
+        "sourceId": "87916"
+      },
+      {
+        "name": "Eazo",
+        "website": "https://eazo.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/87785.html",
+        "sourceId": "87785"
+      },
+      {
+        "name": "Wron",
+        "website": "https://www.wron.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/88339.html",
+        "sourceId": "88339"
+      },
+      {
+        "name": "Wanaka Studio",
+        "website": "https://studio.wanaka.app/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/89335.html",
+        "sourceId": "89335"
+      },
+      {
+        "name": "袋马",
+        "website": "https://www.daimax.cn/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/82903.html",
+        "sourceId": "82903"
+      },
+      {
+        "name": "扣子",
+        "website": "https://www.coze.cn/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/6791.html",
+        "sourceId": "6791"
+      },
+      {
+        "name": "秒哒",
+        "website": "https://www.miaoda.cn/?invitecode=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/65909.html",
+        "sourceId": "65909"
+      },
+      {
+        "name": "千问云",
+        "website": "https://www.qianwenai.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/77621.html",
+        "sourceId": "77621"
+      },
+      {
+        "name": "StreamLake",
+        "website": "https://streamlake.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/81062.html",
+        "sourceId": "81062"
+      },
+      {
+        "name": "造化工坊",
+        "website": "https://zaohua.qq.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/80851.html",
+        "sourceId": "80851"
+      },
+      {
+        "name": "TArk元舟",
+        "website": "https://www.tarkcloud.com/zh-CN?login=true&ref=C9GSROZZZO",
+        "source": "https://ai-bot.cn/sites/85641.html",
+        "sourceId": "85641"
+      },
+      {
+        "name": "Playabl",
+        "website": "https://playabl.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/82625.html",
+        "sourceId": "82625"
+      },
+      {
+        "name": "AstraFlow星图",
+        "website": "https://www.ucloud.cn/site/active/astraflow?ytag=geo_waituo_aibot ",
+        "source": "https://ai-bot.cn/sites/83042.html",
+        "sourceId": "83042"
+      },
+      {
+        "name": "OpenRouter",
+        "website": "https://openrouter.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/58373.html",
+        "sourceId": "58373"
+      },
+      {
+        "name": "SiliconFlow",
+        "website": "https://cloud.siliconflow.cn/i/SjhsJgfH",
+        "source": "https://ai-bot.cn/sites/35828.html",
+        "sourceId": "35828"
+      },
+      {
+        "name": "OfoxAI",
+        "website": "https://ofox.io/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/77667.html",
+        "sourceId": "77667"
+      },
+      {
+        "name": "QMuse",
+        "website": "https://www.qmusespace.com/home?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/81559.html",
+        "sourceId": "81559"
+      },
+      {
+        "name": "麦芽AI",
+        "website": "https://www.myaifast.com/company/login?inviteCode=AGENT202605120003&type=register&inviteSource=agent",
+        "source": "https://ai-bot.cn/sites/77069.html",
+        "sourceId": "77069"
+      },
+      {
+        "name": "Trickle AI",
+        "website": "https://trickle.so/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/58463.html",
+        "sourceId": "58463"
+      },
+      {
+        "name": "WorldClaw",
+        "website": "https://worldclaw.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/76617.html",
+        "sourceId": "76617"
+      }
+    ],
+    "design": [
+      {
+        "name": "妙呀",
+        "website": "https://www.miaoyaai.cn/activityDetail?activityId=431&sqm=miaoya.aibot.ls.pc  ",
+        "source": "https://ai-bot.cn/sites/83281.html",
+        "sourceId": "83281"
+      },
+      {
+        "name": "稿定AI",
+        "website": "https://www.gaoding.art/utms/9f9e3162fb274b11810089a93ea547f1",
+        "source": "https://ai-bot.cn/sites/2029.html",
+        "sourceId": "2029"
+      },
+      {
+        "name": "墨刀AI",
+        "website": "https://modao.cgref.cn/aibot",
+        "source": "https://ai-bot.cn/sites/2648.html",
+        "sourceId": "2648"
+      },
+      {
+        "name": "Figma AI",
+        "website": "https://www.figma.com/ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/13896.html",
+        "sourceId": "13896"
+      },
+      {
+        "name": "Holopix AI",
+        "website": "https://holopix.cn/?inviteCode=741737",
+        "source": "https://ai-bot.cn/sites/56965.html",
+        "sourceId": "56965"
+      },
+      {
+        "name": "Lovart",
+        "website": "https://ai-bot.cn/sites/67498.html",
+        "source": "https://ai-bot.cn/sites/67498.html",
+        "sourceId": "84514"
+      },
+      {
+        "name": "美图设计室",
+        "website": "https://www.designkit.cn/?channel=10026",
+        "source": "https://ai-bot.cn/sites/2400.html",
+        "sourceId": "2400"
+      },
+      {
+        "name": "135 AI排版",
+        "website": "https://www.135editor.com/ai_editor/?track_id=34&hmmd=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/10754.html",
+        "sourceId": "10754"
+      },
+      {
+        "name": "创客贴AI",
+        "website": "https://chuangkit.cgref.cn/s/2znrq69kr7",
+        "source": "https://ai-bot.cn/sites/13019.html",
+        "sourceId": "13019"
+      },
+      {
+        "name": "堆友AI",
+        "website": "https://d.design/?from=ab13",
+        "source": "https://ai-bot.cn/sites/61378.html",
+        "sourceId": "61378"
+      },
+      {
+        "name": "OJO",
+        "website": "https://ojo.art/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/84693.html",
+        "sourceId": "84693"
+      },
+      {
+        "name": "Seede AI",
+        "website": "https://seede.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/73361.html",
+        "sourceId": "73361"
+      },
+      {
+        "name": "Pixso AI",
+        "website": "https://paico.cn/?utm_source=referrals&utm_content=aibot&_channel_track_key=e20XAlbs",
+        "source": "https://ai-bot.cn/sites/4435.html",
+        "sourceId": "4435"
+      },
+      {
+        "name": "Wegic",
+        "website": "https://try.wegic.ai/sf415pbzl8ub",
+        "source": "https://ai-bot.cn/sites/12503.html",
+        "sourceId": "12503"
+      },
+      {
+        "name": "Recraft AI",
+        "website": "https://www.recraft.ai/?ref=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/3171.html",
+        "sourceId": "3171"
+      },
+      {
+        "name": "稿好了",
+        "website": "https://www.gaohaole.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/88290.html",
+        "sourceId": "88290"
+      },
+      {
+        "name": "Stitch",
+        "website": "https://stitch.withgoogle.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/73947.html",
+        "sourceId": "73947"
+      },
+      {
+        "name": "Miora",
+        "website": "https://miora.design/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/74421.html",
+        "sourceId": "74421"
+      },
+      {
+        "name": "Ardot",
+        "website": "https://d.qq.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/73831.html",
+        "sourceId": "73831"
+      },
+      {
+        "name": "GstarRender AI",
+        "website": "https://www.gstarcad.com/ai/render/?clientType-GstarRender&fromEvent=AIwebsite",
+        "source": "https://ai-bot.cn/sites/87500.html",
+        "sourceId": "87500"
+      },
+      {
+        "name": "Open Design",
+        "website": "https://open-design.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/78843.html",
+        "sourceId": "78843"
+      },
+      {
+        "name": "Onlook",
+        "website": "https://ai-bot.cn/onlook",
+        "source": "https://ai-bot.cn/onlook/",
+        "sourceId": "40997"
+      },
+      {
+        "name": "Ribbi",
+        "website": "https://ribbi.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/74161.html",
+        "sourceId": "74161"
+      },
+      {
+        "name": "Tavafa塔维法",
+        "website": "http://www.tavafa.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/80173.html",
+        "sourceId": "80173"
+      },
+      {
+        "name": "Interiorize",
+        "website": "https://interiorize.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/78158.html",
+        "sourceId": "78158"
+      },
+      {
+        "name": "QuiverAI",
+        "website": "https://quiver.ai?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/76253.html",
+        "sourceId": "76253"
+      },
+      {
+        "name": "GemDesign",
+        "website": "https://design.gemcoder.com/?ci=bot",
+        "source": "https://ai-bot.cn/sites/60993.html",
+        "sourceId": "60993"
+      },
+      {
+        "name": "Pic Copilot",
+        "website": "https://www.piccopilot.com/create/?utm_source=aff&utm_medium=aibot1",
+        "source": "https://ai-bot.cn/sites/32344.html",
+        "sourceId": "32344"
+      },
+      {
+        "name": "星流AI",
+        "website": "https://lovart.cgref.cn/s/j7n6jwme1g",
+        "source": "https://ai-bot.cn/sites/61482.html",
+        "sourceId": "61482"
+      },
+      {
+        "name": "魔力工作室",
+        "website": "https://www.canva.cn/magic/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/15196.html",
+        "sourceId": "15196"
+      }
+    ],
+    "audio": [
+      {
+        "name": "魔音工坊",
+        "website": "https://www.moyin.com/?channelCode=AIGJJ01_20240905",
+        "source": "https://ai-bot.cn/sites/1924.html",
+        "sourceId": "1924"
+      },
+      {
+        "name": "讯飞智作",
+        "website": "https://xfzhizuo.cgref.cn/aibot",
+        "source": "https://ai-bot.cn/sites/246.html",
+        "sourceId": "246"
+      },
+      {
+        "name": "逗哥配音",
+        "website": "https://www.douge.com/companyProfile?from=J7jaYv",
+        "source": "https://ai-bot.cn/sites/75064.html",
+        "sourceId": "75064"
+      },
+      {
+        "name": "讯飞译制",
+        "website": "https://yizhi.iflyrec.com/?regFrom=XFTJ932&id=XFTJ932",
+        "source": "https://ai-bot.cn/sites/72331.html",
+        "sourceId": "72331"
+      },
+      {
+        "name": "Suno",
+        "website": "https://www.suno.ai/?ref=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/6968.html",
+        "sourceId": "6968"
+      },
+      {
+        "name": "音述AI",
+        "website": "https://yinshu.cgref.cn/aibot",
+        "source": "https://ai-bot.cn/sites/72631.html",
+        "sourceId": "72631"
+      },
+      {
+        "name": "ElevenLabs",
+        "website": "https://try.elevenlabs.io/mqbahm8egbk8",
+        "source": "https://ai-bot.cn/sites/4294.html",
+        "sourceId": "4294"
+      },
+      {
+        "name": "琅琅配音",
+        "website": "https://lang123.top/?rmd=64546",
+        "source": "https://ai-bot.cn/sites/14585.html",
+        "sourceId": "14585"
+      },
+      {
+        "name": "千音漫语",
+        "website": "https://ai-bot.cn/qianyin",
+        "source": "https://ai-bot.cn/qianyin/",
+        "sourceId": "58128"
+      },
+      {
+        "name": "MiniMax Audio",
+        "website": "https://ai-bot.cn/minimax-audio",
+        "source": "https://ai-bot.cn/minimax-audio/",
+        "sourceId": "45083"
+      },
+      {
+        "name": "MusicBuddy",
+        "website": "https://www.musicbuddy.cn/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/89074.html",
+        "sourceId": "89074"
+      },
+      {
+        "name": "Noiz AI",
+        "website": "https://ai-bot.cn/noiz-ai",
+        "source": "https://ai-bot.cn/noiz-ai/",
+        "sourceId": "47748"
+      },
+      {
+        "name": "妙响",
+        "website": "https://music.douyin.com/studio?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/86692.html",
+        "sourceId": "86692"
+      },
+      {
+        "name": "Tunee",
+        "website": "https://www.tunee.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/64880.html",
+        "sourceId": "64880"
+      },
+      {
+        "name": "miya.fm",
+        "website": "https://miya.fm/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/87385.html",
+        "sourceId": "87385"
+      },
+      {
+        "name": "讯飞听见",
+        "website": "https://www.iflyrec.com/zhuanwenzi.html?from=ai-bot_zwz",
+        "source": "https://ai-bot.cn/sites/18898.html",
+        "sourceId": "18898"
+      },
+      {
+        "name": "Gemini Notebook",
+        "website": "https://notebooklm.google/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/21562.html",
+        "sourceId": "21562"
+      },
+      {
+        "name": "Flow Music",
+        "website": "https://www.flowmusic.app/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/78138.html",
+        "sourceId": "78138"
+      },
+      {
+        "name": "Vemus未音",
+        "website": "https://y.qq.com/vemus/index.html?adtag=aibot_ai_musictool_homepage",
+        "source": "https://ai-bot.cn/sites/71317.html",
+        "sourceId": "71317"
+      },
+      {
+        "name": "海绵音乐",
+        "website": "https://www.haimian.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/13336.html",
+        "sourceId": "13336"
+      },
+      {
+        "name": "气泡音扒谱",
+        "website": "https://loop.qipaoyin.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/89822.html",
+        "sourceId": "89822"
+      },
+      {
+        "name": "MELO音乐",
+        "website": "https://www.51melo.com/?from=aibot",
+        "source": "https://ai-bot.cn/sites/79745.html",
+        "sourceId": "79745"
+      },
+      {
+        "name": "MeloLab",
+        "website": "https://melolab.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/79657.html",
+        "sourceId": "79657"
+      },
+      {
+        "name": "万象有声",
+        "website": "https://www.audimind.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/79330.html",
+        "sourceId": "79330"
+      },
+      {
+        "name": "Nafy AI",
+        "website": "https://nafy.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/71063.html",
+        "sourceId": "71063"
+      },
+      {
+        "name": "UniScribe",
+        "website": "https://www.uniscribe.co/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/78898.html",
+        "sourceId": "78898"
+      },
+      {
+        "name": "轻析 LiteSight",
+        "website": "https://qx.utiliverse.site/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/74132.html",
+        "sourceId": "74132"
+      },
+      {
+        "name": "TurboScribe",
+        "website": "https://turboscribe.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/69917.html",
+        "sourceId": "69917"
+      },
+      {
+        "name": "多维视界",
+        "website": "https://dwsj.cn/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/69537.html",
+        "sourceId": "69537"
+      },
+      {
+        "name": "天谱乐",
+        "website": "https://ai-bot.cn/tianpuyue",
+        "source": "https://ai-bot.cn/tianpuyue/",
+        "sourceId": "36538"
+      }
+    ],
+    "search": [
+      {
+        "name": "夸克AI",
+        "website": "https://dis.chatdesks.cn/chatdesk/kuakeaibot.html",
+        "source": "https://ai-bot.cn/sites/15309.html",
+        "sourceId": "15309"
+      },
+      {
+        "name": "秘塔AI搜索",
+        "website": "https://metaso.cn/?s=aibot1&referrer_s=aibot1",
+        "source": "https://ai-bot.cn/sites/9499.html",
+        "sourceId": "9499"
+      },
+      {
+        "name": "Perplexity",
+        "website": "https://www.perplexity.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/65226.html",
+        "sourceId": "65226"
+      },
+      {
+        "name": "玻尔",
+        "website": "https://www.bohrium.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/58169.html",
+        "sourceId": "58169"
+      },
+      {
+        "name": "AMiner",
+        "website": "https://www.aminer.cn/open/research?f=aibot_search_dr_v1",
+        "source": "https://ai-bot.cn/sites/14355.html",
+        "sourceId": "14355"
+      },
+      {
+        "name": "心流",
+        "website": "https://iflow.cn/?utm_source=aibot",
+        "source": "https://ai-bot.cn/sites/14200.html",
+        "sourceId": "14200"
+      },
+      {
+        "name": "元宝搜索",
+        "website": "https://so.qq.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/89563.html",
+        "sourceId": "89563"
+      },
+      {
+        "name": "CleverSee",
+        "website": "https://www.aliyun.com/product/cleversee?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/88385.html",
+        "sourceId": "88385"
+      },
+      {
+        "name": "点点",
+        "website": "https://ai-bot.cn/diandian",
+        "source": "https://ai-bot.cn/diandian/",
+        "sourceId": "35440"
+      },
+      {
+        "name": "Devv",
+        "website": "https://devv.ai/zh?ref=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/7108.html",
+        "sourceId": "7108"
+      },
+      {
+        "name": "知乎直答",
+        "website": "https://zhida.zhihu.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/13966.html",
+        "sourceId": "13966"
+      },
+      {
+        "name": "蜜崽检索",
+        "website": "https://s.mizai.cn/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/80024.html",
+        "sourceId": "80024"
+      },
+      {
+        "name": "纳米AI",
+        "website": "https://www.n.cn/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/62941.html",
+        "sourceId": "62941"
+      },
+      {
+        "name": "百度AI探索版",
+        "website": "https://think.baidu.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/28907.html",
+        "sourceId": "28907"
+      },
+      {
+        "name": "Felo",
+        "website": "https://felo.ai/search?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/18048.html",
+        "sourceId": "18048"
+      },
+      {
+        "name": "天工AI搜索",
+        "website": "https://tiangong.cn/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/4257.html",
+        "sourceId": "4257"
+      },
+      {
+        "name": "Exa AI",
+        "website": "https://exa.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/14411.html",
+        "sourceId": "14411"
+      },
+      {
+        "name": "博查AI搜索",
+        "website": "https://bochaai.com",
+        "source": "https://ai-bot.cn/sites/11402.html",
+        "sourceId": "11402"
+      },
+      {
+        "name": "WisPaper",
+        "website": "https://www.wispaper.ai/?utm_source=aibot",
+        "source": "https://ai-bot.cn/sites/62394.html",
+        "sourceId": "62394"
+      },
+      {
+        "name": "CuspAI",
+        "website": "https://www.cusp.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/15220.html",
+        "sourceId": "15220"
+      },
+      {
+        "name": "MaxAEO",
+        "website": "https://maxaeo.cn/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/81286.html",
+        "sourceId": "81286"
+      },
+      {
+        "name": "SheepGeo",
+        "website": "https://sheepgeo.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/72972.html",
+        "sourceId": "72972"
+      },
+      {
+        "name": "博简智慧专利",
+        "website": "https://pagentia.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/61089.html",
+        "sourceId": "61089"
+      },
+      {
+        "name": "链企AI",
+        "website": "https://www.lianqiai.cn/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/15865.html",
+        "sourceId": "15865"
+      },
+      {
+        "name": "360AI搜索",
+        "website": "https://so.360.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/11897.html",
+        "sourceId": "11897"
+      },
+      {
+        "name": "问问小宇宙",
+        "website": "https://ask.xiaoyuzhoufm.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/14818.html",
+        "sourceId": "14818"
+      },
+      {
+        "name": "Dexa AI",
+        "website": "https://dexa.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/15211.html",
+        "sourceId": "15211"
+      },
+      {
+        "name": "XAnswer",
+        "website": "https://www.xanswer.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/15156.html",
+        "sourceId": "15156"
+      },
+      {
+        "name": "Glean",
+        "website": "https://www.glean.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/16367.html",
+        "sourceId": "16367"
+      },
+      {
+        "name": "AlphaSense",
+        "website": "https://www.alpha-sense.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/15233.html",
+        "sourceId": "15233"
+      }
+    ],
+    "learning": [
+      {
+        "name": "AI大学堂",
+        "website": "https://www.aidaxue.com/?ch=daxue_collection_1",
+        "source": "https://ai-bot.cn/sites/1450.html",
+        "sourceId": "1450"
+      },
+      {
+        "name": "AI分享圈",
+        "website": "https://aisharenet.com",
+        "source": "https://ai-bot.cn/sites/59568.html",
+        "sourceId": "59568"
+      },
+      {
+        "name": "OpenAI Academy",
+        "website": "https://ai-bot.cn/openai-academy",
+        "source": "https://ai-bot.cn/openai-academy/",
+        "sourceId": "47745"
+      },
+      {
+        "name": "Day of AI",
+        "website": "https://dayofai.org/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/36329.html",
+        "sourceId": "36329"
+      },
+      {
+        "name": "fast.ai",
+        "website": "https://www.fast.ai",
+        "source": "https://ai-bot.cn/sites/1356.html",
+        "sourceId": "1356"
+      },
+      {
+        "name": "学吧导航",
+        "website": "https://www.xue8nav.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/60386.html",
+        "sourceId": "60386"
+      },
+      {
+        "name": "懂了鸭",
+        "website": "https://dongleya.qq.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/88589.html",
+        "sourceId": "88589"
+      },
+      {
+        "name": "LearnBuddy",
+        "website": "https://learningbuddy.tencent.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/81881.html",
+        "sourceId": "81881"
+      },
+      {
+        "name": "Wayground",
+        "website": "https://wayground.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/88796.html",
+        "sourceId": "88796"
+      },
+      {
+        "name": "大学岛",
+        "website": "https://daxuedao.zscampus.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/88891.html",
+        "sourceId": "88891"
+      },
+      {
+        "name": "庞征博引",
+        "website": "https://pangzhengboyin.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/85994.html",
+        "sourceId": "85994"
+      },
+      {
+        "name": "Lynote",
+        "website": "https://lynote.ai/zh?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/72897.html",
+        "sourceId": "72897"
+      },
+      {
+        "name": "Coursera",
+        "website": "https://www.coursera.org/collections/best-machine-learning-ai?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/22.html",
+        "sourceId": "22"
+      },
+      {
+        "name": "Elements of AI",
+        "website": "https://www.elementsofai.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/19.html",
+        "sourceId": "19"
+      },
+      {
+        "name": "DeepLearning.AI",
+        "website": "https://www.deeplearning.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/18.html",
+        "sourceId": "18"
+      },
+      {
+        "name": "动手学深度学习",
+        "website": "https://zh.d2l.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/432.html",
+        "sourceId": "432"
+      },
+      {
+        "name": "MachineLearningMastery",
+        "website": "https://machinelearningmastery.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/437.html",
+        "sourceId": "437"
+      },
+      {
+        "name": "Generative AI for Beginners",
+        "website": "https://microsoft.github.io/generative-ai-for-beginners/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/6039.html",
+        "sourceId": "6039"
+      },
+      {
+        "name": "ML for Beginners",
+        "website": "https://microsoft.github.io/ML-For-Beginners/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/1462.html",
+        "sourceId": "1462"
+      },
+      {
+        "name": "Kaggle",
+        "website": "https://www.kaggle.com",
+        "source": "https://ai-bot.cn/sites/21.html",
+        "sourceId": "21"
+      },
+      {
+        "name": "神经网络入门",
+        "website": "https://brilliant.org/courses/intro-neural-networks/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/434.html",
+        "sourceId": "434"
+      },
+      {
+        "name": "Trancy",
+        "website": "https://trancy.org/zh-cn?referrer=65803e3f65752510b033ade9",
+        "source": "https://ai-bot.cn/sites/6807.html",
+        "sourceId": "6807"
+      },
+      {
+        "name": "Reading Coach",
+        "website": "https://coach.microsoft.com/?ref=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/7785.html",
+        "sourceId": "7785"
+      },
+      {
+        "name": "飞桨AI Studio",
+        "website": "https://aistudio.baidu.com",
+        "source": "https://ai-bot.cn/sites/23.html",
+        "sourceId": "23"
+      },
+      {
+        "name": "腾讯扣叮",
+        "website": "https://coding.qq.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/26659.html",
+        "sourceId": "26659"
+      },
+      {
+        "name": "阿里云AI学习路线",
+        "website": "https://developer.aliyun.com/learning/roadmap/ai",
+        "source": "https://ai-bot.cn/sites/1057.html",
+        "sourceId": "1057"
+      },
+      {
+        "name": "Udacity AI学院",
+        "website": "https://www.udacity.com/school/artificial-intelligence?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/1055.html",
+        "sourceId": "1055"
+      },
+      {
+        "name": "Google AI",
+        "website": "https://ai.google",
+        "source": "https://ai-bot.cn/sites/20.html",
+        "sourceId": "20"
+      },
+      {
+        "name": "ShowMeAI知识社区",
+        "website": "https://www.showmeai.tech/?ref=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/1444.html",
+        "sourceId": "1444"
+      },
+      {
+        "name": "txyz",
+        "website": "https://www.txyz.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/11135.html",
+        "sourceId": "11135"
+      }
+    ],
+    "training": [
+      {
+        "name": "Jev",
+        "website": "https://console.typesafe.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/86673.html",
+        "sourceId": "86673"
+      },
+      {
+        "name": "豆包大模型",
+        "website": "https://volcengine.cgref.cn/aibotttt",
+        "source": "https://ai-bot.cn/sites/22232.html",
+        "sourceId": "22232"
+      },
+      {
+        "name": "Nano Banana",
+        "website": "https://deepmind.google/models/gemini-image/pro",
+        "source": "https://ai-bot.cn/sites/68274.html",
+        "sourceId": "68274"
+      },
+      {
+        "name": "Cherry Studio",
+        "website": "https://www.cherry-ai.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/60108.html",
+        "sourceId": "60108"
+      },
+      {
+        "name": "Ollama",
+        "website": "https://ollama.ai/?ref=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/5973.html",
+        "sourceId": "5973"
+      },
+      {
+        "name": "Seedance",
+        "website": "https://volcengine.cgref.cn/aibot",
+        "source": "https://ai-bot.cn/sites/76349.html",
+        "sourceId": "76349"
+      },
+      {
+        "name": "AnythingLLM",
+        "website": "https://ai-bot.cn/anythingllm",
+        "source": "https://ai-bot.cn/anythingllm/",
+        "sourceId": "40982"
+      },
+      {
+        "name": "Chatbox AI",
+        "website": "https://ai-bot.cn/chatbox-ai",
+        "source": "https://ai-bot.cn/chatbox-ai/",
+        "sourceId": "40215"
+      },
+      {
+        "name": "魔搭社区",
+        "website": "https://www.modelscope.cn/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/1487.html",
+        "sourceId": "1487"
+      },
+      {
+        "name": "Dataify",
+        "website": "https://www.dataify.com/?utm_source=aigjj&utm_term=01",
+        "source": "https://ai-bot.cn/sites/77713.html",
+        "sourceId": "77713"
+      },
+      {
+        "name": "无阶未来",
+        "website": "https://www.aivinla.com/register?code=85307444",
+        "source": "https://ai-bot.cn/sites/50603.html",
+        "sourceId": "50603"
+      },
+      {
+        "name": "AutoGPT",
+        "website": "https://agpt.co/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/1626.html",
+        "sourceId": "1626"
+      },
+      {
+        "name": "Jan",
+        "website": "https://jan.ai/?ref=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/7412.html",
+        "sourceId": "7412"
+      },
+      {
+        "name": "AgentGPT",
+        "website": "https://agentgpt.reworkd.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/1623.html",
+        "sourceId": "1623"
+      },
+      {
+        "name": "OpenBMB",
+        "website": "https://www.openbmb.org/home",
+        "source": "https://ai-bot.cn/sites/1129.html",
+        "sourceId": "1129"
+      },
+      {
+        "name": "Llama 3",
+        "website": "https://llama.meta.com/llama3/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/11341.html",
+        "sourceId": "11341"
+      },
+      {
+        "name": "Gemma",
+        "website": "https://ai.google.dev/gemma?hl=zh-cn",
+        "source": "https://ai-bot.cn/sites/8623.html",
+        "sourceId": "8623"
+      },
+      {
+        "name": "GPT-4o",
+        "website": "https://ai-bot.cn/openai-gpt-4o",
+        "source": "https://ai-bot.cn/openai-gpt-4o/",
+        "sourceId": "12205"
+      },
+      {
+        "name": "腾讯混元大模型",
+        "website": "https://hunyuan.tencent.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/4558.html",
+        "sourceId": "4558"
+      },
+      {
+        "name": "书生大模型",
+        "website": "https://intern-ai.org.cn/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/53308.html",
+        "sourceId": "53308"
+      },
+      {
+        "name": "讯飞星辰MaaS",
+        "website": "https://maas.xfyun.cn/modelSquare?ch=maas-lm-G9n9",
+        "source": "https://ai-bot.cn/sites/71659.html",
+        "sourceId": "71659"
+      },
+      {
+        "name": "GPT-4",
+        "website": "",
+        "source": "https://ai-bot.cn/sites/49.html",
+        "sourceId": "49"
+      },
+      {
+        "name": "DALL·E 3",
+        "website": "",
+        "source": "https://ai-bot.cn/sites/50.html",
+        "sourceId": "50"
+      },
+      {
+        "name": "文心大模型",
+        "website": "https://wenxin.baidu.com",
+        "source": "https://ai-bot.cn/sites/1078.html",
+        "sourceId": "1078"
+      },
+      {
+        "name": "LLaMA",
+        "website": "https://github.com/facebookresearch/llama",
+        "source": "https://ai-bot.cn/sites/54.html",
+        "sourceId": "54"
+      },
+      {
+        "name": "悟道",
+        "website": "https://www.baai.ac.cn/portal/article/index/cid/49/id/518.html",
+        "source": "https://ai-bot.cn/sites/1083.html",
+        "sourceId": "1083"
+      },
+      {
+        "name": "MiracleVision奇想智能",
+        "website": "https://www.miraclevision.com/?ref=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/6279.html",
+        "sourceId": "6279"
+      },
+      {
+        "name": "Gradio",
+        "website": "https://gradio.app",
+        "source": "https://ai-bot.cn/sites/2147.html",
+        "sourceId": "2147"
+      },
+      {
+        "name": "DeepFloyd IF",
+        "website": "https://deepfloyd.ai/deepfloyd-if",
+        "source": "https://ai-bot.cn/sites/2141.html",
+        "sourceId": "2141"
+      },
+      {
+        "name": "Cohere",
+        "website": "https://cohere.com",
+        "source": "https://ai-bot.cn/sites/2452.html",
+        "sourceId": "2452"
+      }
+    ],
+    "evaluation": [
+      {
+        "name": "MagicArena",
+        "website": "https://aigcarena.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/65640.html",
+        "sourceId": "65640"
+      },
+      {
+        "name": "MMLU",
+        "website": "https://paperswithcode.com/sota/multi-task-language-understanding-on-mmlu",
+        "source": "https://ai-bot.cn/sites/5434.html",
+        "sourceId": "5434"
+      },
+      {
+        "name": "Open LLM Leaderboard",
+        "website": "https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/5435.html",
+        "sourceId": "5435"
+      },
+      {
+        "name": "C-Eval",
+        "website": "https://cevalbenchmark.com/index_zh.html#home_zh?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/5433.html",
+        "sourceId": "5433"
+      },
+      {
+        "name": "FlagEval",
+        "website": "https://flageval.baai.ac.cn/#/trending",
+        "source": "https://ai-bot.cn/sites/5442.html",
+        "sourceId": "5442"
+      },
+      {
+        "name": "SuperCLUE",
+        "website": "https://www.cluebenchmarks.com/static/superclue.html?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/5437.html",
+        "sourceId": "5437"
+      },
+      {
+        "name": "AGI-Eval",
+        "website": "https://agi-eval.cn/mvp/home?sourcePage=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/34764.html",
+        "sourceId": "34764"
+      },
+      {
+        "name": "OpenCompass",
+        "website": "https://opencompass.org.cn/leaderboard-llm?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/5443.html",
+        "sourceId": "5443"
+      },
+      {
+        "name": "CMMLU",
+        "website": "https://github.com/haonan-li/CMMLU",
+        "source": "https://ai-bot.cn/sites/5436.html",
+        "sourceId": "5436"
+      },
+      {
+        "name": "MMBench",
+        "website": "https://mmbench.opencompass.org.cn/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/5444.html",
+        "sourceId": "5444"
+      },
+      {
+        "name": "HELM",
+        "website": "https://crfm.stanford.edu/helm/latest/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/5447.html",
+        "sourceId": "5447"
+      },
+      {
+        "name": "LMArena",
+        "website": "https://lmarena.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/5441.html",
+        "sourceId": "5441"
+      },
+      {
+        "name": "LLMEval3",
+        "website": "http://llmeval.com/index",
+        "source": "https://ai-bot.cn/sites/5448.html",
+        "sourceId": "5448"
+      },
+      {
+        "name": "H2O EvalGPT",
+        "website": "https://evalgpt.ai",
+        "source": "https://ai-bot.cn/sites/5446.html",
+        "sourceId": "5446"
+      },
+      {
+        "name": "PubMedQA",
+        "website": "https://pubmedqa.github.io/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/5477.html",
+        "sourceId": "5477"
+      }
+    ],
+    "detection": [
+      {
+        "name": "朱雀AI检测",
+        "website": "https://matrix.tencent.com/ai-detect/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/68275.html",
+        "sourceId": "68275"
+      },
+      {
+        "name": "GPTZero",
+        "website": "https://gptzero.me",
+        "source": "https://ai-bot.cn/sites/395.html",
+        "sourceId": "395"
+      },
+      {
+        "name": "StudyCorgi ChatGPT Detector",
+        "website": "https://studycorgi.com/free-writing-tools/chat-gpt-detector",
+        "source": "https://ai-bot.cn/sites/411.html",
+        "sourceId": "411"
+      },
+      {
+        "name": "AISEO AI Content Detector",
+        "website": "https://aiseo.ai/tools/ai-content-detector.html",
+        "source": "https://ai-bot.cn/sites/408.html",
+        "sourceId": "408"
+      },
+      {
+        "name": "Proofig",
+        "website": "https://www.proofig.com/?ref=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/7189.html",
+        "sourceId": "7189"
+      },
+      {
+        "name": "Writecream AI Content Detector",
+        "website": "https://www.writecream.com/ai-content-detector",
+        "source": "https://ai-bot.cn/sites/407.html",
+        "sourceId": "407"
+      },
+      {
+        "name": "Smodin AI Content Detector",
+        "website": "https://smodin.io/ai-content-detector",
+        "source": "https://ai-bot.cn/sites/406.html",
+        "sourceId": "406"
+      },
+      {
+        "name": "Sapling AI Content Detector",
+        "website": "https://sapling.ai/utilities/ai-content-detector",
+        "source": "https://ai-bot.cn/sites/396.html",
+        "sourceId": "396"
+      },
+      {
+        "name": "睿信论文检测",
+        "website": "https://rx.ruijianai.com/login?inviteCode=C6br36ylOBph",
+        "source": "https://ai-bot.cn/sites/71579.html",
+        "sourceId": "71579"
+      },
+      {
+        "name": "挖错网",
+        "website": "https://wacuowang.com",
+        "source": "https://ai-bot.cn/sites/47103.html",
+        "sourceId": "47103"
+      },
+      {
+        "name": "团象",
+        "website": "https://xueshu.tuanxiang.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/16912.html",
+        "sourceId": "16912"
+      },
+      {
+        "name": "AI Content Detector",
+        "website": "https://writer.com/ai-content-detector",
+        "source": "https://ai-bot.cn/sites/393.html",
+        "sourceId": "393"
+      },
+      {
+        "name": "Originality.AI",
+        "website": "https://originality.ai",
+        "source": "https://ai-bot.cn/sites/180.html",
+        "sourceId": "180"
+      },
+      {
+        "name": "CopyLeaks",
+        "website": "https://copyleaks.com",
+        "source": "https://ai-bot.cn/sites/169.html",
+        "sourceId": "169"
+      },
+      {
+        "name": "Winston AI",
+        "website": "https://gowinston.ai",
+        "source": "https://ai-bot.cn/sites/156.html",
+        "sourceId": "156"
+      }
+    ],
+    "prompts": [
+      {
+        "name": "PromptPilot",
+        "website": "https://promptpilot.volcengine.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/69602.html",
+        "sourceId": "69602"
+      },
+      {
+        "name": "幂简AI提示词商城",
+        "website": "https://prompts.explinks.com/?ref=aibot",
+        "source": "https://ai-bot.cn/sites/68309.html",
+        "sourceId": "68309"
+      },
+      {
+        "name": "提示工程指南",
+        "website": "https://www.promptingguide.ai/zh",
+        "source": "https://ai-bot.cn/sites/2818.html",
+        "sourceId": "2818"
+      },
+      {
+        "name": "Google AI提示词库",
+        "website": "https://cloud.google.com/vertex-ai/generative-ai/docs/prompt-gallery?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/61488.html",
+        "sourceId": "61488"
+      },
+      {
+        "name": "MeiGen",
+        "website": "https://www.meigen.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/80527.html",
+        "sourceId": "80527"
+      },
+      {
+        "name": "PromptPerfect",
+        "website": "https://promptperfect.jinaai.cn/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/4963.html",
+        "sourceId": "4963"
+      },
+      {
+        "name": "Stable Diffusion Prompt Book",
+        "website": "https://openart.ai/promptbook",
+        "source": "https://ai-bot.cn/sites/767.html",
+        "sourceId": "767"
+      },
+      {
+        "name": "LocalBanana",
+        "website": "https://www.localbanana.io/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/68915.html",
+        "sourceId": "68915"
+      },
+      {
+        "name": "PromptHero",
+        "website": "https://prompthero.com",
+        "source": "https://ai-bot.cn/sites/743.html",
+        "sourceId": "743"
+      },
+      {
+        "name": "ClickPrompt",
+        "website": "https://prompt.phodal.com",
+        "source": "https://ai-bot.cn/sites/756.html",
+        "sourceId": "756"
+      },
+      {
+        "name": "AI Prompt Generator",
+        "website": "https://www.aipromptgenerator.net/zh?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/23110.html",
+        "sourceId": "23110"
+      },
+      {
+        "name": "AI Short",
+        "website": "https://www.aishort.top/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/23106.html",
+        "sourceId": "23106"
+      },
+      {
+        "name": "LangGPT",
+        "website": "https://github.com/langgptai/LangGPT",
+        "source": "https://ai-bot.cn/sites/23101.html",
+        "sourceId": "23101"
+      },
+      {
+        "name": "Generrated",
+        "website": "https://generrated.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/1279.html",
+        "sourceId": "1279"
+      },
+      {
+        "name": "PublicPrompts",
+        "website": "https://publicprompts.art",
+        "source": "https://ai-bot.cn/sites/795.html",
+        "sourceId": "795"
+      },
+      {
+        "name": "Snack Prompt",
+        "website": "https://snackprompt.com/?ref=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/1899.html",
+        "sourceId": "1899"
+      },
+      {
+        "name": "AIPRM",
+        "website": "https://www.aiprm.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/749.html",
+        "sourceId": "749"
+      },
+      {
+        "name": "PromptFolder",
+        "website": "https://prompt.noonshot.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/760.html",
+        "sourceId": "760"
+      },
+      {
+        "name": "AI Prompt Genius",
+        "website": "https://www.aipromptgenius.app/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/748.html",
+        "sourceId": "748"
+      },
+      {
+        "name": "PromptBase",
+        "website": "https://ai-bot.cn/promptbase",
+        "source": "https://ai-bot.cn/promptbase/",
+        "sourceId": "765"
+      },
+      {
+        "name": "AI Prompt Library",
+        "website": "https://moxby.com/ai-prompt-library?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/747.html",
+        "sourceId": "747"
+      },
+      {
+        "name": "Awesome ChatGPT Prompts",
+        "website": "https://prompts.chat/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/746.html",
+        "sourceId": "746"
+      },
+      {
+        "name": "Learning Prompt",
+        "website": "https://learningprompt.wiki/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/744.html",
+        "sourceId": "744"
+      }
+    ],
+    "side-hustle": [
+      {
+        "name": "CakeGrowth",
+        "website": "https://cakegrowth.cn",
+        "source": "https://ai-bot.cn/sites/75822.html",
+        "sourceId": "75822"
+      },
+      {
+        "name": "模兜",
+        "website": "https://modoudance.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/84390.html",
+        "sourceId": "84390"
+      },
+      {
+        "name": "Linktree",
+        "website": "https://linktr.ee/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/75834.html",
+        "sourceId": "75834"
+      },
+      {
+        "name": "Bitly",
+        "website": "https://bitly.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/76271.html",
+        "sourceId": "76271"
+      },
+      {
+        "name": "PartnerStack",
+        "website": "https://partnerstack.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/75809.html",
+        "sourceId": "75809"
+      },
+      {
+        "name": "impact.com",
+        "website": "https://impact.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/75818.html",
+        "sourceId": "75818"
+      },
+      {
+        "name": "Waffo Pancake",
+        "website": "https://www.waffo.ai/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/87566.html",
+        "sourceId": "87566"
+      },
+      {
+        "name": "Antom",
+        "website": "https://www.antom.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/88348.html",
+        "sourceId": "88348"
+      },
+      {
+        "name": "微信公众平台",
+        "website": "https://mp.weixin.qq.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/75826.html",
+        "sourceId": "75826"
+      },
+      {
+        "name": "头条号",
+        "website": "https://mp.toutiao.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/76370.html",
+        "sourceId": "76370"
+      },
+      {
+        "name": "新榜",
+        "website": "https://www.newrank.cn/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/77052.html",
+        "sourceId": "77052"
+      },
+      {
+        "name": "稀土掘金",
+        "website": "https://juejin.cn/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/77138.html",
+        "sourceId": "77138"
+      },
+      {
+        "name": "知乎",
+        "website": "https://www.zhihu.com/creator?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/77056.html",
+        "sourceId": "77056"
+      },
+      {
+        "name": "CSDN",
+        "website": "https://www.csdn.net/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/77062.html",
+        "sourceId": "77062"
+      },
+      {
+        "name": "百家号",
+        "website": "https://baijiahao.baidu.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/76339.html",
+        "sourceId": "76339"
+      },
+      {
+        "name": "小红书创作服务平台",
+        "website": "https://creator.xiaohongshu.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/77134.html",
+        "sourceId": "77134"
+      },
+      {
+        "name": "小报童",
+        "website": "https://xiaobot.net/home.html?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/77394.html",
+        "sourceId": "77394"
+      },
+      {
+        "name": "知识星球",
+        "website": "https://www.zsxq.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/77399.html",
+        "sourceId": "77399"
+      },
+      {
+        "name": "小鹅通",
+        "website": "https://sem.xiaoe-tech.com/?utm_source=ai-bot.cn",
+        "source": "https://ai-bot.cn/sites/77414.html",
+        "sourceId": "77414"
+      }
+    ]
+  }
+}

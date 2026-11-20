@@ -1,0 +1,13 @@
+{
+  "at": "2026-11-20T11:30:37.169Z",
+  "created": true,
+  "tool": {
+    "id": "1307",
+    "slug": "jimeng-ai-image",
+    "category_id": "image",
+    "name": "即梦AI",
+    "display_order": 1
+  },
+  "sourceId": "43",
+  "sourceUnchanged": true
+}

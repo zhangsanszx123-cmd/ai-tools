@@ -1,0 +1,228 @@
+[
+  {
+    "name": "即梦",
+    "matches": [
+      {
+        "name": "即梦AI",
+        "category": "video",
+        "status": "published",
+        "deleted": false
+      }
+    ]
+  },
+  {
+    "name": "PixPix",
+    "matches": []
+  },
+  {
+    "name": "稿定AI",
+    "matches": [
+      {
+        "name": "稿定AI",
+        "category": "design",
+        "status": "published",
+        "deleted": false
+      }
+    ]
+  },
+  {
+    "name": "Stable Diffusion",
+    "matches": []
+  },
+  {
+    "name": "美图设计室",
+    "matches": [
+      {
+        "name": "美图设计室",
+        "category": "design",
+        "status": "published",
+        "deleted": false
+      }
+    ]
+  },
+  {
+    "name": "椒图AI",
+    "matches": [
+      {
+        "name": "椒图AI",
+        "category": "agents",
+        "status": "published",
+        "deleted": false
+      }
+    ]
+  },
+  {
+    "name": "千问创作",
+    "matches": [
+      {
+        "name": "千问创作",
+        "category": "video",
+        "status": "published",
+        "deleted": false
+      }
+    ]
+  },
+  {
+    "name": "炉米Lumi",
+    "matches": []
+  },
+  {
+    "name": "Krea AI",
+    "matches": []
+  },
+  {
+    "name": "Kira",
+    "matches": []
+  },
+  {
+    "name": "Photoroom",
+    "matches": []
+  },
+  {
+    "name": "Ribbet.ai",
+    "matches": []
+  },
+  {
+    "name": "万相营造",
+    "matches": []
+  },
+  {
+    "name": "悟空图像PhotoSir",
+    "matches": []
+  },
+  {
+    "name": "360智图",
+    "matches": []
+  },
+  {
+    "name": "像素蛋糕",
+    "matches": []
+  },
+  {
+    "name": "如果相机",
+    "matches": []
+  },
+  {
+    "name": "ARC",
+    "matches": []
+  },
+  {
+    "name": "Cutout.Pro",
+    "matches": [
+      {
+        "name": "Cutout.Pro",
+        "category": "video",
+        "status": "published",
+        "deleted": false
+      }
+    ]
+  },
+  {
+    "name": "remove.bg",
+    "matches": []
+  },
+  {
+    "name": "MagicStudio",
+    "matches": []
+  },
+  {
+    "name": "Booltool",
+    "matches": []
+  },
+  {
+    "name": "Faceswapper",
+    "matches": []
+  },
+  {
+    "name": "ClipDrop",
+    "matches": []
+  },
+  {
+    "name": "Vmake AI",
+    "matches": []
+  },
+  {
+    "name": "Leonardo.ai",
+    "matches": []
+  },
+  {
+    "name": "DeepSwapper",
+    "matches": []
+  },
+  {
+    "name": "Kacha AI",
+    "matches": []
+  },
+  {
+    "name": "PicTech AI",
+    "matches": []
+  },
+  {
+    "name": "吐司AI",
+    "matches": []
+  },
+  {
+    "name": "Hotpot.ai",
+    "matches": []
+  },
+  {
+    "name": "IconGen",
+    "matches": []
+  },
+  {
+    "name": "言之画",
+    "matches": []
+  },
+  {
+    "name": "百度智能云一念",
+    "matches": []
+  },
+  {
+    "name": "艾绘",
+    "matches": []
+  },
+  {
+    "name": "Graviti Diffus",
+    "matches": []
+  },
+  {
+    "name": "秘塔捉捉猫",
+    "matches": []
+  },
+  {
+    "name": "志设",
+    "matches": []
+  },
+  {
+    "name": "Adobe Firefly",
+    "matches": []
+  },
+  {
+    "name": "Visual Electric",
+    "matches": []
+  },
+  {
+    "name": "Imagine with Meta",
+    "matches": []
+  },
+  {
+    "name": "Stockimg AI",
+    "matches": []
+  },
+  {
+    "name": "Stable Doodle",
+    "matches": []
+  },
+  {
+    "name": "175FUN",
+    "matches": []
+  },
+  {
+    "name": "行者AI美术",
+    "matches": []
+  },
+  {
+    "name": "Skybox AI",
+    "matches": []
+  }
+]

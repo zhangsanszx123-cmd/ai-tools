@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ArrowUpRight, AudioLines, Bot, BrainCircuit, BriefcaseBusiness, ClipboardCheck, Code2, GraduationCap, Image, Laptop, LibraryBig, MessageCircle, Palette, PenLine, ScanText, Search, Sparkles, Terminal, Video, type LucideIcon } from 'lucide-react'
+import { AudioLines, Bot, BrainCircuit, BriefcaseBusiness, ClipboardCheck, Code2, GraduationCap, Image, Laptop, LibraryBig, MessageCircle, Palette, PenLine, ScanText, Search, Sparkles, Terminal, Video, type LucideIcon } from 'lucide-react'
 import { type CatalogTool, toolLogo } from '@/lib/catalog'
 
 const categoryIcons: Record<string, LucideIcon> = {
@@ -25,9 +25,10 @@ export function ToolLogo({ tool }: { tool: CatalogTool }) {
 
 export function ToolCard({ tool }: { tool: CatalogTool }) {
   return <Link className="tool-card" href={`/tools/${tool.slug}`} target="_blank" rel="noopener noreferrer" prefetch={false}>
-    <div className="tool-card-top"><ToolLogo tool={tool} /><ArrowUpRight className="tool-arrow" size={17} aria-hidden="true" /></div>
-    <h3>{tool.name}<span className="sr-only">（在新标签页打开）</span></h3>
-    <p title={tool.summary}>{tool.summary}</p>
-    <span className="tool-category">{tool.categoryShort}</span>
+    <ToolLogo tool={tool} />
+    <div className="tool-card-copy">
+      <h3 title={tool.name}>{tool.name}<span className="sr-only">（在新标签页打开）</span></h3>
+      <p title={tool.summary}>{tool.summary}</p>
+    </div>
   </Link>
 }

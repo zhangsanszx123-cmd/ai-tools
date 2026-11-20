@@ -1,11 +1,28 @@
 'use client'
 
 import Link from 'next/link'
-import { useEffect, useRef, useState, type FormEvent, type MouseEvent } from 'react'
-import { ArrowRight, ChevronRight, Clock3, Compass, Flame, Menu, Plus, Search, Sparkles, X } from 'lucide-react'
+import { useEffect, useRef, useState, type FormEvent } from 'react'
+import { ArrowRight, ChevronRight, Clock3, Flame, Search, Sparkles, X } from 'lucide-react'
 import { type CatalogCategory, type CatalogTool, type CategoryId } from '@/lib/catalog'
-import { Brand, getCategoryIcon, ToolCard } from './catalog-elements'
-import { AccountStatus, type AccountIdentity } from './account-status'
+import { getCategoryIcon, ToolCard } from './catalog-elements'
+import { type AccountIdentity } from './account-status'
+import styles from './directory-category.module.css'
+import { rankHomepageCategory, commonToolNames, selectHomepageTools } from '@/lib/homepage-curation'
+
+function CategorySection({ category, tools, total }: { category: CatalogCategory; tools: CatalogTool[]; total: number }) {
+  const { id, name, description, iconKey } = category
+  const Icon = getCategoryIcon(iconKey)
+  return <section id={id} className={`tool-section category-section ${styles.section}`} aria-labelledby={`${id}-title`}>
+    <div className="section-head">
+      <div className="section-title"><span className="section-icon"><Icon size={20} aria-hidden="true" /></span><div><h2 id={`${id}-title`}>{name}</h2><p>{description}</p></div></div>
+      <div className={styles.actions}>
+        <span className="collection-count">共 {total} 款工具</span>
+        <Link className={styles.more} data-has-more={total > tools.length} href={`/categories/${encodeURIComponent(id)}`} aria-label={`查看更多${name}`}>查看更多<ChevronRight size={14} aria-hidden="true" /></Link>
+      </div>
+    </div>
+    {tools.length ? <div id={`${id}-tools`} className={`tool-grid ${styles.grid}`}>{tools.map(tool => <ToolCard key={tool.slug} tool={tool} />)}</div> : <div id={`${id}-tools`} className="catalog-empty">此分类暂未收录工具。</div>}
+  </section>
+}
 
 function SearchBox({ query, onQuery, onSubmit, inputRef }: {
   query: string
@@ -43,18 +60,25 @@ function FeaturedSection({ id, title, description, icon: Icon, tools, emptyMessa
 
 export function Directory({ categories, tools, user, unavailable }: { categories: CatalogCategory[]; tools: CatalogTool[]; user: AccountIdentity | null; unavailable: 'configuration' | 'connection' | null }) {
   const [query, setQuery] = useState('')
-  const [active, setActive] = useState('home')
-  const [drawer, setDrawer] = useState(false)
   const [categoryFilter, setCategoryFilter] = useState<CategoryId | ''>('')
   const searchInput = useRef<HTMLInputElement>(null)
   const resultHeading = useRef<HTMLHeadingElement>(null)
+
+  useEffect(() => {
+    function jump(event: Event) {
+      const id = (event as CustomEvent<string>).detail
+      setQuery(''); setCategoryFilter('')
+      requestAnimationFrame(() => document.getElementById(id)?.scrollIntoView({ block: 'start' }))
+    }
+    window.addEventListener('directory:category-jump', jump)
+    return () => window.removeEventListener('directory:category-jump', jump)
+  }, [])
 
   useEffect(() => {
     function shortcuts(event: KeyboardEvent) {
       if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === 'k') {
         event.preventDefault(); searchInput.current?.focus()
       }
-      if (event.key === 'Escape') setDrawer(false)
     }
     document.addEventListener('keydown', shortcuts)
     return () => document.removeEventListener('keydown', shortcuts)
@@ -65,39 +89,12 @@ export function Directory({ categories, tools, user, unavailable }: { categories
     const category = categories.find(({ id }) => id === tool.category)
     return (!categoryFilter || categoryFilter === tool.category) && `${tool.name} ${tool.summary} ${category?.name ?? ''} ${category?.short ?? ''} ${tool.slug}`.toLowerCase().includes(query.trim().toLowerCase())
   })
-  const popularTools = tools.filter((tool) => tool.featuredOrder !== null).sort((a, b) => a.featuredOrder! - b.featuredOrder!).slice(0, 8)
+  const popularTools = selectHomepageTools(tools, commonToolNames)
   const latestTools = tools.slice(0, 8)
-
-  function jump(event: MouseEvent<HTMLAnchorElement>, id: CategoryId) {
-    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return
-    event.preventDefault()
-    setQuery(''); setCategoryFilter(''); setActive(id); setDrawer(false)
-    requestAnimationFrame(() => document.getElementById(id)?.scrollIntoView({ behavior: 'auto' }))
-  }
 
   function submitSearch() { resultHeading.current?.focus(); resultHeading.current?.scrollIntoView({ block: 'start' }) }
 
-  return <div className="directory-shell" id="home">
-    <a className="skip-link" href="#main-content">跳到主要内容</a>
-    {drawer && <button className="nav-backdrop" type="button" onClick={() => setDrawer(false)} aria-label="关闭分类导航" />}
-    <aside id="category-navigation" className="directory-sidebar" data-open={drawer}>
-      <div className="sidebar-brand"><Brand /><button className="icon-button nav-close" type="button" onClick={() => setDrawer(false)} aria-label="关闭菜单"><X size={20} /></button></div>
-      <nav className="sidebar-nav" aria-label="分类导航">
-        <p className="nav-label">工具分类</p>
-        {categories.map(({ id, name, iconKey }) => {
-          const Icon = getCategoryIcon(iconKey)
-          return <a key={id} href={`#${id}`} onClick={(event) => jump(event, id)} data-active={active === id} aria-current={active === id ? 'location' : undefined}><Icon size={17} aria-hidden="true" /><span>{name}</span><ChevronRight className="nav-chevron" size={14} aria-hidden="true" /></a>
-        })}
-      </nav>
-      <div className="sidebar-footer"><Link href="/account?tab=submit" className="submit-link"><Plus size={18} aria-hidden="true" />提交站点</Link><p>收录优质工具 · 持续更新</p></div>
-    </aside>
-    <div className="directory-pane">
-      <header className="directory-header">
-        <button type="button" className="icon-button nav-toggle" onClick={() => setDrawer(!drawer)} aria-label="打开分类导航" aria-expanded={drawer} aria-controls="category-navigation"><Menu size={22} /></button>
-        <div className="header-title"><Compass size={17} aria-hidden="true" /><span>探索</span><ChevronRight size={14} aria-hidden="true" /><strong>工具导航</strong></div>
-        <div className="header-actions"><Link className="text-action admin-entry" href="/admin">后台管理</Link><AccountStatus user={user} /></div>
-      </header>
-      <main className="directory-content" id="main-content">
+  return <>
         <div className="directory-hero">
           <div className="hero-copy">
             <span className="hero-badge"><Sparkles size={14} aria-hidden="true" /> AI 工具导航</span>
@@ -119,19 +116,10 @@ export function Directory({ categories, tools, user, unavailable }: { categories
           <div className="section-head"><div className="section-title"><span className="section-icon"><Search size={20} aria-hidden="true" /></span><div><h2 id="search-title" ref={resultHeading} tabIndex={-1}>搜索结果</h2><p aria-live="polite">找到 {matches.length} 款工具</p></div></div><button type="button" onClick={() => { setQuery(''); setCategoryFilter('') }} className="text-action">清除筛选 <X size={15} aria-hidden="true" /></button></div>
           {matches.length ? <div className="tool-grid">{matches.map((tool) => <ToolCard key={tool.slug} tool={tool} />)}</div> : <div className="catalog-empty">没有找到匹配的工具，试试其他关键词或分类。</div>}
         </section> : <>
-          <FeaturedSection id="popular" title="热门工具" description="从这些广受欢迎的 AI 工具开始" icon={Flame} tools={popularTools} emptyMessage="暂无热门工具。" />
+          <FeaturedSection id="popular" title="常用 AI 工具" description="从日常对话、写作和搜索开始" icon={Flame} tools={popularTools} emptyMessage="暂无可展示的常用工具。" />
           <FeaturedSection id="latest" title="最新收录" description="最近添加到目录的 AI 工具" icon={Clock3} tools={latestTools} emptyMessage="暂无新收录的工具。" />
-          {categories.map(({ id, name, description, iconKey }) => {
-            const list = tools.filter((tool) => tool.category === id).sort((a, b) => a.displayOrder - b.displayOrder)
-            const Icon = getCategoryIcon(iconKey)
-            return <section key={id} id={id} className="tool-section category-section" aria-labelledby={`${id}-title`}>
-              <div className="section-head"><div className="section-title"><span className="section-icon"><Icon size={20} aria-hidden="true" /></span><div><h2 id={`${id}-title`}>{name}</h2><p>{description}</p></div></div><span className="collection-count">{list.length} 款工具</span></div>
-              {list.length ? <div className="tool-grid">{list.map((tool) => <ToolCard key={tool.slug} tool={tool} />)}</div> : <div className="catalog-empty">此分类暂未收录工具。</div>}
-            </section>
-          })}
+          {categories.map(category => <CategorySection key={category.id} category={category} total={tools.filter(tool => tool.category === category.id).length} tools={rankHomepageCategory(tools, category.id)} />)}
         </>}
         <footer className="directory-footer"><span>AI 工具箱</span><Link href="/admin">后台管理</Link><Link href="/account?tab=submit">推荐一款工具 <ArrowRight size={15} aria-hidden="true" /></Link></footer>
-      </main>
-    </div>
-  </div>
+  </>
 }

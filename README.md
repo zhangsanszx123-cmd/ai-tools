@@ -7,7 +7,7 @@
 3. 新数据库先按下文初始化认证表，再审阅并执行 [db/directory-v2.sql](./db/directory-v2.sql)，创建分类、正式工具、投稿记录三张业务表，并初始化 17 个分类。现有项目数据库已经完成此步骤，不要重复建表。旧版单表脚本 [db/schema.sql](./db/schema.sql) 已停用；旧结构迁移需参考 [设计文档](./docs/database-design.md)，不可覆盖旧数据。
 4. 执行 `pnpm dev`。修改环境配置后需重启开发服务。
 
-首页分类从 `ai_directory_categories` 动态读取，不再依赖代码内置数组。仅展示启用分类下 `ai_directory_tools.status = 'published'` 的工具。没有工具时显示真实空目录，不填充演示数据。`featured_order` 非空的工具进入热门列表，按数值升序排列；`published_at` 用于最新收录；同分类按 `display_order`、收录时间排序。
+首页分类从 `ai_directory_categories` 动态读取，不再依赖代码内置数组。仅展示启用分类下 `ai_directory_tools.status = 'published'` 的工具。没有工具时显示真实空目录，不填充演示数据。首页“常用 AI 工具”由 `lib/homepage-curation.ts` 中的人工名单和顺序控制，只匹配已公开的真实工具；名称变更后需同步名单。首页分类区和分类独立页均以后台“分类内排序”对应的 `display_order` 为准，数值越小越靠前，不再插入代码里的分类推荐顺序。首页每个分类在所有屏幕尺寸下均取排序前 30 条，不足 30 条时展示全部；超过 30 条时显示“查看更多”，进入保留侧栏和顶栏的完整分类页。搜索也保留完整目录。`featured_order` 仍保留为后台管理字段，当前首页常用区不使用它排序。“最新收录”保持按 `published_at` 展示。排序测试可运行 `node --test tests/homepage-curation.test.mjs`。参考站首页快照和逐条匹配差异保存在 `docs/imports/homepage-reference-order-2026-11-20.json` 及 `homepage-order-applied-2026-11-20.json`，图像分类按 `image-category-reference-2026-11-20.json` 和 `image-category-order-applied-2026-11-20.json` 的分类页顺序更新。只调整现有公开工具的排序，不自动补录、跨分类复制或恢复已停用/删除的工具。
 
 ## 登录与投稿
 

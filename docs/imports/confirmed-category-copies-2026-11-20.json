@@ -1,0 +1,79 @@
+{
+  "at": "2026-11-20T11:41:04.646Z",
+  "created": 8,
+  "originalRecordsUnchanged": true,
+  "records": [
+    {
+      "sourceId": "60",
+      "id": "1308",
+      "name": "办公小浣熊",
+      "category": "writing",
+      "slug": "xiaohuanxiong-writing",
+      "order": 3,
+      "created": true
+    },
+    {
+      "sourceId": "178",
+      "id": "1309",
+      "name": "稿定AI",
+      "category": "image",
+      "slug": "gaoding-ai-image",
+      "order": 3,
+      "created": true
+    },
+    {
+      "sourceId": "181",
+      "id": "1310",
+      "name": "美图设计室",
+      "category": "image",
+      "slug": "meitu-designkit-image",
+      "order": 7,
+      "created": true
+    },
+    {
+      "sourceId": "112",
+      "id": "1311",
+      "name": "椒图AI",
+      "category": "image",
+      "slug": "jiaotu-ai-image",
+      "order": 8,
+      "created": true
+    },
+    {
+      "sourceId": "627",
+      "id": "1312",
+      "name": "千问创作",
+      "category": "image",
+      "slug": "qianwen-creation-image",
+      "order": 20,
+      "created": true
+    },
+    {
+      "sourceId": "25",
+      "id": "1313",
+      "name": "可灵AI",
+      "category": "video",
+      "slug": "kling-ai-video",
+      "order": 16,
+      "created": true
+    },
+    {
+      "sourceId": "1",
+      "id": "1314",
+      "name": "豆包",
+      "category": "chat",
+      "slug": "doubao-chat",
+      "order": 1,
+      "created": true
+    },
+    {
+      "sourceId": "296",
+      "id": "1315",
+      "name": "书生大模型",
+      "category": "chat",
+      "slug": "intern-ai-chat",
+      "order": 26,
+      "created": true
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+.section { container-type: inline-size; }
+.actions { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+.more { display: none; align-items: center; gap: 3px; min-height: 44px; color: var(--subtle); font-size: 12px; cursor: pointer; white-space: nowrap; }
+.more:hover { color: var(--brand); }
+.more:focus-visible { outline: 2px solid var(--brand); outline-offset: 3px; border-radius: 4px; }
+.section .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.section .actions a.more[data-has-more='true'] { display: inline-flex; }
+@container (max-width: 420px) {
+  .actions { gap: 5px; }
+  .actions :global(.collection-count) { display: none; }
+}
+@container (min-width: 540px) {
+  .section .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@container (min-width: 760px) {
+  .section .grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+@container (min-width: 1020px) {
+  .section .grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+}
+@container (min-width: 1240px) {
+  .section .grid { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+}
