@@ -128,6 +128,51 @@ try {
   checks.push('independent admin login, guest redirect, ordinary-user denial and legacy redirect')
   checks.push('email registration, session and admin navigation')
 
+  stage = 'user-management'
+  for (const backend of [false, true]) {
+    const tab = backend ? 'admins' : 'users'
+    const base = `/admin?tab=${tab}`
+    const email = `managed-e2e-${tab}@example.invalid`
+    const userTable = backend ? 'admin_user' : 'ai_directory_users'
+    const api = backend ? '/api/admin-auth' : '/api/auth'
+    const list = (await page(base, admin.cookie)).html
+    assert.ok(list.includes('<table'))
+    assert.ok(list.includes(`aria-label="${backend ? '后端用户' : '前端用户'}分页"`))
+    assert.equal((await page(base, owner.cookie)).response.status, 307)
+    redirected(await postForm(`${base}&new=1`, admin.cookie, html => html.includes('name="password"'), { name: '用户管理测试', email, password, isEnabled: 'on' }))
+    const record = (await bootstrap.query(`SELECT id FROM ${userTable} WHERE email = $1`, [email])).rows[0]
+    assert.ok(record)
+    async function loginManaged(pass = password) {
+      const response = await fetch(origin + api + '/sign-in/email', { method: 'POST', headers: { Origin: origin, 'Content-Type': 'application/json' }, body: JSON.stringify({ email, password: pass }) })
+      return { response, cookie: cookie(response) }
+    }
+    const signed = await loginManaged()
+    assert.equal(signed.response.status, 200)
+    assert.equal((await page(backend ? '/admin' : '/account', signed.cookie)).response.status, 200)
+    const filtered = (await page(`${base}&q=${email}&status=enabled&page=999`, admin.cookie)).html
+    assert.ok(filtered.includes(`edit=${record.id}`))
+    const edit = `${base}&edit=${record.id}`
+    redirected(await postForm(edit, admin.cookie, html => html.includes('name="password"'), { name: '已修改用户', email, password: password + '-reset', isEnabled: 'on' }))
+    assert.equal((await page(backend ? '/admin' : '/account', signed.cookie)).response.status, 307)
+    const reset = await loginManaged(password + '-reset')
+    assert.equal(reset.response.status, 200)
+    redirected(await postForm(base, admin.cookie, html => hasInput(html, 'id', record.id) && hasInput(html, 'intent', 'disabled'), { expected: 'true', intent: 'disabled' }))
+    assert.equal((await page(backend ? '/admin' : '/account', reset.cookie)).response.status, 307)
+    assert.ok((await page(`${base}&q=${email}&status=disabled`, admin.cookie)).html.includes(`edit=${record.id}`))
+    redirected(await postForm(base, admin.cookie, html => hasInput(html, 'id', record.id) && hasInput(html, 'intent', 'enabled'), { expected: 'false', intent: 'enabled' }))
+    const unconfirmed = await postForm(base, admin.cookie, html => hasInput(html, 'id', record.id) && hasInput(html, 'intent', 'delete'), {})
+    assert.equal(unconfirmed.status, 200)
+    assert.equal((await bootstrap.query(`SELECT id FROM ${userTable} WHERE id = $1`, [record.id])).rowCount, 1)
+    if (backend) {
+      await postForm(base, admin.cookie, html => hasInput(html, 'id', record.id) && hasInput(html, 'intent', 'delete'), { id: 'isolated-admin', confirmDelete: 'yes' })
+      assert.equal((await page('/admin', admin.cookie)).response.status, 200)
+    }
+    redirected(await postForm(base, admin.cookie, html => hasInput(html, 'id', record.id) && hasInput(html, 'intent', 'delete'), { confirmDelete: 'yes' }))
+    assert.equal((await bootstrap.query(`SELECT id FROM ${userTable} WHERE id = $1`, [record.id])).rowCount, 0)
+    assert.ok((await page(edit, admin.cookie)).html.includes('账号不存在'))
+  }
+  checks.push('frontend users and backend administrators: lists, filters, forms, create, edit, password reset, session revocation, enable/disable, confirmed deletion and access isolation')
+
   stage = 'category-management'
   const category = { id: 'e2e-category', name: '端到端测试分类', short: '测试', description: '临时测试分类', iconKey: 'Sparkles', sortOrder: '5', isEnabled: 'on' }
   redirected(await postForm('/admin?tab=categories&new=1', admin.cookie, html => html.includes('新增分类'), category))
@@ -250,6 +295,15 @@ try {
   const emptyTools = (await page('/admin?tab=tools&q=no-such-pagination-item&page=999', admin.cookie)).html
   assert.ok(emptyTools.replace(/<!--.*?-->/g, '').includes('第 1 / 1 页'))
   checks.push('both admin pagers, selectable sizes, filter preservation, page links, jump forms and range clamping')
+  stage = 'self-password-reset'
+  // Reset only the isolated fixture's login budget before the separate logout scenario.
+  await bootstrap.query('DELETE FROM admin_rate_limit')
+  redirected(await postForm('/admin?tab=admins&edit=isolated-admin', admin.cookie, html => html.includes('name="password"'), { name: '管理员', email: 'admin-e2e@example.invalid', password, isEnabled: 'on' }))
+  assert.equal((await page('/admin', admin.cookie)).response.status, 307)
+  const selfLogin = await fetch(origin + '/api/admin-auth/sign-in/email', credentials)
+  assert.equal(selfLogin.status, 200)
+  admin.cookie = cookie(selfLogin)
+  checks.push('missing delete confirmation and forged self deletion denied; own password reset revokes previous admin session')
   stage = 'logout'
   const bothCookies = `${admin.cookie}; ${owner.cookie}`
   assert.equal((await page('/account', bothCookies)).response.status, 200)

@@ -1,3 +1,4 @@
+import { randomUUID } from 'node:crypto'
 import type { Pool } from 'pg'
 import type { CatalogCategory, CatalogTool } from './catalog'
 import { adminPagination } from './admin-pagination.ts'
@@ -17,6 +18,39 @@ export type SubmissionItem = {
   rejectionReason: string | null; publishedSlug: string | null; submitterName: string | null
 }
 export type ManagedTool = CatalogTool & { content: string; hasCover: boolean; status: 'published' | 'disabled' }
+export type ManagedFrontendUser = {
+  id: string
+  name: string
+  email: string
+  isEnabled: boolean
+  submissionCount: number
+  approvedCount: number
+  createdAt: Date
+}
+export type ManagedAdminUser = {
+  id: string
+  name: string
+  email: string
+  isEnabled: boolean
+  toolCount: number
+  reviewCount: number
+  createdAt: Date
+}
+export type ManagedUserAccountInput = {
+  id?: string
+  name: string
+  email: string
+  passwordHash: string | null
+  isEnabled: boolean
+}
+export type AdminOverview = {
+  pendingSubmissions: number
+  enabledCategories: number
+  disabledCategories: number
+  publishedTools: number
+  disabledTools: number
+  featuredTools: number
+}
 export const PAGE_SIZE = 20
 
 const publicFields = `t.id::text AS id, t.slug, t.name, t.category_id AS category,
@@ -70,7 +104,7 @@ export function createDirectoryStore(database: Pick<Pool, 'query'>) {
       const { rows } = await database.query<{ id: string }>(`INSERT INTO ai_directory_tool_submissions
         (submitted_by, requested_slug, category_id, name, website, summary, content, logo_data, logo_type, cover_data, cover_type)
         SELECT $1::text, $2::text, c.id, $4::text, $5::text, $6::text, $7::text, $8::bytea, $9::text, $10::bytea, $11::text FROM ai_directory_categories c
-        WHERE c.id = $3 AND c.is_enabled AND EXISTS (SELECT 1 FROM ai_directory_users WHERE id = $1)
+        WHERE c.id = $3 AND c.is_enabled AND EXISTS (SELECT 1 FROM ai_directory_users WHERE id = $1 AND role <> 'disabled')
           AND NOT EXISTS (SELECT 1 FROM ai_directory_tools WHERE slug = $2)
         RETURNING id::text`, [userId, input.slug, input.category, input.name, input.website, input.summary, input.content,
         input.logoData, input.logoData ? 'image/webp' : null, input.coverData, input.coverData ? 'image/webp' : null])
@@ -124,6 +158,24 @@ export function createDirectoryStore(database: Pick<Pool, 'query'>) {
       const column = kind === 'logo' ? 'logo' : 'cover'
       const { rows } = await database.query<{ data: Buffer; type: string }>(`SELECT ${column}_data AS data, ${column}_type AS type
         FROM ai_directory_tool_submissions WHERE id = $1 AND (submitted_by = $2 OR ${admin('$3')})`, [id, userId, adminId])
+      return rows[0]
+    },
+    async getManagedToolMedia(adminId: string, id: string, kind: 'logo' | 'cover') {
+      const column = kind === 'logo' ? 'logo' : 'cover'
+      const { rows } = await database.query<{ data: Buffer; type: string }>(`SELECT t.${column}_data AS data, t.${column}_type AS type
+        FROM ai_directory_tools t
+        WHERE t.id::text = $2 AND t.deleted_at IS NULL AND ${admin('$1')}`, [adminId, id])
+      return rows[0]
+    },
+    async getAdminOverview(adminId: string) {
+      const { rows } = await database.query<AdminOverview>(`SELECT
+        (SELECT count(*)::integer FROM ai_directory_tool_submissions WHERE status = 'pending') AS "pendingSubmissions",
+        (SELECT count(*)::integer FROM ai_directory_categories WHERE is_enabled) AS "enabledCategories",
+        (SELECT count(*)::integer FROM ai_directory_categories WHERE NOT is_enabled) AS "disabledCategories",
+        (SELECT count(*)::integer FROM ai_directory_tools WHERE deleted_at IS NULL AND status = 'published') AS "publishedTools",
+        (SELECT count(*)::integer FROM ai_directory_tools WHERE deleted_at IS NULL AND status = 'disabled') AS "disabledTools",
+        (SELECT count(*)::integer FROM ai_directory_tools WHERE deleted_at IS NULL AND status = 'published' AND featured_order IS NOT NULL) AS "featuredTools"
+        WHERE ${admin('$1')}`, [adminId])
       return rows[0]
     },
     async saveCategory(userId: string, value: CatalogCategory) {
@@ -199,6 +251,203 @@ export function createDirectoryStore(database: Pick<Pool, 'query'>) {
           $10::bytea, $11::text, $12::text, $13::integer, $14::integer, $15::text, $1::text
         WHERE ${admin('$1')} AND EXISTS (SELECT 1 FROM ai_directory_categories WHERE id = $3 AND (is_enabled OR $12 = 'disabled'))
         RETURNING id::text, slug`, args)
+      return rows[0]
+    },
+    async getManagedUsers(adminId: string, page = 1, filters: { query?: string; status?: string; pageSize?: string | number } = {}) {
+      const args = [
+        adminId,
+        filters.query?.trim().slice(0, 100) ?? '',
+        ['enabled', 'disabled'].includes(filters.status ?? '') ? filters.status : '',
+      ]
+      const from = `FROM ai_directory_users u
+        WHERE ${admin('$1')}
+          AND ($2::text = '' OR strpos(lower(u.name || ' ' || u.email), lower($2)) > 0)
+          AND ($3::text = '' OR (CASE WHEN $3 = 'enabled' THEN u.role <> 'disabled' ELSE u.role = 'disabled' END))`
+      const count = await database.query<{ total: number }>(`SELECT count(*)::integer AS total ${from}`, args)
+      const pagination = adminPagination(count.rows[0].total, page, filters.pageSize)
+      const result = await database.query<ManagedFrontendUser>(`SELECT
+        u.id, u.name, u.email, (u.role <> 'disabled') AS "isEnabled", u."createdAt",
+        (SELECT count(*)::integer FROM ai_directory_tool_submissions s WHERE s.submitted_by = u.id) AS "submissionCount",
+        (SELECT count(*)::integer FROM ai_directory_tool_submissions s WHERE s.submitted_by = u.id AND s.status = 'approved') AS "approvedCount"
+        ${from}
+        ORDER BY u."createdAt" DESC, u.id DESC LIMIT $4 OFFSET $5`, [...args, pagination.pageSize, pagination.offset])
+      return { items: result.rows, ...pagination }
+    },
+    async getManagedUser(adminId: string, id: string) {
+      const { rows } = await database.query<ManagedFrontendUser>(`SELECT
+        u.id, u.name, u.email, (u.role <> 'disabled') AS "isEnabled", u."createdAt",
+        (SELECT count(*)::integer FROM ai_directory_tool_submissions s WHERE s.submitted_by = u.id) AS "submissionCount",
+        (SELECT count(*)::integer FROM ai_directory_tool_submissions s WHERE s.submitted_by = u.id AND s.status = 'approved') AS "approvedCount"
+        FROM ai_directory_users u
+        WHERE u.id = $2::text AND ${admin('$1')}`, [adminId, id])
+      return rows[0]
+    },
+    async saveManagedUser(adminId: string, value: ManagedUserAccountInput) {
+      if (value.id) {
+        const { rows } = await database.query<{ id: string }>(`WITH updated_user AS (
+          UPDATE ai_directory_users
+          SET name = $3::text,
+              email = $4::text,
+              role = CASE WHEN $5::boolean THEN 'user' ELSE 'disabled' END,
+              "updatedAt" = statement_timestamp()
+          WHERE id = $2::text AND ${admin('$1')}
+          RETURNING id
+        ), updated_account AS (
+          UPDATE ai_directory_accounts a
+          SET password = $6::text, "updatedAt" = statement_timestamp()
+          FROM updated_user u
+          WHERE $6::text IS NOT NULL AND a."userId" = u.id AND a."providerId" = 'credential'
+          RETURNING a.id
+        ), inserted_account AS (
+          INSERT INTO ai_directory_accounts (id, "accountId", "providerId", "userId", password, "createdAt", "updatedAt")
+          SELECT $7::text, u.id, 'credential', u.id, $6::text, statement_timestamp(), statement_timestamp()
+          FROM updated_user u
+          WHERE $6::text IS NOT NULL
+            AND NOT EXISTS (SELECT 1 FROM ai_directory_accounts WHERE "userId" = u.id AND "providerId" = 'credential')
+          RETURNING id
+        ), revoked_sessions AS (
+          DELETE FROM ai_directory_sessions s
+          USING updated_user u
+          WHERE s."userId" = u.id AND (NOT $5::boolean OR $6::text IS NOT NULL)
+          RETURNING s.id
+        )
+        SELECT id FROM updated_user`, [adminId, value.id, value.name, value.email, value.isEnabled, value.passwordHash, randomUUID()])
+        return rows[0]
+      }
+      if (!value.passwordHash) return undefined
+      const userId = randomUUID(), accountId = randomUUID()
+      const { rows } = await database.query<{ id: string }>(`WITH created_user AS (
+        INSERT INTO ai_directory_users (id, name, email, "emailVerified", role, "createdAt", "updatedAt")
+        SELECT $2::text, $3::text, $4::text, false, CASE WHEN $5::boolean THEN 'user' ELSE 'disabled' END, statement_timestamp(), statement_timestamp()
+        WHERE ${admin('$1')}
+        RETURNING id
+      ), created_account AS (
+        INSERT INTO ai_directory_accounts (id, "accountId", "providerId", "userId", password, "createdAt", "updatedAt")
+        SELECT $6::text, u.id, 'credential', u.id, $7::text, statement_timestamp(), statement_timestamp()
+        FROM created_user u
+        RETURNING "userId"
+      )
+      SELECT id FROM created_user`, [adminId, userId, value.name, value.email, value.isEnabled, accountId, value.passwordHash])
+      return rows[0]
+    },
+    async setManagedUserStatus(adminId: string, id: string, enabled: boolean, expected: boolean) {
+      const { rows } = await database.query<{ id: string }>(`WITH updated AS (
+        UPDATE ai_directory_users
+        SET role = CASE WHEN $3::boolean THEN 'user' ELSE 'disabled' END,
+            "updatedAt" = statement_timestamp()
+        WHERE id = $2::text AND (role <> 'disabled') = $4::boolean AND ${admin('$1')}
+        RETURNING id
+      ), revoked AS (
+        DELETE FROM ai_directory_sessions s
+        USING updated u
+        WHERE s."userId" = u.id AND NOT $3::boolean
+      )
+      SELECT id FROM updated`, [adminId, id, enabled, expected])
+      return rows[0]
+    },
+    async deleteManagedUser(adminId: string, id: string) {
+      const { rows } = await database.query<{ id: string }>(`DELETE FROM ai_directory_users
+        WHERE id = $2::text AND ${admin('$1')} RETURNING id`, [adminId, id])
+      return rows[0]
+    },
+    async getManagedAdmins(adminId: string, page = 1, filters: { query?: string; status?: string; pageSize?: string | number } = {}) {
+      const args = [
+        adminId,
+        filters.query?.trim().slice(0, 100) ?? '',
+        ['enabled', 'disabled'].includes(filters.status ?? '') ? filters.status : '',
+      ]
+      const from = `FROM admin_user a
+        WHERE ${admin('$1')}
+          AND ($2::text = '' OR strpos(lower(a.name || ' ' || a.email), lower($2)) > 0)
+          AND ($3::text = '' OR a."isEnabled" = ($3 = 'enabled'))`
+      const count = await database.query<{ total: number }>(`SELECT count(*)::integer AS total ${from}`, args)
+      const pagination = adminPagination(count.rows[0].total, page, filters.pageSize)
+      const result = await database.query<ManagedAdminUser>(`SELECT
+        a.id, a.name, a.email, a."isEnabled", a."createdAt",
+        (SELECT count(*)::integer FROM ai_directory_tools t WHERE t.created_by_admin = a.id AND t.deleted_at IS NULL) AS "toolCount",
+        (SELECT count(*)::integer FROM ai_directory_tool_submissions s WHERE s.reviewed_by_admin = a.id) AS "reviewCount"
+        ${from}
+        ORDER BY a."createdAt" DESC, a.id DESC LIMIT $4 OFFSET $5`, [...args, pagination.pageSize, pagination.offset])
+      return { items: result.rows, ...pagination }
+    },
+    async getManagedAdmin(adminId: string, id: string) {
+      const { rows } = await database.query<ManagedAdminUser>(`SELECT
+        a.id, a.name, a.email, a."isEnabled", a."createdAt",
+        (SELECT count(*)::integer FROM ai_directory_tools t WHERE t.created_by_admin = a.id AND t.deleted_at IS NULL) AS "toolCount",
+        (SELECT count(*)::integer FROM ai_directory_tool_submissions s WHERE s.reviewed_by_admin = a.id) AS "reviewCount"
+        FROM admin_user a
+        WHERE a.id = $2::text AND ${admin('$1')}`, [adminId, id])
+      return rows[0]
+    },
+    async saveManagedAdmin(adminId: string, value: ManagedUserAccountInput) {
+      if (value.id) {
+        if (value.id === adminId && !value.isEnabled) return undefined
+        const { rows } = await database.query<{ id: string }>(`WITH updated_admin AS (
+          UPDATE admin_user
+          SET name = $3::text,
+              email = $4::text,
+              "isEnabled" = $5::boolean,
+              "updatedAt" = statement_timestamp()
+          WHERE id = $2::text AND ($2::text <> $1::text OR $5::boolean = true) AND ${admin('$1')}
+          RETURNING id
+        ), updated_account AS (
+          UPDATE admin_account ac
+          SET password = $6::text, "updatedAt" = statement_timestamp()
+          FROM updated_admin u
+          WHERE $6::text IS NOT NULL AND ac."userId" = u.id AND ac."providerId" = 'credential'
+          RETURNING ac.id
+        ), inserted_account AS (
+          INSERT INTO admin_account (id, "accountId", "providerId", "userId", password, "createdAt", "updatedAt")
+          SELECT $7::text, u.id, 'credential', u.id, $6::text, statement_timestamp(), statement_timestamp()
+          FROM updated_admin u
+          WHERE $6::text IS NOT NULL
+            AND NOT EXISTS (SELECT 1 FROM admin_account WHERE "userId" = u.id AND "providerId" = 'credential')
+          RETURNING id
+        ), revoked_sessions AS (
+          DELETE FROM admin_session s
+          USING updated_admin u
+          WHERE s."userId" = u.id AND (NOT $5::boolean OR $6::text IS NOT NULL)
+          RETURNING s.id
+        )
+        SELECT id FROM updated_admin`, [adminId, value.id, value.name, value.email, value.isEnabled, value.passwordHash, randomUUID()])
+        return rows[0]
+      }
+      if (!value.passwordHash) return undefined
+      const userId = randomUUID(), accountId = randomUUID()
+      const { rows } = await database.query<{ id: string }>(`WITH created_admin AS (
+        INSERT INTO admin_user (id, name, email, "emailVerified", "isEnabled", "createdAt", "updatedAt")
+        SELECT $2::text, $3::text, $4::text, false, $5::boolean, statement_timestamp(), statement_timestamp()
+        WHERE ${admin('$1')}
+        RETURNING id
+      ), created_account AS (
+        INSERT INTO admin_account (id, "accountId", "providerId", "userId", password, "createdAt", "updatedAt")
+        SELECT $6::text, u.id, 'credential', u.id, $7::text, statement_timestamp(), statement_timestamp()
+        FROM created_admin u
+        RETURNING "userId"
+      )
+      SELECT id FROM created_admin`, [adminId, userId, value.name, value.email, value.isEnabled, accountId, value.passwordHash])
+      return rows[0]
+    },
+    async setManagedAdminStatus(adminId: string, id: string, enabled: boolean, expected: boolean) {
+      if (id === adminId && !enabled) return undefined
+      const { rows } = await database.query<{ id: string }>(`WITH updated AS (
+        UPDATE admin_user
+        SET "isEnabled" = $3::boolean,
+            "updatedAt" = statement_timestamp()
+        WHERE id = $2::text AND id <> $1::text AND "isEnabled" = $4::boolean AND ${admin('$1')}
+        RETURNING id
+      ), revoked AS (
+        DELETE FROM admin_session s
+        USING updated u
+        WHERE s."userId" = u.id AND NOT $3::boolean
+      )
+      SELECT id FROM updated`, [adminId, id, enabled, expected])
+      return rows[0]
+    },
+    async deleteManagedAdmin(adminId: string, id: string) {
+      if (id === adminId) return undefined
+      const { rows } = await database.query<{ id: string }>(`DELETE FROM admin_user
+        WHERE id = $2::text AND id <> $1::text AND ${admin('$1')} RETURNING id`, [adminId, id])
       return rows[0]
     },
   }

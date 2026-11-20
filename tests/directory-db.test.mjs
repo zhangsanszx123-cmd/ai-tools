@@ -32,6 +32,7 @@ before(async () => {
     const sql = readFileSync('db/directory-v2.sql', 'utf8').replaceAll('"ai-tools"', `"${schema}"`).replaceAll("'ai-tools'", `'${schema}'`)
     await bootstrap.query(sql)
     await bootstrap.query(`SET search_path = "${schema}", public`)
+    await bootstrap.query(readFileSync('db/auth-schema.sql', 'utf8'))
     await bootstrap.query(readFileSync('db/admin-auth.sql', 'utf8'))
     await bootstrap.query(readFileSync('db/admin-audit-migration.sql', 'utf8'))
     pool = new Pool({ ...config, max: 8, options: `-c search_path=${schema},public` })
@@ -52,6 +53,49 @@ after(async () => {
     try { await cleanup.query(`DROP SCHEMA "${schema}" CASCADE`) } finally { await cleanup.end() }
     console.log('Removed isolated directory test schema; production business data unchanged.')
   }
+})
+
+test('managed accounts enforce permission, password updates, state checks and history retention', async () => {
+  for (const backend of [false, true]) {
+    const save = backend ? store.saveManagedAdmin : store.saveManagedUser
+    const get = backend ? store.getManagedAdmin : store.getManagedUser
+    const list = backend ? store.getManagedAdmins : store.getManagedUsers
+    const status = backend ? store.setManagedAdminStatus : store.setManagedUserStatus
+    const remove = backend ? store.deleteManagedAdmin : store.deleteManagedUser
+    const table = backend ? 'admin_account' : 'ai_directory_accounts'
+    const sessionTable = backend ? 'admin_session' : 'ai_directory_sessions'
+    const value = { name: '账户测试', email: `managed-${backend}@example.invalid`, isEnabled: true, passwordHash: 'test-hash' }
+    assert.equal(await save(owner, value), undefined)
+    const record = await save(admin, value)
+    assert.ok(record)
+    assert.equal(await get(owner, record.id), undefined)
+    assert.equal((await list(admin, 999, { query: value.email, pageSize: 20 })).page, 1)
+    assert.equal((await list(admin, 1, { query: value.email })).total, 1)
+    await pool.query(`INSERT INTO ${sessionTable} (id, token, "userId", "expiresAt", "updatedAt") VALUES ($1, $1, $2, now() + interval '1 day', now())`, [`session-${backend}`, record.id])
+    await save(admin, { ...value, id: record.id, name: '修改后', passwordHash: 'new-hash' })
+    assert.equal((await pool.query(`SELECT password FROM ${table} WHERE "userId" = $1`, [record.id])).rows[0].password, 'new-hash')
+    assert.equal((await pool.query(`SELECT * FROM ${sessionTable} WHERE "userId" = $1`, [record.id])).rowCount, 0)
+    await save(admin, { ...value, id: record.id, passwordHash: null })
+    assert.equal((await pool.query(`SELECT password FROM ${table} WHERE "userId" = $1`, [record.id])).rows[0].password, 'new-hash')
+    await assert.rejects(save(admin, value), { code: '23505' })
+    assert.equal(await status(owner, record.id, false, true), undefined)
+    assert.ok(await status(admin, record.id, false, true))
+    assert.equal(await status(admin, record.id, false, true), undefined)
+    assert.equal((await list(admin, 1, { query: value.email, status: 'disabled' })).total, 1)
+    assert.ok(await status(admin, record.id, true, false))
+    const submission = await store.submitTool(backend ? owner : record.id, input(slug()))
+    if (backend) await store.rejectTool(record.id, submission.id, '保留历史')
+    assert.equal(await remove(owner, record.id), undefined)
+    assert.ok(await remove(admin, record.id))
+    assert.equal(await get(admin, record.id), undefined)
+    assert.equal((await pool.query(`SELECT * FROM ${table} WHERE "userId" = $1`, [record.id])).rowCount, 0)
+    const history = (await pool.query('SELECT submitted_by, reviewed_by_admin FROM ai_directory_tool_submissions WHERE id = $1', [submission.id])).rows[0]
+    assert.ok(history)
+    assert.equal(backend ? history.reviewed_by_admin : history.submitted_by, null)
+  }
+  assert.equal(await store.setManagedAdminStatus(admin, admin, false, true), undefined)
+  assert.equal(await store.deleteManagedAdmin(admin, admin), undefined)
+  assert.equal(await store.saveManagedAdmin(admin, { id: admin, name: 'self', email: 'self@example.invalid', isEnabled: false, passwordHash: null }), undefined)
 })
 
 test('database categories replace the fixed frontend list', async () => {
@@ -243,4 +287,21 @@ test('moderation and history pagination preserve access to older records', async
   assert.ok(second.items.length > 0)
   assert.equal(first.items.some(item => second.items.some(next => next.id === item.id)), false)
   assert.ok((await store.getReviewQueue(admin, 1)).hasNext)
+})
+
+test('admin overview and managed tool media enforce admin check and support disabled tools', async () => {
+  assert.equal(await store.getAdminOverview(owner), undefined)
+  const before = await store.getAdminOverview(admin)
+  assert.ok(before && typeof before.pendingSubmissions === 'number')
+  const disabledTool = await store.saveTool(admin, managed(input(slug()), { status: 'disabled' }))
+  const featuredTool = await store.saveTool(admin, managed(input(slug()), { status: 'published', featuredOrder: 1 }))
+  assert.equal(await store.getManagedToolMedia(owner, disabledTool.id, 'logo'), undefined)
+  assert.deepEqual((await store.getManagedToolMedia(admin, disabledTool.id, 'logo')).data, logo)
+  const after = await store.getAdminOverview(admin)
+  assert.equal(after.disabledTools, before.disabledTools + 1)
+  assert.equal(after.publishedTools, before.publishedTools + 1)
+  assert.equal(after.featuredTools, before.featuredTools + 1)
+  await store.deleteTool(admin, disabledTool.id)
+  assert.equal(await store.getManagedToolMedia(admin, disabledTool.id, 'logo'), undefined)
+  assert.equal((await store.getAdminOverview(admin)).disabledTools, before.disabledTools)
 })

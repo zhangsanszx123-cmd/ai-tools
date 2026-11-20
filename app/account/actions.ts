@@ -2,12 +2,22 @@
 
 import { redirect } from 'next/navigation'
 import { revalidatePath } from 'next/cache'
+import { hashPassword } from 'better-auth/crypto'
 import { validRecordId } from '@/lib/catalog'
 import { getCurrentUser } from '@/lib/directory-auth'
 import { getCurrentAdmin } from '@/lib/admin-auth'
 import { directoryStore } from '@/lib/directory-db'
 import { normalizeImage } from '@/lib/directory-submissions'
-import { databaseErrorCode, formText, parseCategoryForm, parseToolForm, parseToolManagement } from '@/lib/directory-validation'
+import {
+  databaseErrorCode,
+  formText,
+  parseAdminUserForm,
+  parseCategoryForm,
+  parseFrontendUserForm,
+  parseToolForm,
+  parseToolManagement,
+  validUserId,
+} from '@/lib/directory-validation'
 
 export type ActionState = { error?: string } | null
 
@@ -134,4 +144,82 @@ export async function changeManagedTool(_state: ActionState, form: FormData): Pr
   }
   refreshDirectory()
   redirect(`/admin?tab=tools&${intent === 'delete' ? 'deleted=1' : 'changed=1'}`)
+}
+
+export async function saveFrontendUser(_state: ActionState, form: FormData): Promise<ActionState> {
+  const user = await currentAdmin()
+  if (!user) return { error: '你没有前端用户管理权限。' }
+  const value = parseFrontendUserForm(form)
+  if (!value) return { error: '请检查用户昵称、有效邮箱及 8–128 位密码。' }
+  try {
+    const passwordHash = value.password ? await hashPassword(value.password) : null
+    if (!await directoryStore.saveManagedUser(user.id, { ...value, passwordHash })) {
+      return { error: '用户不存在或你已没有管理权限，请返回列表重试。' }
+    }
+  } catch (error) {
+    const code = databaseErrorCode(error)
+    console.error('Directory frontend user save error code:', code)
+    return { error: code === '23505' ? '该邮箱已被其他前端用户使用，请更换邮箱。' : '用户暂时无法保存，请稍后重试。' }
+  }
+  refreshDirectory()
+  redirect('/admin?tab=users&saved=1')
+}
+
+export async function changeFrontendUser(_state: ActionState, form: FormData): Promise<ActionState> {
+  const user = await currentAdmin()
+  const id = formText(form, 'id'), intent = formText(form, 'intent'), expected = formText(form, 'expected')
+  if (!validUserId(id) || !['delete', 'enabled', 'disabled'].includes(intent)) return { error: '操作参数无效，请刷新后重试。' }
+  if (intent === 'delete' && form.get('confirmDelete') !== 'yes') return { error: '请先勾选确认删除该用户。' }
+  if (intent !== 'delete' && !['true', 'false'].includes(expected)) return { error: '用户状态参数无效，请刷新列表。' }
+  try {
+    const result = intent === 'delete'
+      ? await directoryStore.deleteManagedUser(user.id, id)
+      : await directoryStore.setManagedUserStatus(user.id, id, intent === 'enabled', expected === 'true')
+    if (!result) return { error: '用户不存在、状态已变化或你已没有权限，请刷新列表。' }
+  } catch (error) {
+    console.error('Directory frontend user action error code:', databaseErrorCode(error))
+    return { error: '操作未完成，请稍后重试。' }
+  }
+  refreshDirectory()
+  redirect(`/admin?tab=users&${intent === 'delete' ? 'deleted=1' : 'changed=1'}`)
+}
+
+export async function saveAdminUser(_state: ActionState, form: FormData): Promise<ActionState> {
+  const user = await currentAdmin()
+  if (!user) return { error: '你没有后端管理员维护权限。' }
+  const value = parseAdminUserForm(form)
+  if (!value) return { error: '请检查管理员名称、有效邮箱及 12–128 位高强度密码。' }
+  if (value.id === user.id && !value.isEnabled) return { error: '不能停用当前正在登录的管理员账号。' }
+  try {
+    const passwordHash = value.password ? await hashPassword(value.password) : null
+    if (!await directoryStore.saveManagedAdmin(user.id, { ...value, passwordHash })) {
+      return { error: '管理员不存在、不能停用自身账号或你已没有权限，请刷新重试。' }
+    }
+  } catch (error) {
+    const code = databaseErrorCode(error)
+    console.error('Directory admin user save error code:', code)
+    return { error: code === '23505' ? '该邮箱已被其他后台管理员使用，请更换邮箱。' : '管理员账号暂时无法保存，请稍后重试。' }
+  }
+  refreshDirectory()
+  redirect('/admin?tab=admins&saved=1')
+}
+
+export async function changeAdminUser(_state: ActionState, form: FormData): Promise<ActionState> {
+  const user = await currentAdmin()
+  const id = formText(form, 'id'), intent = formText(form, 'intent'), expected = formText(form, 'expected')
+  if (!validUserId(id) || !['delete', 'enabled', 'disabled'].includes(intent)) return { error: '操作参数无效，请刷新后重试。' }
+  if (id === user.id && (intent === 'delete' || intent === 'disabled')) return { error: '不能停用或删除当前正在登录的管理员账号。' }
+  if (intent === 'delete' && form.get('confirmDelete') !== 'yes') return { error: '请先勾选确认删除该管理员。' }
+  if (intent !== 'delete' && !['true', 'false'].includes(expected)) return { error: '管理员状态参数无效，请刷新列表。' }
+  try {
+    const result = intent === 'delete'
+      ? await directoryStore.deleteManagedAdmin(user.id, id)
+      : await directoryStore.setManagedAdminStatus(user.id, id, intent === 'enabled', expected === 'true')
+    if (!result) return { error: '管理员不存在、状态已变化、无法操作当前登录账号或你已没有权限，请刷新列表。' }
+  } catch (error) {
+    console.error('Directory admin user action error code:', databaseErrorCode(error))
+    return { error: '操作未完成，请稍后重试。' }
+  }
+  refreshDirectory()
+  redirect(`/admin?tab=admins&${intent === 'delete' ? 'deleted=1' : 'changed=1'}`)
 }

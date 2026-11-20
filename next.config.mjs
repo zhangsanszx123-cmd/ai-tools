@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  devIndicators: false,
   experimental: { serverActions: { bodySizeLimit: '3mb' } },
   async headers() {
     return [{ source: '/:path*', headers: [

@@ -37,6 +37,39 @@ export function parseCategoryForm(form: FormData): CatalogCategory | null {
   return { id, name, short, description, iconKey, sortOrder, isEnabled: form.get('isEnabled') === 'on' }
 }
 
+export const userIdPattern = /^[A-Za-z0-9_-]{1,64}$/
+const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+
+export function validUserId(value: string) {
+  return userIdPattern.test(value)
+}
+
+function parseUserAccountForm(form: FormData, minPasswordLength: number) {
+  const id = formText(form, 'id')
+  const name = formText(form, 'name')
+  const email = formText(form, 'email').toLowerCase()
+  const rawPassword = typeof form.get('password') === 'string' ? String(form.get('password')) : ''
+  if (id && !validUserId(id)) return null
+  if (!name || name.length > 50 || !email || email.length > 254 || !emailPattern.test(email)) return null
+  if (!id && (rawPassword.length < minPasswordLength || rawPassword.length > 128)) return null
+  if (id && rawPassword.length > 0 && (rawPassword.length < minPasswordLength || rawPassword.length > 128)) return null
+  return {
+    id: id || undefined,
+    name,
+    email,
+    password: rawPassword || null,
+    isEnabled: form.get('isEnabled') === 'on',
+  }
+}
+
+export function parseFrontendUserForm(form: FormData) {
+  return parseUserAccountForm(form, 8)
+}
+
+export function parseAdminUserForm(form: FormData) {
+  return parseUserAccountForm(form, 12)
+}
+
 export function databaseErrorCode(error: unknown): string {
   return error && typeof error === 'object' && 'code' in error && typeof error.code === 'string' ? error.code : 'UNKNOWN'
 }

@@ -1,10 +1,19 @@
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
 import { validRecordId, pageNumber, websiteUrl } from '../lib/catalog.ts'
-import { parseToolForm, parseCategoryForm, parseToolManagement } from '../lib/directory-validation.ts'
+import { parseToolForm, parseCategoryForm, parseToolManagement, parseFrontendUserForm, parseAdminUserForm } from '../lib/directory-validation.ts'
 
 const form = value => { const data = new FormData(); for (const [key, text] of Object.entries(value)) data.set(key, text); return data }
 const tool = { slug: 'test-tool', name: '测试工具', category: 'writing', website: 'https://example.com', summary: '测试摘要', content: '测试内容' }
+
+test('managed user forms validate identity, email and separate password limits', () => {
+  for (const [parse, minimum] of [[parseFrontendUserForm, 8], [parseAdminUserForm, 12]]) {
+    const value = { name: '用户', email: 'USER@example.com', password: 'x'.repeat(minimum), isEnabled: 'on' }
+    assert.equal(parse(form(value)).email, 'user@example.com')
+    for (const fields of [{ name: ' ' }, { email: 'invalid' }, { id: '../invalid' }, { password: 'x'.repeat(minimum - 1) }, { password: 'x'.repeat(129) }]) assert.equal(parse(form({ ...value, ...fields })), null)
+    assert.equal(parse(form({ ...value, id: 'existing-id', password: '' })).password, null)
+  }
+})
 
 test('tool validation normalizes URL and rejects unsafe or incomplete input', () => {
   assert.equal(parseToolForm(form(tool)).website, 'https://example.com/')

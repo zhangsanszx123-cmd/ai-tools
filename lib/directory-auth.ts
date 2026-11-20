@@ -29,7 +29,10 @@ export const getCurrentUser = cache(async () => {
   if (!auth) return null
   try {
     const session = await auth.api.getSession({ headers: await headers() })
-    return session?.user ?? null
+    const user = session?.user
+    if (!user) return null
+    const { rows } = await pool.query('SELECT id FROM ai_directory_users WHERE id = $1 AND role <> $2', [user.id, 'disabled'])
+    return rows.length ? user : null
   } catch {
     console.error('Could not read directory session')
     return null
