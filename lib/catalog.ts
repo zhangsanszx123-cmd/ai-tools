@@ -21,6 +21,8 @@ export type CatalogTool = {
   summary: string
   logoKey: string | null
   hasLogo: boolean
+  logoUrl?: string | null
+  coverUrl?: string | null
   featuredOrder: number | null
   displayOrder: number
   publishedAt: string
@@ -30,7 +32,7 @@ export const iconKeys = ['PenLine', 'Image', 'Video', 'LibraryBig', 'MessageCirc
 export const brandKeys = ['openai', 'claude', 'midjourney', 'deepseek', 'gemini', 'perplexity', 'notion', 'cursor', 'kimi', 'doubao', 'grammarly', 'ideogram', 'runway', 'descript', 'suno', 'elevenlabs', 'canva', 'windsurf'] as const
 
 export function toolLogo(tool: Pick<CatalogTool, 'slug' | 'hasLogo' | 'logoKey'>) {
-  if (tool.hasLogo) return `/api/tool-media/${tool.slug}/logo`
+  if (tool.hasLogo) return ('logoUrl' in tool && typeof tool.logoUrl === 'string') ? tool.logoUrl : `/api/tool-media/${tool.slug}/logo`
   if (tool.logoKey && (brandKeys as readonly string[]).includes(tool.logoKey)) return `/brands/${tool.logoKey}.svg`
   return null
 }

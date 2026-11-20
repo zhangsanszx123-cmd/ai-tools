@@ -1,0 +1,11 @@
+{
+  "phase": "prepare",
+  "files": 1772,
+  "bytes": 46741302,
+  "verifiedUrls": 0,
+  "tables": {
+    "ai_directory_tools": 995,
+    "ai_directory_tool_submissions": 0
+  },
+  "root": "D:\\VibeCoding\\ai-tools\\storage\\media"
+}

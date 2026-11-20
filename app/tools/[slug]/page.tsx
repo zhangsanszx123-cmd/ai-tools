@@ -30,7 +30,7 @@ export default async function ToolPage({ params }: ToolPageProps) {
     <SubHeader user={user ? { email: user.email } : null} />
     <main className="subpage">
       <nav className="breadcrumb" aria-label="当前位置"><Link href="/">首页</Link><ChevronRight size={14} aria-hidden="true" />{category && <><Link href={`/#${category.id}`}>{category.name}</Link><ChevronRight size={14} aria-hidden="true" /></>}<span aria-current="page">{tool.name}</span></nav>
-      {tool.hasCover ? <div className="detail-cover"><img src={`/api/tool-media/${tool.slug}/cover`} alt={`${tool.name} 网站预览`} /></div> : <div className="detail-cover art-cover" aria-hidden="true"><ToolLogo tool={tool} /><span className="cover-label">{tool.name}</span></div>}
+      {tool.hasCover ? <div className="detail-cover"><img src={tool.coverUrl ?? `/api/tool-media/${tool.slug}/cover`} alt={`${tool.name} 网站预览`} /></div> : <div className="detail-cover art-cover" aria-hidden="true"><ToolLogo tool={tool} /><span className="cover-label">{tool.name}</span></div>}
       <div className="surface detail-heading"><div><h1>{tool.name}</h1><p>{tool.summary}</p><span className="tool-category">{category?.name ?? 'AI 工具'}</span></div>{url && <a className="primary-action" href={url.href} target="_blank" rel="noopener noreferrer">打开网站 <ArrowUpRight size={16} aria-hidden="true" /><span className="sr-only">（新标签页）</span></a>}</div>
       <div className="detail-content">
         <section className="surface"><h2>工具介绍</h2><div className="markdown"><Markdown skipHtml disallowedElements={['img']}>{tool.content.replaceAll('\\n', '\n')}</Markdown></div></section>

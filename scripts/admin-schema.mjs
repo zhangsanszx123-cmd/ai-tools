@@ -16,6 +16,7 @@ try {
     await client.query(readFileSync('db/admin-auth.sql', 'utf8'))
     await client.query(readFileSync('db/admin-audit-migration.sql', 'utf8'))
     await client.query(readFileSync('db/tool-management.sql', 'utf8'))
+    await client.query(readFileSync('db/media-storage.sql', 'utf8'))
   }
   const { rows } = await client.query(`SELECT table_name FROM information_schema.tables WHERE table_schema = current_schema() AND table_name = ANY($1::text[])`, [['admin_user', 'admin_session', 'admin_account', 'admin_verification', 'admin_rate_limit']])
   console.log(JSON.stringify({ applied: process.argv.includes('--apply'), sslCertificateVerified: client.connection.stream.authorized === true, adminTables: rows.map(r => r.table_name) }))

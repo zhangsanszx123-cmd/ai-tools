@@ -19,7 +19,7 @@ export function Brand() {
 export function ToolLogo({ tool }: { tool: CatalogTool }) {
   const src = toolLogo(tool)
   return <span className="tool-logo" data-brand={tool.logoKey ?? ''}>
-    {src ? <img src={src} width="28" height="28" alt="" decoding="async" /> : <span>{tool.name.slice(0, 1).toUpperCase()}</span>}
+    {src ? <img src={src} width="28" height="28" alt="" loading="lazy" decoding="async" /> : <span>{tool.name.slice(0, 1).toUpperCase()}</span>}
   </span>
 }
 

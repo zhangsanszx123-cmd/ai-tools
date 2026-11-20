@@ -1,0 +1,17 @@
+{
+  "verifiedAt": "2026-11-20T04:50:00.919Z",
+  "tools": 1306,
+  "logos": 931,
+  "covers": 841,
+  "binary_logos": 0,
+  "binary_covers": 0,
+  "privateStats": {
+    "binary_logos": 0,
+    "binary_covers": 0
+  },
+  "base": "/",
+  "uniqueFilesVerified": 1696,
+  "uniqueFileBytes": 46354208,
+  "root": "D:\\VibeCoding\\ai-tools\\storage\\media",
+  "directImageHttp": 200
+}

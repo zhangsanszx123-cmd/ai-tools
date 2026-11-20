@@ -1,6 +1,9 @@
 import assert from 'node:assert/strict'
 import { randomBytes } from 'node:crypto'
-import { existsSync, readFileSync } from 'node:fs'
+import { existsSync, readFileSync, mkdtempSync } from 'node:fs'
+import { rm } from 'node:fs/promises'
+import { tmpdir } from 'node:os'
+import { join, resolve, dirname, basename } from 'node:path'
 import { parseEnv } from 'node:util'
 import { createServer } from 'node:net'
 import { spawn } from 'node:child_process'
@@ -14,7 +17,8 @@ import { postgresConfig } from '../lib/postgres-config.ts'
 // Production Next.js, real server actions and real PostgreSQL, isolated from business data.
 const values = {}
 for (const file of ['.env', '.env.local']) if (existsSync(file)) Object.assign(values, parseEnv(readFileSync(file, 'utf8')))
-const environment = { ...values, ...process.env }
+const mediaTestRoot = mkdtempSync(join(tmpdir(), 'dir-media-e2e-'))
+const environment = { ...values, ...process.env, MEDIA_STORAGE_DIR: mediaTestRoot }
 const schema = `dir_e2e_${randomBytes(8).toString('hex')}`
 const bootstrap = new Client(postgresConfig(environment))
 let child, created = false, stage = 'setup', origin
@@ -61,6 +65,7 @@ try {
   await bootstrap.query(readFileSync('db/directory-v2.sql', 'utf8').replaceAll('"ai-tools"', `"${schema}"`).replaceAll("'ai-tools'", `'${schema}'`))
   await bootstrap.query(readFileSync('db/admin-auth.sql', 'utf8'))
   await bootstrap.query(readFileSync('db/admin-audit-migration.sql', 'utf8'))
+  await bootstrap.query(readFileSync('db/media-storage.sql', 'utf8'))
   await bootstrap.query(`INSERT INTO admin_user (id, name, email, "emailVerified") VALUES ('isolated-admin', '管理员', 'admin-e2e@example.invalid', false)`)
   await bootstrap.query(`INSERT INTO admin_account (id, "accountId", "providerId", "userId", password, "updatedAt") VALUES ('isolated-admin-account', 'isolated-admin', 'credential', 'isolated-admin', $1, CURRENT_TIMESTAMP)`, [await hashPassword(password)])
   const socket = createServer()
@@ -173,6 +178,19 @@ try {
   }
   checks.push('frontend users and backend administrators: lists, filters, forms, create, edit, password reset, session revocation, enable/disable, confirmed deletion and access isolation')
 
+  stage = 'media-settings'
+  assert.equal((await page('/admin?tab=media', owner.cookie)).response.status, 307)
+  const settingForm = html => html.includes('name="base"')
+  const badSetting = await postForm('/admin?tab=media', admin.cookie, settingForm, { base: 'javascript:alert(1)', expected: '/' })
+  assert.equal(badSetting.status, 200)
+  assert.equal((await bootstrap.query("SELECT value FROM ai_directory_settings WHERE key='media_base_url'")).rows[0].value, '/')
+  redirected(await postForm('/admin?tab=media', admin.cookie, settingForm, { base: origin + '/', expected: '/' }))
+  assert.equal((await bootstrap.query("SELECT value FROM ai_directory_settings WHERE key='media_base_url'")).rows[0].value, origin)
+  assert.equal((await postForm('/admin?tab=media', admin.cookie, settingForm, { base: 'https://stale.example.invalid', expected: '/' })).status, 200)
+  assert.equal((await bootstrap.query("SELECT value FROM ai_directory_settings WHERE key='media_base_url'")).rows[0].value, origin)
+  redirected(await postForm('/admin?tab=media', admin.cookie, settingForm, { base: '/', expected: origin }))
+  checks.push('media settings: administrator protection, invalid URLs, normalization, stale-form denial and restoring local defaults')
+
   stage = 'category-management'
   const category = { id: 'e2e-category', name: '端到端测试分类', short: '测试', description: '临时测试分类', iconKey: 'Sparkles', sortOrder: '5', isEnabled: 'on' }
   redirected(await postForm('/admin?tab=categories&new=1', admin.cookie, html => html.includes('新增分类'), category))
@@ -208,6 +226,10 @@ try {
   assert.equal((await page(privatePath, outsider.cookie)).response.status, 404)
   assert.equal((await page(privatePath, owner.cookie)).response.status, 200)
   assert.equal((await page(privatePath, admin.cookie)).response.status, 200)
+  const pendingImage = (await bootstrap.query('SELECT logo_url,logo_data FROM ai_directory_tool_submissions WHERE id=$1', [submission.id])).rows[0]
+  assert.ok(pendingImage.logo_url.startsWith('/private-media/'))
+  assert.equal(pendingImage.logo_data, null)
+  assert.equal((await page(pendingImage.logo_url)).response.status, 404)
   assert.equal((await page('/api/tool-media/e2e-tool/logo?review=1', owner.cookie)).response.status, 404)
   checks.push('real submission server action and private image authorization')
 
@@ -226,6 +248,18 @@ try {
   redirected(await postForm('/admin?tab=review', admin.cookie, reviewForm, { decision: 'approve' }))
   assert.equal((await page('/tools/e2e-tool')).response.status, 200)
   assert.equal((await page('/api/tool-media/e2e-tool/logo')).response.status, 200)
+  const storedImage = (await bootstrap.query("SELECT logo_url,logo_data FROM ai_directory_tools WHERE slug='e2e-tool'")).rows[0]
+  assert.ok(storedImage.logo_url.startsWith('/media/'))
+  assert.equal(storedImage.logo_data, null)
+  assert.equal((await page(storedImage.logo_url)).response.status, 200)
+  redirected(await postForm('/admin?tab=media', admin.cookie, settingForm, { base: origin, expected: '/' }))
+  assert.ok((await page('/tools/e2e-tool')).html.includes(origin + storedImage.logo_url))
+  const remoteAlias = await page('/api/tool-media/e2e-tool/logo')
+  assert.equal(remoteAlias.response.status, 307)
+  assert.equal(remoteAlias.response.headers.get('cache-control'), 'no-store')
+  assert.equal(remoteAlias.response.headers.get('location'), origin + storedImage.logo_url)
+  assert.equal((await page(privatePath)).response.status, 404)
+  redirected(await postForm('/admin?tab=media', admin.cookie, settingForm, { base: '/', expected: origin }))
   assert.ok((await page('/account', owner.cookie)).html.includes('已通过'))
   checks.push('server action authorization, approval and public detail/media')
 
@@ -327,8 +361,12 @@ try {
   checks.push('independent admin_user, APIs, cookies and sessions; frontend and backend logout isolation; disabled admin denial')
   console.log(JSON.stringify({ ok: true, checks }, null, 2))
   if (process.argv.includes('--hold')) {
+    // Enable only this isolated fixture for visual review after the disabled-admin assertion passed.
+    await bootstrap.query(`UPDATE admin_user SET "isEnabled" = true WHERE id = 'isolated-admin'`)
+    await bootstrap.query('DELETE FROM admin_rate_limit')
     console.log(JSON.stringify({ previewOrigin: origin, isolated: true, previewAdmin: 'admin-e2e@example.invalid' }))
     await once(process.stdin, 'data')
+    process.stdin.pause()
   }
 } catch (error) {
   console.error(JSON.stringify({ ok: false, stage, code: error.code || error.message || error.name }))
@@ -340,4 +378,7 @@ try {
     console.log('Removed isolated e2e schema and all temporary users/content.')
   }
   await bootstrap.end()
+  assert.equal(dirname(resolve(mediaTestRoot)), resolve(tmpdir()))
+  assert.ok(basename(mediaTestRoot).startsWith('dir-media-e2e-'))
+  await rm(mediaTestRoot, { recursive: true, force: true })
 }

@@ -12,7 +12,7 @@ export const dynamic = 'force-dynamic'
 
 export default async function AdminLoginPage({ searchParams }: { searchParams: Promise<{ tab?: string }> }) {
   const { tab } = await searchParams
-  const destination = `/admin?tab=${['review', 'categories', 'tools', 'users', 'admins'].includes(tab ?? '') ? tab : 'review'}`
+  const destination = `/admin?tab=${['review', 'categories', 'tools', 'users', 'admins', 'media'].includes(tab ?? '') ? tab : 'review'}`
   if (await getCurrentAdmin()) redirect(destination)
 
   return (

@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   devIndicators: false,
+  outputFileTracingExcludes: { '/*': ['./storage/**/*'] },
   experimental: { serverActions: { bodySizeLimit: '3mb' } },
   async headers() {
     return [{ source: '/:path*', headers: [

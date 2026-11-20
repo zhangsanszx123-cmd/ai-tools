@@ -14,6 +14,7 @@ import {
 import { adminSignOut } from '@/app/admin/actions'
 import { CategoryPanel, ReviewPanel, ToolsPanel } from '@/components/admin-panels'
 import { UsersPanel } from '@/components/admin-users-panel'
+import { MediaSettingsForm, MediaSettingsSaved } from '@/components/media-settings-form'
 import { Brand } from '@/components/catalog-elements'
 import { Alert, AlertDescription } from '@/components/ui/alert'
 import { Button } from '@/components/ui/button'
@@ -30,6 +31,7 @@ const views = [
   { id: 'tools', title: 'AI 工具', icon: Settings2 },
   { id: 'users', title: '前端用户', icon: UserRound },
   { id: 'admins', title: '后端用户', icon: ShieldCheck },
+  { id: 'media', title: '图片存储设置', icon: Settings2 },
 ] as const
 
 export default async function AdminPage({
@@ -58,6 +60,10 @@ export default async function AdminPage({
 
   const page = pageNumber(query.page)
   const overview = await directoryStore.getAdminOverview(user.id).catch(() => null)
+  const media = active.id === 'media' ? await Promise.all([
+    directoryStore.getMediaBase(),
+    directoryStore.getMediaSample(),
+  ]).catch(() => null) : null
   const ActiveIcon = active.icon
   const adminInitial = (user.email.trim()[0] ?? 'A').toUpperCase()
 
@@ -142,6 +148,10 @@ export default async function AdminPage({
         </header>
 
         <main className="admin-main">
+          {active.id === 'media' && <section className="admin-card"><div className="admin-card-head"><h1>图片存储设置</h1></div>
+            {query.saved === '1' && <MediaSettingsSaved />}
+            {media ? <MediaSettingsForm key={media[0]} base={media[0]} samplePath={media[1]?.url ?? null} /> : <Alert variant="destructive"><AlertDescription>暂时无法加载图片设置，请稍后重试。</AlertDescription></Alert>}
+          </section>}
           {(active.id === 'users' || active.id === 'admins') && <UsersPanel adminId={user.id} kind={active.id} page={page} query={query} />}
           {query.signout === 'failed' && (
             <Alert variant="destructive" className="mb-5">

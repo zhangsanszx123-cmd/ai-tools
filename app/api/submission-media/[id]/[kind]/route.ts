@@ -2,6 +2,7 @@ import { validRecordId } from '@/lib/catalog'
 import { getCurrentUser } from '@/lib/directory-auth'
 import { getCurrentAdmin } from '@/lib/admin-auth'
 import { directoryStore } from '@/lib/directory-db'
+import { readMediaFile } from '@/lib/media-files'
 
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
@@ -14,7 +15,7 @@ export async function GET(_request: Request, { params }: { params: Promise<{ id:
   if (!user && !admin) return new Response(null, { status: 404, headers })
   try {
     const asset = await directoryStore.getSubmissionMedia(user?.id ?? null, id, kind, admin?.id ?? null)
-    if (!asset?.data || asset.type !== 'image/webp') return new Response(null, { status: 404, headers })
-    return new Response(new Uint8Array(asset.data), { headers: { ...headers, 'Content-Type': 'image/webp' } })
+    if (!asset?.url) return new Response(null, { status: 404, headers })
+    return new Response(new Uint8Array(await readMediaFile(asset.url)), { headers: { ...headers, 'Content-Type': 'image/webp' } })
   } catch { return new Response(null, { status: 503, headers }) }
 }

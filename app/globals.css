@@ -2190,6 +2190,8 @@ html { scroll-padding-top: calc(var(--header-height) + 20px); }
 }
 
 @media (max-width: 540px) {
+  .admin-breadcrumb { flex-basis: 100%; }
+  .admin-session { flex-basis: 100%; justify-content: space-between; }
   .admin-breadcrumb-root,
   .admin-breadcrumb-sep {
     display: none;

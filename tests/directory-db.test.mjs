@@ -1,7 +1,11 @@
 import assert from 'node:assert/strict'
 import { before, after, test } from 'node:test'
 import { randomBytes } from 'node:crypto'
-import { existsSync, readFileSync } from 'node:fs'
+import { existsSync, readFileSync, mkdtempSync } from 'node:fs'
+import { rm } from 'node:fs/promises'
+import { tmpdir } from 'node:os'
+import { join, resolve, dirname, basename } from 'node:path'
+import { readMediaFile } from '../lib/media-files.ts'
 import { parseEnv } from 'node:util'
 import { Pool, Client } from 'pg'
 import sharp from 'sharp'
@@ -9,6 +13,8 @@ import { postgresConfig } from '../lib/postgres-config.ts'
 import { createDirectoryStore } from '../lib/directory-store.ts'
 
 // Real PostgreSQL tests run only in a unique, disposable schema. Business rows and auth roles are untouched.
+const mediaTestRoot = mkdtempSync(join(tmpdir(), 'dir-media-test-'))
+process.env.MEDIA_STORAGE_DIR = mediaTestRoot
 const values = {}
 for (const file of ['.env', '.env.local']) if (existsSync(file)) Object.assign(values, parseEnv(readFileSync(file, 'utf8')))
 for (const [key, value] of Object.entries(values)) if (process.env[key] === undefined) process.env[key] = value
@@ -35,6 +41,7 @@ before(async () => {
     await bootstrap.query(readFileSync('db/auth-schema.sql', 'utf8'))
     await bootstrap.query(readFileSync('db/admin-auth.sql', 'utf8'))
     await bootstrap.query(readFileSync('db/admin-audit-migration.sql', 'utf8'))
+    await bootstrap.query(readFileSync('db/media-storage.sql', 'utf8'))
     pool = new Pool({ ...config, max: 8, options: `-c search_path=${schema},public` })
     store = createDirectoryStore(pool)
     for (const [id, role] of [[admin, 'admin'], [owner, 'user'], [other, 'user']]) {
@@ -46,6 +53,9 @@ before(async () => {
 })
 
 after(async () => {
+  assert.equal(dirname(resolve(mediaTestRoot)), resolve(tmpdir()))
+  assert.ok(basename(mediaTestRoot).startsWith('dir-media-test-'))
+  await rm(mediaTestRoot, { recursive: true, force: true })
   if (pool) await pool.end()
   if (created && /^dir_test_[a-f0-9]{16}$/.test(schema)) {
     const cleanup = new Client(config)
@@ -96,6 +106,25 @@ test('managed accounts enforce permission, password updates, state checks and hi
   assert.equal(await store.setManagedAdminStatus(admin, admin, false, true), undefined)
   assert.equal(await store.deleteManagedAdmin(admin, admin), undefined)
   assert.equal(await store.saveManagedAdmin(admin, { id: admin, name: 'self', email: 'self@example.invalid', isEnabled: false, passwordHash: null }), undefined)
+})
+
+test('media settings require administrator, reject stale changes and resolve URLs without modifying stored paths', async () => {
+  assert.equal(await store.getMediaBase(), '/')
+  assert.equal(await store.saveMediaBase(owner, 'https://img.example.invalid', '/'), undefined)
+  assert.equal(await store.saveMediaBase(admin, 'javascript:alert(1)', '/'), undefined)
+  const tool = await store.saveTool(admin, managed(input(slug())))
+  const local = await store.getTool(tool.slug)
+  assert.match(local.logoUrl, /^\/media\/[a-f0-9]{64}\.webp$/)
+  const stored = (await pool.query('SELECT logo_url,logo_data,cover_data FROM ai_directory_tools WHERE id=$1', [tool.id])).rows[0]
+  assert.equal(stored.logo_url, local.logoUrl)
+  assert.equal(stored.logo_data, null)
+  assert.equal(stored.cover_data, null)
+  assert.ok(await store.saveMediaBase(admin, 'https://img.example.invalid/assets/', '/'))
+  assert.equal((await store.getTool(tool.slug)).logoUrl, 'https://img.example.invalid/assets' + local.logoUrl)
+  assert.equal(await store.saveMediaBase(admin, '/', '/'), undefined)
+  assert.ok(await store.getPublicMediaByUrl(local.logoUrl))
+  assert.ok(await store.saveMediaBase(admin, '/', 'https://img.example.invalid/assets'))
+  assert.equal((await store.getTool(tool.slug)).logoUrl, local.logoUrl)
 })
 
 test('database categories replace the fixed frontend list', async () => {
@@ -170,7 +199,7 @@ test('delete preserves audited submissions while hiding tools/media and prevents
   const snapshot = (await store.getSubmissionHistory(owner)).items.find(item => item.id === submission.id)
   assert.equal(snapshot.status, 'approved')
   assert.equal(snapshot.publishedSlug, null)
-  assert.deepEqual((await store.getSubmissionMedia(owner, submission.id, 'logo')).data, logo)
+  assert.deepEqual(await readMediaFile((await store.getSubmissionMedia(owner, submission.id, 'logo')).url), logo)
 })
 
 test('pending submissions remain private and never enter the formal tool table', async () => {
@@ -179,7 +208,7 @@ test('pending submissions remain private and never enter the formal tool table',
   assert.ok(submission.id)
   assert.equal(await store.getTool(value.slug), undefined)
   assert.equal(await store.getPublicMedia(value.slug, 'logo'), undefined)
-  assert.deepEqual((await store.getSubmissionMedia(owner, submission.id, 'logo')).data, logo)
+  assert.deepEqual(await readMediaFile((await store.getSubmissionMedia(owner, submission.id, 'logo')).url), logo)
   assert.equal(await store.getSubmissionMedia(admin, submission.id, 'logo'), undefined)
   assert.ok(await store.getSubmissionMedia(null, submission.id, 'logo', admin))
   assert.equal(await store.getSubmissionMedia(other, submission.id, 'logo'), undefined)
@@ -246,7 +275,7 @@ test('editing and unpublishing a tool leaves original submission content and ima
   assert.equal(after.publishedAt, before.publishedAt)
   const history = (await store.getSubmissionHistory(owner)).items.find(item => item.id === submission.id)
   assert.equal(history.content, value.content)
-  assert.deepEqual((await store.getSubmissionMedia(owner, submission.id, 'logo')).data, logo)
+  assert.deepEqual(await readMediaFile((await store.getSubmissionMedia(owner, submission.id, 'logo')).url), logo)
   await store.saveTool(admin, managed(value, { id: approved.id, status: 'disabled' }))
   assert.equal(await store.getTool(value.slug), undefined)
   assert.equal(await store.getPublicMedia(value.slug, 'logo'), undefined)
@@ -296,7 +325,7 @@ test('admin overview and managed tool media enforce admin check and support disa
   const disabledTool = await store.saveTool(admin, managed(input(slug()), { status: 'disabled' }))
   const featuredTool = await store.saveTool(admin, managed(input(slug()), { status: 'published', featuredOrder: 1 }))
   assert.equal(await store.getManagedToolMedia(owner, disabledTool.id, 'logo'), undefined)
-  assert.deepEqual((await store.getManagedToolMedia(admin, disabledTool.id, 'logo')).data, logo)
+  assert.deepEqual(await readMediaFile((await store.getManagedToolMedia(admin, disabledTool.id, 'logo')).url), logo)
   const after = await store.getAdminOverview(admin)
   assert.equal(after.disabledTools, before.disabledTools + 1)
   assert.equal(after.publishedTools, before.publishedTools + 1)
