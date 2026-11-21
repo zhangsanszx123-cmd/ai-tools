@@ -1,0 +1,1361 @@
+{
+  "source": "https://ai-bot.cn/favorites/ai-writing-tools/",
+  "at": "2026-11-20T11:05:16.631Z",
+  "applied": false,
+  "categories": [
+    {
+      "category": "writing",
+      "available": 96,
+      "matched": 95,
+      "matches": [
+        {
+          "name": "笔灵AI小说",
+          "id": "2",
+          "order": 7
+        },
+        {
+          "name": "稿易AI论文",
+          "id": "3",
+          "order": 10
+        },
+        {
+          "name": "千笔AI论文",
+          "id": "4",
+          "order": 11
+        },
+        {
+          "name": "66AI论文",
+          "id": "5",
+          "order": 12
+        },
+        {
+          "name": "维普科创助手",
+          "id": "6",
+          "order": 14
+        },
+        {
+          "name": "笔目鱼",
+          "id": "7",
+          "order": 15
+        },
+        {
+          "name": "光速写作",
+          "id": "8",
+          "order": 16
+        },
+        {
+          "name": "小鱼AI写作",
+          "id": "9",
+          "order": 17
+        },
+        {
+          "name": "墨问",
+          "id": "10",
+          "order": 18
+        },
+        {
+          "name": "万能小in",
+          "id": "11",
+          "order": 19
+        },
+        {
+          "name": "标达人",
+          "id": "12",
+          "order": 20
+        },
+        {
+          "name": "文优小助",
+          "id": "13",
+          "order": 21
+        },
+        {
+          "name": "排版小星",
+          "id": "14",
+          "order": 22
+        },
+        {
+          "name": "新华妙笔",
+          "id": "15",
+          "order": 23
+        },
+        {
+          "name": "丹青妙笔",
+          "id": "16",
+          "order": 24
+        },
+        {
+          "name": "FeelFish",
+          "id": "17",
+          "order": 25
+        },
+        {
+          "name": "Loomi",
+          "id": "18",
+          "order": 26
+        },
+        {
+          "name": "落笔AI写作",
+          "id": "19",
+          "order": 28
+        },
+        {
+          "name": "创飞写作",
+          "id": "20",
+          "order": 29
+        },
+        {
+          "name": "超级小说家",
+          "id": "21",
+          "order": 30
+        },
+        {
+          "name": "材料星AI",
+          "id": "375",
+          "order": 31
+        },
+        {
+          "name": "量子探险",
+          "id": "376",
+          "order": 32
+        },
+        {
+          "name": "社研通",
+          "id": "377",
+          "order": 33
+        },
+        {
+          "name": "Rubriq",
+          "id": "378",
+          "order": 34
+        },
+        {
+          "name": "QuillBot",
+          "id": "379",
+          "order": 35
+        },
+        {
+          "name": "Paperpal",
+          "id": "380",
+          "order": 36
+        },
+        {
+          "name": "咔咔猩",
+          "id": "381",
+          "order": 37
+        },
+        {
+          "name": "YouMind",
+          "id": "382",
+          "order": 38
+        },
+        {
+          "name": "讯飞文书",
+          "id": "383",
+          "order": 39
+        },
+        {
+          "name": "Muset",
+          "id": "384",
+          "order": 40
+        },
+        {
+          "name": "华文笔杆",
+          "id": "385",
+          "order": 41
+        },
+        {
+          "name": "秘塔写作猫",
+          "id": "386",
+          "order": 42
+        },
+        {
+          "name": "公文宝",
+          "id": "387",
+          "order": 43
+        },
+        {
+          "name": "讯飞写作",
+          "id": "388",
+          "order": 44
+        },
+        {
+          "name": "PaperXie智能写作",
+          "id": "389",
+          "order": 45
+        },
+        {
+          "name": "FlowUs AI",
+          "id": "390",
+          "order": 46
+        },
+        {
+          "name": "Rytr",
+          "id": "391",
+          "order": 47
+        },
+        {
+          "name": "迅捷AI写作",
+          "id": "392",
+          "order": 48
+        },
+        {
+          "name": "橙篇",
+          "id": "393",
+          "order": 49
+        },
+        {
+          "name": "深言达意",
+          "id": "394",
+          "order": 50
+        },
+        {
+          "name": "彩云小梦",
+          "id": "395",
+          "order": 51
+        },
+        {
+          "name": "MidReal",
+          "id": "396",
+          "order": 52
+        },
+        {
+          "name": "掌桥科研AI论文",
+          "id": "397",
+          "order": 53
+        },
+        {
+          "name": "灵犀速写",
+          "id": "398",
+          "order": 54
+        },
+        {
+          "name": "茅茅虫",
+          "id": "399",
+          "order": 55
+        },
+        {
+          "name": "库宝AI工作助手",
+          "id": "400",
+          "order": 58
+        },
+        {
+          "name": "Grammarly",
+          "id": "401",
+          "order": 59
+        },
+        {
+          "name": "文状元",
+          "id": "402",
+          "order": 60
+        },
+        {
+          "name": "晓语台",
+          "id": "403",
+          "order": 61
+        },
+        {
+          "name": "Writesonic",
+          "id": "404",
+          "order": 62
+        },
+        {
+          "name": "DeepL Write",
+          "id": "405",
+          "order": 63
+        },
+        {
+          "name": "Jenni",
+          "id": "406",
+          "order": 64
+        },
+        {
+          "name": "有道翻译·AI写作",
+          "id": "407",
+          "order": 65
+        },
+        {
+          "name": "Wordvice AI",
+          "id": "408",
+          "order": 66
+        },
+        {
+          "name": "宙语Cosmos",
+          "id": "409",
+          "order": 68
+        },
+        {
+          "name": "灵构AI笔记",
+          "id": "410",
+          "order": 69
+        },
+        {
+          "name": "有道写作",
+          "id": "411",
+          "order": 70
+        },
+        {
+          "name": "文思助手",
+          "id": "412",
+          "order": 71
+        },
+        {
+          "name": "WriteWise",
+          "id": "413",
+          "order": 72
+        },
+        {
+          "name": "百度作家平台",
+          "id": "414",
+          "order": 73
+        },
+        {
+          "name": "爱创作",
+          "id": "415",
+          "order": 74
+        },
+        {
+          "name": "Verse",
+          "id": "416",
+          "order": 75
+        },
+        {
+          "name": "Moonbeam",
+          "id": "417",
+          "order": 76
+        },
+        {
+          "name": "Cohesive",
+          "id": "418",
+          "order": 77
+        },
+        {
+          "name": "万彩AI",
+          "id": "419",
+          "order": 78
+        },
+        {
+          "name": "WritingPal",
+          "id": "420",
+          "order": 79
+        },
+        {
+          "name": "Magic Write",
+          "id": "421",
+          "order": 80
+        },
+        {
+          "name": "NovelAI",
+          "id": "422",
+          "order": 81
+        },
+        {
+          "name": "奇妙文",
+          "id": "423",
+          "order": 82
+        },
+        {
+          "name": "Spell.tools",
+          "id": "424",
+          "order": 83
+        },
+        {
+          "name": "HyperWrite",
+          "id": "425",
+          "order": 84
+        },
+        {
+          "name": "Typeface AI",
+          "id": "426",
+          "order": 85
+        },
+        {
+          "name": "悉语",
+          "id": "427",
+          "order": 86
+        },
+        {
+          "name": "文涌Effidit",
+          "id": "428",
+          "order": 87
+        },
+        {
+          "name": "火龙果写作",
+          "id": "429",
+          "order": 88
+        },
+        {
+          "name": "树熊写作",
+          "id": "430",
+          "order": 89
+        },
+        {
+          "name": "爱改写",
+          "id": "431",
+          "order": 90
+        },
+        {
+          "name": "HeyFriday",
+          "id": "432",
+          "order": 91
+        },
+        {
+          "name": "易撰",
+          "id": "433",
+          "order": 92
+        },
+        {
+          "name": "智搜",
+          "id": "434",
+          "order": 93
+        },
+        {
+          "name": "创作王",
+          "id": "435",
+          "order": 94
+        },
+        {
+          "name": "悟智AI",
+          "id": "436",
+          "order": 95
+        },
+        {
+          "name": "讯飞智检",
+          "id": "437",
+          "order": 96
+        },
+        {
+          "name": "ContentBot",
+          "id": "438",
+          "order": 99
+        },
+        {
+          "name": "快文CopyDone",
+          "id": "439",
+          "order": 100
+        },
+        {
+          "name": "Compose AI",
+          "id": "1192",
+          "order": 102
+        },
+        {
+          "name": "Sudowrite",
+          "id": "1193",
+          "order": 104
+        },
+        {
+          "name": "Smodin AI Research Paper",
+          "id": "1194",
+          "order": 109
+        },
+        {
+          "name": "PaperBetter AI",
+          "id": "1195",
+          "order": 116
+        },
+        {
+          "name": "范文喵",
+          "id": "1196",
+          "order": 118
+        },
+        {
+          "name": "小微智能论文",
+          "id": "1197",
+          "order": 119
+        },
+        {
+          "name": "笔杆论文",
+          "id": "1198",
+          "order": 120
+        },
+        {
+          "name": "AI论文君",
+          "id": "1199",
+          "order": 121
+        },
+        {
+          "name": "ProWritingAid",
+          "id": "1200",
+          "order": 123
+        },
+        {
+          "name": "星火网文助手",
+          "id": "1201",
+          "order": 131
+        }
+      ],
+      "missing": [
+        {
+          "name": "蛙蛙写作",
+          "source": "https://ai-bot.cn/sites/8204.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Loomy",
+          "source": "https://ai-bot.cn/sites/73695.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "办公小浣熊",
+          "source": "https://xiaohuanxiong.com/work/home?utm_source=blmay1",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "笔灵AI写作",
+          "source": "https://ibiling.cn/?from=ai-bot",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Laper",
+          "source": "https://ai-bot.cn/sites/81321.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "讯飞绘文",
+          "source": "https://ai-bot.cn/sites/6242.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "沁言学术",
+          "source": "https://ai-bot.cn/sites/56573.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "切问学术",
+          "source": "https://ai-bot.cn/sites/72406.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "剧云",
+          "source": "https://ai-bot.cn/sites/79219.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "ReadPo",
+          "source": "https://ai-bot.cn/readpo/",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Copy.ai",
+          "source": "https://ai-bot.cn/sites/31.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Jasper",
+          "source": "https://ai-bot.cn/sites/14.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "魔撰写作",
+          "source": "https://ai-bot.cn/sites/2009.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Bearly",
+          "source": "https://ai-bot.cn/sites/1061.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "5118 SEO优化精灵",
+          "source": "https://www.5118.com/ai/articlegenius",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Peppertype.ai",
+          "source": "https://ai-bot.cn/sites/65.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Texta",
+          "source": "https://ai-bot.cn/sites/258.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "ClosersCopy",
+          "source": "https://ai-bot.cn/sites/966.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "WPS智能写作",
+          "source": "https://ai-bot.cn/sites/33.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Anyword",
+          "source": "https://ai-bot.cn/sites/188.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Hypotenuse AI",
+          "source": "https://ai-bot.cn/sites/589.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "ParagraphAI",
+          "source": "https://ai-bot.cn/sites/1065.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "LongShot",
+          "source": "https://ai-bot.cn/sites/776.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Jounce",
+          "source": "https://ai-bot.cn/sites/153.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Reword",
+          "source": "https://ai-bot.cn/sites/127.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Elephas",
+          "source": "https://ai-bot.cn/sites/1067.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "AISEO",
+          "source": "https://ai-bot.cn/sites/409.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Writer",
+          "source": "https://ai-bot.cn/sites/170.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "SurferSEO",
+          "source": "https://ai-bot.cn/sites/201.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "WordTune",
+          "source": "https://ai-bot.cn/sites/203.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Yaara",
+          "source": "https://ai-bot.cn/sites/198.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Copysmith",
+          "source": "https://ai-bot.cn/sites/66.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Frase",
+          "source": "https://ai-bot.cn/sites/200.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "NeuralText",
+          "source": "https://ai-bot.cn/sites/202.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Copymatic",
+          "source": "https://ai-bot.cn/sites/197.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "TextCortex",
+          "source": "https://ai-bot.cn/sites/158.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "INK",
+          "source": "https://ai-bot.cn/sites/205.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Content at Scale",
+          "source": "https://ai-bot.cn/sites/171.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Mark Copy",
+          "source": "https://ai-bot.cn/sites/1265.html",
+          "reason": "not-in-category"
+        }
+      ]
+    }
+  ],
+  "changes": [
+    {
+      "id": "2",
+      "category": "writing",
+      "name": "笔灵AI小说",
+      "before": 7,
+      "after": 7
+    },
+    {
+      "id": "3",
+      "category": "writing",
+      "name": "稿易AI论文",
+      "before": 10,
+      "after": 10
+    },
+    {
+      "id": "4",
+      "category": "writing",
+      "name": "千笔AI论文",
+      "before": 11,
+      "after": 11
+    },
+    {
+      "id": "5",
+      "category": "writing",
+      "name": "66AI论文",
+      "before": 12,
+      "after": 12
+    },
+    {
+      "id": "6",
+      "category": "writing",
+      "name": "维普科创助手",
+      "before": 14,
+      "after": 14
+    },
+    {
+      "id": "7",
+      "category": "writing",
+      "name": "笔目鱼",
+      "before": 15,
+      "after": 15
+    },
+    {
+      "id": "8",
+      "category": "writing",
+      "name": "光速写作",
+      "before": 16,
+      "after": 16
+    },
+    {
+      "id": "9",
+      "category": "writing",
+      "name": "小鱼AI写作",
+      "before": 17,
+      "after": 17
+    },
+    {
+      "id": "10",
+      "category": "writing",
+      "name": "墨问",
+      "before": 18,
+      "after": 18
+    },
+    {
+      "id": "11",
+      "category": "writing",
+      "name": "万能小in",
+      "before": 19,
+      "after": 19
+    },
+    {
+      "id": "12",
+      "category": "writing",
+      "name": "标达人",
+      "before": 20,
+      "after": 20
+    },
+    {
+      "id": "13",
+      "category": "writing",
+      "name": "文优小助",
+      "before": 21,
+      "after": 21
+    },
+    {
+      "id": "14",
+      "category": "writing",
+      "name": "排版小星",
+      "before": 22,
+      "after": 22
+    },
+    {
+      "id": "15",
+      "category": "writing",
+      "name": "新华妙笔",
+      "before": 23,
+      "after": 23
+    },
+    {
+      "id": "16",
+      "category": "writing",
+      "name": "丹青妙笔",
+      "before": 24,
+      "after": 24
+    },
+    {
+      "id": "17",
+      "category": "writing",
+      "name": "FeelFish",
+      "before": 25,
+      "after": 25
+    },
+    {
+      "id": "18",
+      "category": "writing",
+      "name": "Loomi",
+      "before": 26,
+      "after": 26
+    },
+    {
+      "id": "19",
+      "category": "writing",
+      "name": "落笔AI写作",
+      "before": 28,
+      "after": 28
+    },
+    {
+      "id": "20",
+      "category": "writing",
+      "name": "创飞写作",
+      "before": 29,
+      "after": 29
+    },
+    {
+      "id": "21",
+      "category": "writing",
+      "name": "超级小说家",
+      "before": 30,
+      "after": 30
+    },
+    {
+      "id": "375",
+      "category": "writing",
+      "name": "材料星AI",
+      "before": 1074,
+      "after": 31
+    },
+    {
+      "id": "376",
+      "category": "writing",
+      "name": "量子探险",
+      "before": 1073,
+      "after": 32
+    },
+    {
+      "id": "377",
+      "category": "writing",
+      "name": "社研通",
+      "before": 1072,
+      "after": 33
+    },
+    {
+      "id": "378",
+      "category": "writing",
+      "name": "Rubriq",
+      "before": 1071,
+      "after": 34
+    },
+    {
+      "id": "379",
+      "category": "writing",
+      "name": "QuillBot",
+      "before": 1070,
+      "after": 35
+    },
+    {
+      "id": "380",
+      "category": "writing",
+      "name": "Paperpal",
+      "before": 1069,
+      "after": 36
+    },
+    {
+      "id": "381",
+      "category": "writing",
+      "name": "咔咔猩",
+      "before": 1068,
+      "after": 37
+    },
+    {
+      "id": "382",
+      "category": "writing",
+      "name": "YouMind",
+      "before": 1067,
+      "after": 38
+    },
+    {
+      "id": "383",
+      "category": "writing",
+      "name": "讯飞文书",
+      "before": 1066,
+      "after": 39
+    },
+    {
+      "id": "384",
+      "category": "writing",
+      "name": "Muset",
+      "before": 1065,
+      "after": 40
+    },
+    {
+      "id": "385",
+      "category": "writing",
+      "name": "华文笔杆",
+      "before": 1064,
+      "after": 41
+    },
+    {
+      "id": "386",
+      "category": "writing",
+      "name": "秘塔写作猫",
+      "before": 1063,
+      "after": 42
+    },
+    {
+      "id": "387",
+      "category": "writing",
+      "name": "公文宝",
+      "before": 1062,
+      "after": 43
+    },
+    {
+      "id": "388",
+      "category": "writing",
+      "name": "讯飞写作",
+      "before": 1061,
+      "after": 44
+    },
+    {
+      "id": "389",
+      "category": "writing",
+      "name": "PaperXie智能写作",
+      "before": 1060,
+      "after": 45
+    },
+    {
+      "id": "390",
+      "category": "writing",
+      "name": "FlowUs AI",
+      "before": 1059,
+      "after": 46
+    },
+    {
+      "id": "391",
+      "category": "writing",
+      "name": "Rytr",
+      "before": 1058,
+      "after": 47
+    },
+    {
+      "id": "392",
+      "category": "writing",
+      "name": "迅捷AI写作",
+      "before": 1057,
+      "after": 48
+    },
+    {
+      "id": "393",
+      "category": "writing",
+      "name": "橙篇",
+      "before": 1056,
+      "after": 49
+    },
+    {
+      "id": "394",
+      "category": "writing",
+      "name": "深言达意",
+      "before": 1055,
+      "after": 50
+    },
+    {
+      "id": "395",
+      "category": "writing",
+      "name": "彩云小梦",
+      "before": 1054,
+      "after": 51
+    },
+    {
+      "id": "396",
+      "category": "writing",
+      "name": "MidReal",
+      "before": 1053,
+      "after": 52
+    },
+    {
+      "id": "397",
+      "category": "writing",
+      "name": "掌桥科研AI论文",
+      "before": 1052,
+      "after": 53
+    },
+    {
+      "id": "398",
+      "category": "writing",
+      "name": "灵犀速写",
+      "before": 1051,
+      "after": 54
+    },
+    {
+      "id": "399",
+      "category": "writing",
+      "name": "茅茅虫",
+      "before": 1050,
+      "after": 55
+    },
+    {
+      "id": "400",
+      "category": "writing",
+      "name": "库宝AI工作助手",
+      "before": 1049,
+      "after": 58
+    },
+    {
+      "id": "401",
+      "category": "writing",
+      "name": "Grammarly",
+      "before": 1048,
+      "after": 59
+    },
+    {
+      "id": "402",
+      "category": "writing",
+      "name": "文状元",
+      "before": 1047,
+      "after": 60
+    },
+    {
+      "id": "403",
+      "category": "writing",
+      "name": "晓语台",
+      "before": 1046,
+      "after": 61
+    },
+    {
+      "id": "404",
+      "category": "writing",
+      "name": "Writesonic",
+      "before": 1045,
+      "after": 62
+    },
+    {
+      "id": "405",
+      "category": "writing",
+      "name": "DeepL Write",
+      "before": 1044,
+      "after": 63
+    },
+    {
+      "id": "406",
+      "category": "writing",
+      "name": "Jenni",
+      "before": 1043,
+      "after": 64
+    },
+    {
+      "id": "407",
+      "category": "writing",
+      "name": "有道翻译·AI写作",
+      "before": 1042,
+      "after": 65
+    },
+    {
+      "id": "408",
+      "category": "writing",
+      "name": "Wordvice AI",
+      "before": 1041,
+      "after": 66
+    },
+    {
+      "id": "409",
+      "category": "writing",
+      "name": "宙语Cosmos",
+      "before": 1040,
+      "after": 68
+    },
+    {
+      "id": "410",
+      "category": "writing",
+      "name": "灵构AI笔记",
+      "before": 1039,
+      "after": 69
+    },
+    {
+      "id": "411",
+      "category": "writing",
+      "name": "有道写作",
+      "before": 1038,
+      "after": 70
+    },
+    {
+      "id": "412",
+      "category": "writing",
+      "name": "文思助手",
+      "before": 1037,
+      "after": 71
+    },
+    {
+      "id": "413",
+      "category": "writing",
+      "name": "WriteWise",
+      "before": 1036,
+      "after": 72
+    },
+    {
+      "id": "414",
+      "category": "writing",
+      "name": "百度作家平台",
+      "before": 1035,
+      "after": 73
+    },
+    {
+      "id": "415",
+      "category": "writing",
+      "name": "爱创作",
+      "before": 1034,
+      "after": 74
+    },
+    {
+      "id": "416",
+      "category": "writing",
+      "name": "Verse",
+      "before": 1033,
+      "after": 75
+    },
+    {
+      "id": "417",
+      "category": "writing",
+      "name": "Moonbeam",
+      "before": 1032,
+      "after": 76
+    },
+    {
+      "id": "418",
+      "category": "writing",
+      "name": "Cohesive",
+      "before": 1031,
+      "after": 77
+    },
+    {
+      "id": "419",
+      "category": "writing",
+      "name": "万彩AI",
+      "before": 1030,
+      "after": 78
+    },
+    {
+      "id": "420",
+      "category": "writing",
+      "name": "WritingPal",
+      "before": 1029,
+      "after": 79
+    },
+    {
+      "id": "421",
+      "category": "writing",
+      "name": "Magic Write",
+      "before": 1028,
+      "after": 80
+    },
+    {
+      "id": "422",
+      "category": "writing",
+      "name": "NovelAI",
+      "before": 1027,
+      "after": 81
+    },
+    {
+      "id": "423",
+      "category": "writing",
+      "name": "奇妙文",
+      "before": 1026,
+      "after": 82
+    },
+    {
+      "id": "424",
+      "category": "writing",
+      "name": "Spell.tools",
+      "before": 1025,
+      "after": 83
+    },
+    {
+      "id": "425",
+      "category": "writing",
+      "name": "HyperWrite",
+      "before": 1024,
+      "after": 84
+    },
+    {
+      "id": "426",
+      "category": "writing",
+      "name": "Typeface AI",
+      "before": 1023,
+      "after": 85
+    },
+    {
+      "id": "427",
+      "category": "writing",
+      "name": "悉语",
+      "before": 1022,
+      "after": 86
+    },
+    {
+      "id": "428",
+      "category": "writing",
+      "name": "文涌Effidit",
+      "before": 1021,
+      "after": 87
+    },
+    {
+      "id": "429",
+      "category": "writing",
+      "name": "火龙果写作",
+      "before": 1020,
+      "after": 88
+    },
+    {
+      "id": "430",
+      "category": "writing",
+      "name": "树熊写作",
+      "before": 1019,
+      "after": 89
+    },
+    {
+      "id": "431",
+      "category": "writing",
+      "name": "爱改写",
+      "before": 1018,
+      "after": 90
+    },
+    {
+      "id": "432",
+      "category": "writing",
+      "name": "HeyFriday",
+      "before": 1017,
+      "after": 91
+    },
+    {
+      "id": "433",
+      "category": "writing",
+      "name": "易撰",
+      "before": 1016,
+      "after": 92
+    },
+    {
+      "id": "434",
+      "category": "writing",
+      "name": "智搜",
+      "before": 1015,
+      "after": 93
+    },
+    {
+      "id": "435",
+      "category": "writing",
+      "name": "创作王",
+      "before": 1014,
+      "after": 94
+    },
+    {
+      "id": "436",
+      "category": "writing",
+      "name": "悟智AI",
+      "before": 1013,
+      "after": 95
+    },
+    {
+      "id": "437",
+      "category": "writing",
+      "name": "讯飞智检",
+      "before": 1012,
+      "after": 96
+    },
+    {
+      "id": "438",
+      "category": "writing",
+      "name": "ContentBot",
+      "before": 1011,
+      "after": 99
+    },
+    {
+      "id": "439",
+      "category": "writing",
+      "name": "快文CopyDone",
+      "before": 1010,
+      "after": 100
+    },
+    {
+      "id": "1192",
+      "category": "writing",
+      "name": "Compose AI",
+      "before": 1009,
+      "after": 102
+    },
+    {
+      "id": "1193",
+      "category": "writing",
+      "name": "Sudowrite",
+      "before": 1008,
+      "after": 104
+    },
+    {
+      "id": "1194",
+      "category": "writing",
+      "name": "Smodin AI Research Paper",
+      "before": 1007,
+      "after": 109
+    },
+    {
+      "id": "1195",
+      "category": "writing",
+      "name": "PaperBetter AI",
+      "before": 1006,
+      "after": 116
+    },
+    {
+      "id": "1196",
+      "category": "writing",
+      "name": "范文喵",
+      "before": 1005,
+      "after": 118
+    },
+    {
+      "id": "1197",
+      "category": "writing",
+      "name": "小微智能论文",
+      "before": 1004,
+      "after": 119
+    },
+    {
+      "id": "1198",
+      "category": "writing",
+      "name": "笔杆论文",
+      "before": 1003,
+      "after": 120
+    },
+    {
+      "id": "1199",
+      "category": "writing",
+      "name": "AI论文君",
+      "before": 1002,
+      "after": 121
+    },
+    {
+      "id": "1200",
+      "category": "writing",
+      "name": "ProWritingAid",
+      "before": 1001,
+      "after": 123
+    },
+    {
+      "id": "1201",
+      "category": "writing",
+      "name": "星火网文助手",
+      "before": 1000,
+      "after": 131
+    },
+    {
+      "id": "1",
+      "category": "writing",
+      "name": "豆包",
+      "before": 1075,
+      "after": 1000
+    }
+  ],
+  "otherCategoriesUnchanged": true
+}

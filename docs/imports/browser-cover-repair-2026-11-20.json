@@ -1,0 +1,184 @@
+{
+  "verifiedAt": "2026-11-20T06:22:11.050Z",
+  "checked": 21,
+  "logosAdded": 0,
+  "coversAdded": 2,
+  "paused": false,
+  "counts": {
+    "total": 1306,
+    "logos": 1306,
+    "covers": 1287
+  },
+  "results": [
+    {
+      "id": "1024",
+      "name": "Magician",
+      "source": "https://ai-bot.cn/sites/148.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": []
+    },
+    {
+      "id": "1074",
+      "name": "Play.ht",
+      "source": "https://ai-bot.cn/sites/253.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": []
+    },
+    {
+      "id": "1017",
+      "name": "Poly",
+      "source": "https://ai-bot.cn/sites/701.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": []
+    },
+    {
+      "id": "1262",
+      "name": "Unscreen",
+      "source": "https://ai-bot.cn/sites/40.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/03/unscreen-website.png"
+    },
+    {
+      "id": "1068",
+      "name": "BeatBot",
+      "source": "https://ai-bot.cn/sites/1965.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": []
+    },
+    {
+      "id": "1277",
+      "name": "Veed Video Background Remover",
+      "source": "https://ai-bot.cn/sites/236.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": []
+    },
+    {
+      "id": "1083",
+      "name": "MetaVoice",
+      "source": "https://ai-bot.cn/sites/404.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": []
+    },
+    {
+      "id": "292",
+      "name": "OpenBMB",
+      "source": "https://ai-bot.cn/sites/1129.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": []
+    },
+    {
+      "id": "473",
+      "name": "Zyro AI Image Upscaler",
+      "source": "https://ai-bot.cn/sites/216.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": []
+    },
+    {
+      "id": "564",
+      "name": "Removal.AI",
+      "source": "https://ai-bot.cn/sites/87.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/03/removal-ai-website.png"
+    },
+    {
+      "id": "534",
+      "name": "Mokker AI",
+      "source": "https://ai-bot.cn/sites/173.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": []
+    },
+    {
+      "id": "563",
+      "name": "Adobe Image Background Remover",
+      "source": "https://ai-bot.cn/sites/313.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": []
+    },
+    {
+      "id": "571",
+      "name": "Zyro AI Background Remover",
+      "source": "https://ai-bot.cn/sites/302.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": []
+    },
+    {
+      "id": "569",
+      "name": "BGremover",
+      "source": "https://ai-bot.cn/sites/304.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": []
+    },
+    {
+      "id": "572",
+      "name": "PhotoScissors",
+      "source": "https://ai-bot.cn/sites/284.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": []
+    },
+    {
+      "id": "577",
+      "name": "Booth.ai",
+      "source": "https://ai-bot.cn/sites/178.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": []
+    },
+    {
+      "id": "768",
+      "name": "Sheet+",
+      "source": "https://ai-bot.cn/sites/373.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": []
+    },
+    {
+      "id": "776",
+      "name": "Excel Formularizer",
+      "source": "https://ai-bot.cn/sites/1149.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": []
+    },
+    {
+      "id": "953",
+      "name": "Tabnine",
+      "source": "https://ai-bot.cn/sites/110.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": []
+    },
+    {
+      "id": "956",
+      "name": "Fig",
+      "source": "https://ai-bot.cn/sites/114.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": []
+    },
+    {
+      "id": "960",
+      "name": "AI Code Reviewer",
+      "source": "https://ai-bot.cn/sites/479.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": []
+    }
+  ]
+}

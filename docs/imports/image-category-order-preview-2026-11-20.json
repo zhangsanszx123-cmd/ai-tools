@@ -1,0 +1,1563 @@
+{
+  "source": "https://ai-bot.cn/favorites/best-ai-image-tools/",
+  "at": "2026-11-20T11:11:22.066Z",
+  "applied": false,
+  "categories": [
+    {
+      "category": "image",
+      "available": 157,
+      "matched": 43,
+      "matches": [
+        {
+          "name": "阿贝智能",
+          "id": "22",
+          "order": 4
+        },
+        {
+          "name": "Midjourney",
+          "id": "23",
+          "order": 5
+        },
+        {
+          "name": "RunningHub",
+          "id": "24",
+          "order": 9
+        },
+        {
+          "name": "可灵AI",
+          "id": "25",
+          "order": 10
+        },
+        {
+          "name": "呜哩",
+          "id": "26",
+          "order": 11
+        },
+        {
+          "name": "insMind",
+          "id": "27",
+          "order": 12
+        },
+        {
+          "name": "抠抠图",
+          "id": "555",
+          "order": 13
+        },
+        {
+          "name": "135维视",
+          "id": "28",
+          "order": 14
+        },
+        {
+          "name": "图改改",
+          "id": "29",
+          "order": 15
+        },
+        {
+          "name": "Epixa",
+          "id": "30",
+          "order": 16
+        },
+        {
+          "name": "意流 eluai",
+          "id": "31",
+          "order": 17
+        },
+        {
+          "name": "改稿鸦",
+          "id": "32",
+          "order": 18
+        },
+        {
+          "name": "SciDraw AI",
+          "id": "33",
+          "order": 19
+        },
+        {
+          "name": "AlphaVow",
+          "id": "34",
+          "order": 21
+        },
+        {
+          "name": "ChatArt",
+          "id": "35",
+          "order": 22
+        },
+        {
+          "name": "Krene",
+          "id": "36",
+          "order": 23
+        },
+        {
+          "name": "AI改图神器",
+          "id": "37",
+          "order": 24
+        },
+        {
+          "name": "米粿AI",
+          "id": "38",
+          "order": 25
+        },
+        {
+          "name": "咖图AI",
+          "id": "39",
+          "order": 26
+        },
+        {
+          "name": "视觉工厂",
+          "id": "40",
+          "order": 27
+        },
+        {
+          "name": "秒绘AI",
+          "id": "41",
+          "order": 28
+        },
+        {
+          "name": "妙话AI",
+          "id": "42",
+          "order": 29
+        },
+        {
+          "name": "Civitai",
+          "id": "440",
+          "order": 51
+        },
+        {
+          "name": "通义万相",
+          "id": "441",
+          "order": 54
+        },
+        {
+          "name": "秒画",
+          "id": "442",
+          "order": 57
+        },
+        {
+          "name": "WHEE",
+          "id": "443",
+          "order": 58
+        },
+        {
+          "name": "奇域AI",
+          "id": "444",
+          "order": 61
+        },
+        {
+          "name": "触手AI绘画",
+          "id": "446",
+          "order": 63
+        },
+        {
+          "name": "造梦日记",
+          "id": "447",
+          "order": 64
+        },
+        {
+          "name": "Canva AI图像生成",
+          "id": "448",
+          "order": 68
+        },
+        {
+          "name": "超能画布",
+          "id": "449",
+          "order": 69
+        },
+        {
+          "name": "Bing Image Creator",
+          "id": "450",
+          "order": 70
+        },
+        {
+          "name": "简单AI",
+          "id": "451",
+          "order": 72
+        },
+        {
+          "name": "摩笔马良",
+          "id": "452",
+          "order": 73
+        },
+        {
+          "name": "Exactly.ai",
+          "id": "453",
+          "order": 74
+        },
+        {
+          "name": "画宇宙",
+          "id": "454",
+          "order": 75
+        },
+        {
+          "name": "6pen Art",
+          "id": "455",
+          "order": 76
+        },
+        {
+          "name": "创客贴AI画匠",
+          "id": "456",
+          "order": 77
+        },
+        {
+          "name": "360智绘",
+          "id": "457",
+          "order": 79
+        },
+        {
+          "name": "网易AI创意工坊",
+          "id": "459",
+          "order": 80
+        },
+        {
+          "name": "Freepik AI Image Generator",
+          "id": "461",
+          "order": 82
+        },
+        {
+          "name": "Facet",
+          "id": "496",
+          "order": 88
+        },
+        {
+          "name": "Relight",
+          "id": "497",
+          "order": 89
+        }
+      ],
+      "missing": [
+        {
+          "name": "即梦",
+          "source": "https://ai-bot.cn/sites/17772.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "PixPix",
+          "source": "https://ai-bot.cn/sites/82119.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "稿定AI",
+          "source": "https://www.gaoding.art/utms/9f9e3162fb274b11810089a93ea547f1",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Stable Diffusion",
+          "source": "https://ai-bot.cn/sites/123.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "美图设计室",
+          "source": "https://ai-bot.cn/sites/2400.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "椒图AI",
+          "source": "https://ai-bot.cn/sites/61891.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "千问创作",
+          "source": "https://ai-bot.cn/sites/63437.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "炉米Lumi",
+          "source": "https://ai-bot.cn/lumi/",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Krea AI",
+          "source": "https://ai-bot.cn/sites/7050.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Kira",
+          "source": "https://ai-bot.cn/sites/56504.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Photoroom",
+          "source": "https://ai-bot.cn/sites/18077.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Ribbet.ai",
+          "source": "https://ai-bot.cn/sites/693.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "万相营造",
+          "source": "https://ai-bot.cn/sites/29264.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "悟空图像PhotoSir",
+          "source": "https://ai-bot.cn/sites/1418.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "360智图",
+          "source": "https://ai-bot.cn/sites/4177.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "像素蛋糕",
+          "source": "https://ai-bot.cn/sites/15853.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "如果相机",
+          "source": "https://ai-bot.cn/sites/14173.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "ARC",
+          "source": "https://ai-bot.cn/sites/678.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Cutout.Pro",
+          "source": "https://ai-bot.cn/sites/305.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "remove.bg",
+          "source": "https://ai-bot.cn/sites/6.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "MagicStudio",
+          "source": "https://ai-bot.cn/sites/282.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Booltool",
+          "source": "https://ai-bot.cn/sites/677.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Faceswapper",
+          "source": "https://ai-bot.cn/sites/16745.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "ClipDrop",
+          "source": "https://ai-bot.cn/sites/103.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Vmake AI",
+          "source": "https://ai-bot.cn/sites/18073.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Leonardo.ai",
+          "source": "https://ai-bot.cn/sites/1631.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "DeepSwapper",
+          "source": "https://ai-bot.cn/sites/15075.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Kacha AI",
+          "source": "https://ai-bot.cn/sites/18081.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "PicTech AI",
+          "source": "https://ai-bot.cn/sites/15479.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "吐司AI",
+          "source": "https://ai-bot.cn/tusiart/",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Hotpot.ai",
+          "source": "https://ai-bot.cn/sites/109.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "IconGen",
+          "source": "https://ai-bot.cn/sites/15972.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "言之画",
+          "source": "https://ai-bot.cn/sites/1936.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "百度智能云一念",
+          "source": "https://ai-bot.cn/sites/24248.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "艾绘",
+          "source": "https://ai-bot.cn/sites/18651.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Graviti Diffus",
+          "source": "https://ai-bot.cn/sites/1688.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "秘塔捉捉猫",
+          "source": "https://ai-bot.cn/sites/1607.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "志设",
+          "source": "https://ai-bot.cn/sites/2305.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Adobe Firefly",
+          "source": "https://ai-bot.cn/sites/726.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Visual Electric",
+          "source": "https://ai-bot.cn/sites/6463.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Imagine with Meta",
+          "source": "https://ai-bot.cn/sites/6492.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Stockimg AI",
+          "source": "https://ai-bot.cn/sites/151.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Stable Doodle",
+          "source": "https://ai-bot.cn/sites/3529.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "175FUN",
+          "source": "https://ai-bot.cn/sites/2676.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "行者AI美术",
+          "source": "https://ai-bot.cn/sites/2803.html",
+          "reason": "not-in-category"
+        },
+        {
+          "name": "Skybox AI",
+          "source": "https://ai-bot.cn/sites/2571.html",
+          "reason": "not-in-category"
+        }
+      ]
+    }
+  ],
+  "changes": [
+    {
+      "id": "22",
+      "category": "image",
+      "name": "阿贝智能",
+      "before": 4,
+      "after": 4
+    },
+    {
+      "id": "23",
+      "category": "image",
+      "name": "Midjourney",
+      "before": 5,
+      "after": 5
+    },
+    {
+      "id": "24",
+      "category": "image",
+      "name": "RunningHub",
+      "before": 9,
+      "after": 9
+    },
+    {
+      "id": "25",
+      "category": "image",
+      "name": "可灵AI",
+      "before": 10,
+      "after": 10
+    },
+    {
+      "id": "26",
+      "category": "image",
+      "name": "呜哩",
+      "before": 11,
+      "after": 11
+    },
+    {
+      "id": "27",
+      "category": "image",
+      "name": "insMind",
+      "before": 12,
+      "after": 12
+    },
+    {
+      "id": "555",
+      "category": "image",
+      "name": "抠抠图",
+      "before": 13,
+      "after": 13
+    },
+    {
+      "id": "28",
+      "category": "image",
+      "name": "135维视",
+      "before": 14,
+      "after": 14
+    },
+    {
+      "id": "29",
+      "category": "image",
+      "name": "图改改",
+      "before": 15,
+      "after": 15
+    },
+    {
+      "id": "30",
+      "category": "image",
+      "name": "Epixa",
+      "before": 16,
+      "after": 16
+    },
+    {
+      "id": "31",
+      "category": "image",
+      "name": "意流 eluai",
+      "before": 17,
+      "after": 17
+    },
+    {
+      "id": "32",
+      "category": "image",
+      "name": "改稿鸦",
+      "before": 18,
+      "after": 18
+    },
+    {
+      "id": "33",
+      "category": "image",
+      "name": "SciDraw AI",
+      "before": 19,
+      "after": 19
+    },
+    {
+      "id": "34",
+      "category": "image",
+      "name": "AlphaVow",
+      "before": 21,
+      "after": 21
+    },
+    {
+      "id": "35",
+      "category": "image",
+      "name": "ChatArt",
+      "before": 22,
+      "after": 22
+    },
+    {
+      "id": "36",
+      "category": "image",
+      "name": "Krene",
+      "before": 23,
+      "after": 23
+    },
+    {
+      "id": "37",
+      "category": "image",
+      "name": "AI改图神器",
+      "before": 24,
+      "after": 24
+    },
+    {
+      "id": "38",
+      "category": "image",
+      "name": "米粿AI",
+      "before": 25,
+      "after": 25
+    },
+    {
+      "id": "39",
+      "category": "image",
+      "name": "咖图AI",
+      "before": 26,
+      "after": 26
+    },
+    {
+      "id": "40",
+      "category": "image",
+      "name": "视觉工厂",
+      "before": 27,
+      "after": 27
+    },
+    {
+      "id": "41",
+      "category": "image",
+      "name": "秒绘AI",
+      "before": 28,
+      "after": 28
+    },
+    {
+      "id": "42",
+      "category": "image",
+      "name": "妙话AI",
+      "before": 29,
+      "after": 29
+    },
+    {
+      "id": "440",
+      "category": "image",
+      "name": "Civitai",
+      "before": 1134,
+      "after": 51
+    },
+    {
+      "id": "441",
+      "category": "image",
+      "name": "通义万相",
+      "before": 1133,
+      "after": 54
+    },
+    {
+      "id": "442",
+      "category": "image",
+      "name": "秒画",
+      "before": 1132,
+      "after": 57
+    },
+    {
+      "id": "443",
+      "category": "image",
+      "name": "WHEE",
+      "before": 1131,
+      "after": 58
+    },
+    {
+      "id": "444",
+      "category": "image",
+      "name": "奇域AI",
+      "before": 1130,
+      "after": 61
+    },
+    {
+      "id": "446",
+      "category": "image",
+      "name": "触手AI绘画",
+      "before": 1128,
+      "after": 63
+    },
+    {
+      "id": "447",
+      "category": "image",
+      "name": "造梦日记",
+      "before": 1127,
+      "after": 64
+    },
+    {
+      "id": "448",
+      "category": "image",
+      "name": "Canva AI图像生成",
+      "before": 1126,
+      "after": 68
+    },
+    {
+      "id": "449",
+      "category": "image",
+      "name": "超能画布",
+      "before": 1125,
+      "after": 69
+    },
+    {
+      "id": "450",
+      "category": "image",
+      "name": "Bing Image Creator",
+      "before": 1124,
+      "after": 70
+    },
+    {
+      "id": "451",
+      "category": "image",
+      "name": "简单AI",
+      "before": 1123,
+      "after": 72
+    },
+    {
+      "id": "452",
+      "category": "image",
+      "name": "摩笔马良",
+      "before": 1122,
+      "after": 73
+    },
+    {
+      "id": "453",
+      "category": "image",
+      "name": "Exactly.ai",
+      "before": 1121,
+      "after": 74
+    },
+    {
+      "id": "454",
+      "category": "image",
+      "name": "画宇宙",
+      "before": 1120,
+      "after": 75
+    },
+    {
+      "id": "455",
+      "category": "image",
+      "name": "6pen Art",
+      "before": 1119,
+      "after": 76
+    },
+    {
+      "id": "456",
+      "category": "image",
+      "name": "创客贴AI画匠",
+      "before": 1118,
+      "after": 77
+    },
+    {
+      "id": "457",
+      "category": "image",
+      "name": "360智绘",
+      "before": 1117,
+      "after": 79
+    },
+    {
+      "id": "459",
+      "category": "image",
+      "name": "网易AI创意工坊",
+      "before": 1115,
+      "after": 80
+    },
+    {
+      "id": "461",
+      "category": "image",
+      "name": "Freepik AI Image Generator",
+      "before": 1113,
+      "after": 82
+    },
+    {
+      "id": "496",
+      "category": "image",
+      "name": "Facet",
+      "before": 1078,
+      "after": 88
+    },
+    {
+      "id": "497",
+      "category": "image",
+      "name": "Relight",
+      "before": 1077,
+      "after": 89
+    },
+    {
+      "id": "579",
+      "category": "image",
+      "name": "PicWish",
+      "before": 1000,
+      "after": 1000
+    },
+    {
+      "id": "578",
+      "category": "image",
+      "name": "Pixelcut.ai",
+      "before": 1001,
+      "after": 1001
+    },
+    {
+      "id": "576",
+      "category": "image",
+      "name": "Stylized",
+      "before": 1002,
+      "after": 1002
+    },
+    {
+      "id": "575",
+      "category": "image",
+      "name": "Hotpot AI Background Remover",
+      "before": 1003,
+      "after": 1003
+    },
+    {
+      "id": "574",
+      "category": "image",
+      "name": "图可丽",
+      "before": 1004,
+      "after": 1004
+    },
+    {
+      "id": "573",
+      "category": "image",
+      "name": "ClippingMagic",
+      "before": 1005,
+      "after": 1005
+    },
+    {
+      "id": "571",
+      "category": "image",
+      "name": "Zyro AI Background Remover",
+      "before": 1006,
+      "after": 1006
+    },
+    {
+      "id": "570",
+      "category": "image",
+      "name": "Quicktools Background Remover",
+      "before": 1007,
+      "after": 1007
+    },
+    {
+      "id": "568",
+      "category": "image",
+      "name": "吐司AI抠图",
+      "before": 1008,
+      "after": 1008
+    },
+    {
+      "id": "567",
+      "category": "image",
+      "name": "Cutout.Pro抠图",
+      "before": 1009,
+      "after": 1009
+    },
+    {
+      "id": "566",
+      "category": "image",
+      "name": "Slazzer",
+      "before": 1010,
+      "after": 1010
+    },
+    {
+      "id": "565",
+      "category": "image",
+      "name": "Background Eraser",
+      "before": 1011,
+      "after": 1011
+    },
+    {
+      "id": "564",
+      "category": "image",
+      "name": "Removal.AI",
+      "before": 1012,
+      "after": 1012
+    },
+    {
+      "id": "562",
+      "category": "image",
+      "name": "千图设计室AI助手",
+      "before": 1013,
+      "after": 1013
+    },
+    {
+      "id": "561",
+      "category": "image",
+      "name": "Erase.bg",
+      "before": 1014,
+      "after": 1014
+    },
+    {
+      "id": "560",
+      "category": "image",
+      "name": "ClipDrop Remove Background",
+      "before": 1015,
+      "after": 1015
+    },
+    {
+      "id": "559",
+      "category": "image",
+      "name": "BgSub",
+      "before": 1016,
+      "after": 1016
+    },
+    {
+      "id": "558",
+      "category": "image",
+      "name": "Icons8 Background Remover",
+      "before": 1017,
+      "after": 1017
+    },
+    {
+      "id": "557",
+      "category": "image",
+      "name": "Pixian.AI",
+      "before": 1018,
+      "after": 1018
+    },
+    {
+      "id": "556",
+      "category": "image",
+      "name": "光子AI抠图",
+      "before": 1019,
+      "after": 1019
+    },
+    {
+      "id": "554",
+      "category": "image",
+      "name": "鲜艺AI抠图",
+      "before": 1020,
+      "after": 1020
+    },
+    {
+      "id": "553",
+      "category": "image",
+      "name": "顽兔抠图",
+      "before": 1021,
+      "after": 1021
+    },
+    {
+      "id": "552",
+      "category": "image",
+      "name": "美图抠图",
+      "before": 1022,
+      "after": 1022
+    },
+    {
+      "id": "551",
+      "category": "image",
+      "name": "Meshy",
+      "before": 1023,
+      "after": 1023
+    },
+    {
+      "id": "550",
+      "category": "image",
+      "name": "VoxCraft",
+      "before": 1024,
+      "after": 1024
+    },
+    {
+      "id": "549",
+      "category": "image",
+      "name": "LuxReal",
+      "before": 1025,
+      "after": 1025
+    },
+    {
+      "id": "548",
+      "category": "image",
+      "name": "Style3D",
+      "before": 1026,
+      "after": 1026
+    },
+    {
+      "id": "547",
+      "category": "image",
+      "name": "Hitems",
+      "before": 1027,
+      "after": 1027
+    },
+    {
+      "id": "546",
+      "category": "image",
+      "name": "造好物",
+      "before": 1028,
+      "after": 1028
+    },
+    {
+      "id": "545",
+      "category": "image",
+      "name": "V2Fun",
+      "before": 1029,
+      "after": 1029
+    },
+    {
+      "id": "544",
+      "category": "image",
+      "name": "Omma",
+      "before": 1030,
+      "after": 1030
+    },
+    {
+      "id": "543",
+      "category": "image",
+      "name": "绘蛙AI转3D",
+      "before": 1031,
+      "after": 1031
+    },
+    {
+      "id": "542",
+      "category": "image",
+      "name": "Quady3D",
+      "before": 1032,
+      "after": 1032
+    },
+    {
+      "id": "541",
+      "category": "image",
+      "name": "Fast3D",
+      "before": 1033,
+      "after": 1033
+    },
+    {
+      "id": "540",
+      "category": "image",
+      "name": "Marble",
+      "before": 1034,
+      "after": 1034
+    },
+    {
+      "id": "539",
+      "category": "image",
+      "name": "Neural4D",
+      "before": 1035,
+      "after": 1035
+    },
+    {
+      "id": "538",
+      "category": "image",
+      "name": "Tripo AI",
+      "before": 1036,
+      "after": 1036
+    },
+    {
+      "id": "537",
+      "category": "image",
+      "name": "腾讯混元3D",
+      "before": 1037,
+      "after": 1037
+    },
+    {
+      "id": "536",
+      "category": "image",
+      "name": "图生生",
+      "before": 1038,
+      "after": 1038
+    },
+    {
+      "id": "535",
+      "category": "image",
+      "name": "花生图像",
+      "before": 1039,
+      "after": 1039
+    },
+    {
+      "id": "534",
+      "category": "image",
+      "name": "Mokker AI",
+      "before": 1040,
+      "after": 1040
+    },
+    {
+      "id": "533",
+      "category": "image",
+      "name": "Pebblely",
+      "before": 1041,
+      "after": 1041
+    },
+    {
+      "id": "532",
+      "category": "image",
+      "name": "创自由",
+      "before": 1042,
+      "after": 1042
+    },
+    {
+      "id": "531",
+      "category": "image",
+      "name": "Cliclic AI",
+      "before": 1043,
+      "after": 1043
+    },
+    {
+      "id": "530",
+      "category": "image",
+      "name": "美间AI商拍",
+      "before": 1044,
+      "after": 1044
+    },
+    {
+      "id": "529",
+      "category": "image",
+      "name": "妙思",
+      "before": 1045,
+      "after": 1045
+    },
+    {
+      "id": "528",
+      "category": "image",
+      "name": "千鹿AI",
+      "before": 1046,
+      "after": 1046
+    },
+    {
+      "id": "527",
+      "category": "image",
+      "name": "蕉点AI",
+      "before": 1047,
+      "after": 1047
+    },
+    {
+      "id": "526",
+      "category": "image",
+      "name": "PhotoStudio AI",
+      "before": 1048,
+      "after": 1048
+    },
+    {
+      "id": "525",
+      "category": "image",
+      "name": "GemHues",
+      "before": 1049,
+      "after": 1049
+    },
+    {
+      "id": "524",
+      "category": "image",
+      "name": "几何AI",
+      "before": 1050,
+      "after": 1050
+    },
+    {
+      "id": "523",
+      "category": "image",
+      "name": "莓图AI",
+      "before": 1051,
+      "after": 1051
+    },
+    {
+      "id": "522",
+      "category": "image",
+      "name": "泡泡AI",
+      "before": 1052,
+      "after": 1052
+    },
+    {
+      "id": "521",
+      "category": "image",
+      "name": "青虎AI",
+      "before": 1053,
+      "after": 1053
+    },
+    {
+      "id": "520",
+      "category": "image",
+      "name": "蜂鸟AI",
+      "before": 1054,
+      "after": 1054
+    },
+    {
+      "id": "519",
+      "category": "image",
+      "name": "PixoLet",
+      "before": 1055,
+      "after": 1055
+    },
+    {
+      "id": "518",
+      "category": "image",
+      "name": "莱诺鸟",
+      "before": 1056,
+      "after": 1056
+    },
+    {
+      "id": "517",
+      "category": "image",
+      "name": "易智魔方",
+      "before": 1057,
+      "after": 1057
+    },
+    {
+      "id": "516",
+      "category": "image",
+      "name": "绘蛙AI",
+      "before": 1058,
+      "after": 1058
+    },
+    {
+      "id": "515",
+      "category": "image",
+      "name": "美图商拍",
+      "before": 1059,
+      "after": 1059
+    },
+    {
+      "id": "514",
+      "category": "image",
+      "name": "稿定AI商品图",
+      "before": 1060,
+      "after": 1060
+    },
+    {
+      "id": "513",
+      "category": "image",
+      "name": "吐司AI高清",
+      "before": 1061,
+      "after": 1061
+    },
+    {
+      "id": "512",
+      "category": "image",
+      "name": "Playground AI",
+      "before": 1062,
+      "after": 1062
+    },
+    {
+      "id": "511",
+      "category": "image",
+      "name": "Palette",
+      "before": 1063,
+      "after": 1063
+    },
+    {
+      "id": "510",
+      "category": "image",
+      "name": "Cutout.Pro老照片上色",
+      "before": 1064,
+      "after": 1064
+    },
+    {
+      "id": "509",
+      "category": "image",
+      "name": "transpic",
+      "before": 1065,
+      "after": 1065
+    },
+    {
+      "id": "508",
+      "category": "image",
+      "name": "PicMa Studio",
+      "before": 1066,
+      "after": 1066
+    },
+    {
+      "id": "507",
+      "category": "image",
+      "name": "restorePhotos.io",
+      "before": 1067,
+      "after": 1067
+    },
+    {
+      "id": "506",
+      "category": "image",
+      "name": "AirBrush",
+      "before": 1068,
+      "after": 1068
+    },
+    {
+      "id": "505",
+      "category": "image",
+      "name": "咻图AI",
+      "before": 1069,
+      "after": 1069
+    },
+    {
+      "id": "504",
+      "category": "image",
+      "name": "像素蛋糕PixCake",
+      "before": 1070,
+      "after": 1070
+    },
+    {
+      "id": "503",
+      "category": "image",
+      "name": "jpgHD",
+      "before": 1071,
+      "after": 1071
+    },
+    {
+      "id": "502",
+      "category": "image",
+      "name": "Remini",
+      "before": 1072,
+      "after": 1072
+    },
+    {
+      "id": "501",
+      "category": "image",
+      "name": "西米AI",
+      "before": 1073,
+      "after": 1073
+    },
+    {
+      "id": "500",
+      "category": "image",
+      "name": "立刻修相片",
+      "before": 1074,
+      "after": 1074
+    },
+    {
+      "id": "499",
+      "category": "image",
+      "name": "美图云修",
+      "before": 1075,
+      "after": 1075
+    },
+    {
+      "id": "498",
+      "category": "image",
+      "name": "imgAK",
+      "before": 1076,
+      "after": 1076
+    },
+    {
+      "id": "495",
+      "category": "image",
+      "name": "稿定AI变清晰",
+      "before": 1079,
+      "after": 1077
+    },
+    {
+      "id": "494",
+      "category": "image",
+      "name": "WatermarkRemover",
+      "before": 1080,
+      "after": 1078
+    },
+    {
+      "id": "493",
+      "category": "image",
+      "name": "Magic Eraser",
+      "before": 1081,
+      "after": 1079
+    },
+    {
+      "id": "492",
+      "category": "image",
+      "name": "HitPaw Watermark Remover",
+      "before": 1082,
+      "after": 1080
+    },
+    {
+      "id": "491",
+      "category": "image",
+      "name": "吐司AI消除",
+      "before": 1083,
+      "after": 1081
+    },
+    {
+      "id": "490",
+      "category": "image",
+      "name": "蜜蜂剪辑",
+      "before": 1084,
+      "after": 1082
+    },
+    {
+      "id": "489",
+      "category": "image",
+      "name": "Cutout.Pro Retouch",
+      "before": 1085,
+      "after": 1083
+    },
+    {
+      "id": "488",
+      "category": "image",
+      "name": "Cleanup.pictures",
+      "before": 1086,
+      "after": 1084
+    },
+    {
+      "id": "487",
+      "category": "image",
+      "name": "SnapEdit",
+      "before": 1087,
+      "after": 1085
+    },
+    {
+      "id": "486",
+      "category": "image",
+      "name": "Bg Eraser",
+      "before": 1088,
+      "after": 1086
+    },
+    {
+      "id": "485",
+      "category": "image",
+      "name": "IOPaint",
+      "before": 1089,
+      "after": 1087
+    },
+    {
+      "id": "484",
+      "category": "image",
+      "name": "Hama",
+      "before": 1090,
+      "after": 1088
+    },
+    {
+      "id": "483",
+      "category": "image",
+      "name": "稿定AI消除",
+      "before": 1091,
+      "after": 1089
+    },
+    {
+      "id": "482",
+      "category": "image",
+      "name": "美图AI消除",
+      "before": 1092,
+      "after": 1090
+    },
+    {
+      "id": "481",
+      "category": "image",
+      "name": "Pixelhunter",
+      "before": 1093,
+      "after": 1091
+    },
+    {
+      "id": "480",
+      "category": "image",
+      "name": "Image Enlarger",
+      "before": 1094,
+      "after": 1092
+    },
+    {
+      "id": "479",
+      "category": "image",
+      "name": "Upscalepics",
+      "before": 1095,
+      "after": 1093
+    },
+    {
+      "id": "478",
+      "category": "image",
+      "name": "PhotoAid Image Upscaler",
+      "before": 1096,
+      "after": 1094
+    },
+    {
+      "id": "477",
+      "category": "image",
+      "name": "VanceAI Image Resizer",
+      "before": 1097,
+      "after": 1095
+    },
+    {
+      "id": "476",
+      "category": "image",
+      "name": "Nero Image Upscaler",
+      "before": 1098,
+      "after": 1096
+    },
+    {
+      "id": "475",
+      "category": "image",
+      "name": "Upscale.media",
+      "before": 1099,
+      "after": 1097
+    },
+    {
+      "id": "474",
+      "category": "image",
+      "name": "Media.io AI Image Upscaler",
+      "before": 1100,
+      "after": 1098
+    },
+    {
+      "id": "473",
+      "category": "image",
+      "name": "Zyro AI Image Upscaler",
+      "before": 1101,
+      "after": 1099
+    },
+    {
+      "id": "472",
+      "category": "image",
+      "name": "Fotor AI Image Upscaler",
+      "before": 1102,
+      "after": 1100
+    },
+    {
+      "id": "471",
+      "category": "image",
+      "name": "Img.Upscaler",
+      "before": 1103,
+      "after": 1101
+    },
+    {
+      "id": "470",
+      "category": "image",
+      "name": "ClipDrop Image Upscaler",
+      "before": 1104,
+      "after": 1102
+    },
+    {
+      "id": "469",
+      "category": "image",
+      "name": "Icons8 Smart Upscaler",
+      "before": 1105,
+      "after": 1103
+    },
+    {
+      "id": "468",
+      "category": "image",
+      "name": "Let’s Enhance",
+      "before": 1106,
+      "after": 1104
+    },
+    {
+      "id": "467",
+      "category": "image",
+      "name": "Magnific AI",
+      "before": 1107,
+      "after": 1105
+    },
+    {
+      "id": "466",
+      "category": "image",
+      "name": "Mejorar Imagen",
+      "before": 1108,
+      "after": 1106
+    },
+    {
+      "id": "465",
+      "category": "image",
+      "name": "BigJPG",
+      "before": 1109,
+      "after": 1107
+    },
+    {
+      "id": "464",
+      "category": "image",
+      "name": "GoProd",
+      "before": 1110,
+      "after": 1108
+    },
+    {
+      "id": "463",
+      "category": "image",
+      "name": "Upscayl",
+      "before": 1111,
+      "after": 1109
+    },
+    {
+      "id": "462",
+      "category": "image",
+      "name": "美图无损放大",
+      "before": 1112,
+      "after": 1110
+    },
+    {
+      "id": "460",
+      "category": "image",
+      "name": "Morisot",
+      "before": 1114,
+      "after": 1111
+    },
+    {
+      "id": "458",
+      "category": "image",
+      "name": "MakeManga",
+      "before": 1116,
+      "after": 1112
+    },
+    {
+      "id": "445",
+      "category": "image",
+      "name": "入画礼",
+      "before": 1129,
+      "after": 1113
+    }
+  ],
+  "otherCategoriesUnchanged": true
+}

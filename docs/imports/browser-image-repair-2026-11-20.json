@@ -1,0 +1,5068 @@
+{
+  "verifiedAt": "2026-11-20T06:18:45.247Z",
+  "checked": 527,
+  "logosAdded": 372,
+  "coversAdded": 442,
+  "paused": false,
+  "counts": {
+    "total": 1306,
+    "logos": 1304,
+    "covers": 1284
+  },
+  "results": [
+    {
+      "id": "1000",
+      "name": "Motiff 妙多",
+      "source": "https://ai-bot.cn/sites/4004.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/08/motiff-icon.png"
+    },
+    {
+      "id": "1002",
+      "name": "Logo Diffusion",
+      "source": "https://ai-bot.cn/sites/6622.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/12/logo-diffusion-icon.png"
+    },
+    {
+      "id": "101",
+      "name": "问小白",
+      "source": "https://ai-bot.cn/sites/14215.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/02/wenxiaobai-website1.png"
+    },
+    {
+      "id": "1005",
+      "name": "模袋云AI",
+      "source": "https://ai-bot.cn/sites/3632.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/07/modaiyun-ai-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/07/modaiyun-ai-demo.png"
+    },
+    {
+      "id": "1006",
+      "name": "Vizcom",
+      "source": "https://ai-bot.cn/sites/2235.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/05/vizcom-ai-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/05/vizcom-ai-website.png"
+    },
+    {
+      "id": "1017",
+      "name": "Poly",
+      "source": "https://ai-bot.cn/sites/701.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": []
+    },
+    {
+      "id": "1007",
+      "name": "Dora AI",
+      "source": "https://ai-bot.cn/sites/2462.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/05/dora-ai-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/10/Dora-AI-website.png"
+    },
+    {
+      "id": "1011",
+      "name": "千图设计室AI海报",
+      "source": "https://ai-bot.cn/sites/9943.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/10/hihaibao-website.png"
+    },
+    {
+      "id": "1020",
+      "name": "Color Wheel",
+      "source": "https://ai-bot.cn/sites/165.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/10/Color-Wheel-website.png"
+    },
+    {
+      "id": "1024",
+      "name": "Magician",
+      "source": "https://ai-bot.cn/sites/148.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/magician-icon.png"
+    },
+    {
+      "id": "1016",
+      "name": "Fabrie AI",
+      "source": "https://ai-bot.cn/sites/3433.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/07/fabrie-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/07/fabrie-ai-design.jpeg"
+    },
+    {
+      "id": "102",
+      "name": "百灵大模型",
+      "source": "https://ai-bot.cn/sites/64622.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/10/ling-chat-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/10/ling-chat-website.png"
+    },
+    {
+      "id": "1033",
+      "name": "音秘",
+      "source": "https://ai-bot.cn/sites/65354.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/10/AudioMyst-logo.png"
+    },
+    {
+      "id": "1035",
+      "name": "Reecho睿声",
+      "source": "https://ai-bot.cn/sites/8681.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/02/reecho-ai-voice-clone.png"
+    },
+    {
+      "id": "1036",
+      "name": "Udio",
+      "source": "https://ai-bot.cn/sites/11026.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/04/udio-ai-music-generator.png"
+    },
+    {
+      "id": "1030",
+      "name": "音疯",
+      "source": "https://ai-bot.cn/sites/18655.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/09/yinfeng-logo1.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/09/yinfeng-website.png"
+    },
+    {
+      "id": "1037",
+      "name": "网易天音",
+      "source": "https://ai-bot.cn/sites/702.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/10/tianyin-website3.png"
+    },
+    {
+      "id": "106",
+      "name": "商量SenseChat",
+      "source": "https://ai-bot.cn/sites/11529.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/04/sensechat-new-icon.png"
+    },
+    {
+      "id": "1046",
+      "name": "Supertone Shift",
+      "source": "https://ai-bot.cn/sites/11939.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/05/supertone-shift-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/05/supertone-shift-ai-voice-changer.png"
+    },
+    {
+      "id": "1067",
+      "name": "beatoven.ai",
+      "source": "https://ai-bot.cn/sites/2160.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/05/beatoven-ai-icon.png"
+    },
+    {
+      "id": "1062",
+      "name": "BGM猫",
+      "source": "https://ai-bot.cn/sites/1396.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/04/bgmcat-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/10/bgmcat-website.png"
+    },
+    {
+      "id": "1063",
+      "name": "快转字幕",
+      "source": "https://ai-bot.cn/sites/6544.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/12/kzzimu-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/12/kzzimu-ai.png"
+    },
+    {
+      "id": "1068",
+      "name": "BeatBot",
+      "source": "https://ai-bot.cn/sites/1965.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/04/beatbot-icon.png"
+    },
+    {
+      "id": "1074",
+      "name": "Play.ht",
+      "source": "https://ai-bot.cn/sites/253.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/play-ht-icon.png"
+    },
+    {
+      "id": "1076",
+      "name": "Lemonaid",
+      "source": "https://ai-bot.cn/sites/82.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/lemonaid-icon.png"
+    },
+    {
+      "id": "1078",
+      "name": "Boomy",
+      "source": "https://ai-bot.cn/sites/81.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/boomy-icon.png"
+    },
+    {
+      "id": "1083",
+      "name": "MetaVoice",
+      "source": "https://ai-bot.cn/sites/404.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/themetavoice-icon.png"
+    },
+    {
+      "id": "1087",
+      "name": "Listnr",
+      "source": "https://ai-bot.cn/sites/401.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/09/Listnr-website.png"
+    },
+    {
+      "id": "1088",
+      "name": "Voicemod",
+      "source": "https://ai-bot.cn/sites/400.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/09/Voicemod-website-1.png"
+    },
+    {
+      "id": "1079",
+      "name": "LOVO AI",
+      "source": "https://ai-bot.cn/sites/252.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/lovo-ai-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/08/LOVO-AI-website02.png"
+    },
+    {
+      "id": "1089",
+      "name": "WellSaid",
+      "source": "https://ai-bot.cn/sites/398.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/wellsaidlabs-icon.png"
+    },
+    {
+      "id": "1092",
+      "name": "Reportify",
+      "source": "https://ai-bot.cn/sites/9857.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/03/reportify-ai-engine.png"
+    },
+    {
+      "id": "1091",
+      "name": "Globe Explorer",
+      "source": "https://ai-bot.cn/sites/11840.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/05/globe-explorer-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/05/globe-explorer-ai-search-engine.png"
+    },
+    {
+      "id": "1099",
+      "name": "Songtell",
+      "source": "https://ai-bot.cn/sites/11854.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/05/songtell-ai-song-search.png"
+    },
+    {
+      "id": "1093",
+      "name": "Phind",
+      "source": "https://ai-bot.cn/sites/11852.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/05/phind-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/05/phind-ai-search-engine.jpeg"
+    },
+    {
+      "id": "1097",
+      "name": "Searcholic",
+      "source": "https://ai-bot.cn/sites/11853.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/05/searcholic-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/05/searcholic-ai-search.jpg"
+    },
+    {
+      "id": "110",
+      "name": "Muse",
+      "source": "https://ai-bot.cn/sites/86852.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/09/Muse-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/09/Muse-webiste.png"
+    },
+    {
+      "id": "1101",
+      "name": "Miku",
+      "source": "https://ai-bot.cn/sites/11851.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/05/miku-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/05/miku-ai-search-engine.jpeg"
+    },
+    {
+      "id": "1103",
+      "name": "Adot",
+      "source": "https://ai-bot.cn/sites/14712.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/07/Adot-website02.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/07/Adot-website.png"
+    },
+    {
+      "id": "1104",
+      "name": "开搜AI",
+      "source": "https://ai-bot.cn/sites/12880.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/05/kaisouai-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/05/kaisou-ai-search-engine.png"
+    },
+    {
+      "id": "1106",
+      "name": "MoMA",
+      "source": "https://ai-bot.cn/sites/77159.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/05/MoMA-logo.png"
+    },
+    {
+      "id": "1110",
+      "name": "万小智",
+      "source": "https://ai-bot.cn/sites/77243.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/05/wanxiaozhi-website1.png"
+    },
+    {
+      "id": "1105",
+      "name": "TokenDance",
+      "source": "https://ai-bot.cn/sites/76277.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/05/TokenDance-logo-2.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/04/TokenDance-website.png"
+    },
+    {
+      "id": "1109",
+      "name": "灵光",
+      "source": "https://ai-bot.cn/sites/68455.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/12/lingguang-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/12/lingguang-chat-website.png"
+    },
+    {
+      "id": "112",
+      "name": "椒图AI",
+      "source": "https://ai-bot.cn/sites/61891.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/09/jiaotuai-website.png"
+    },
+    {
+      "id": "1117",
+      "name": "数眼智能AI",
+      "source": "https://ai-bot.cn/sites/71707.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/02/shuyanai-icon-1.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/02/shuyanai-website.png"
+    },
+    {
+      "id": "1119",
+      "name": "LLaMA-Factory Online",
+      "source": "https://ai-bot.cn/sites/67872.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/12/LLaMA-Factory-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/12/LLaMA-Factory-website1.png"
+    },
+    {
+      "id": "1121",
+      "name": "APIMart",
+      "source": "https://ai-bot.cn/sites/67128.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/11/APIMart-website1.png"
+    },
+    {
+      "id": "1120",
+      "name": "大模型实验室",
+      "source": "https://ai-bot.cn/sites/67775.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/12/Lab4AI-icon-1.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/12/Lab4AI-website.png"
+    },
+    {
+      "id": "1123",
+      "name": "小马算力",
+      "source": "https://ai-bot.cn/sites/64827.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/10/tokenpony-icon-1.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/10/tokenpony-2-1.png"
+    },
+    {
+      "id": "1126",
+      "name": "搭叩",
+      "source": "https://ai-bot.cn/sites/64715.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/10/dakou-website1.png"
+    },
+    {
+      "id": "1124",
+      "name": "天壤小白",
+      "source": "https://ai-bot.cn/sites/8536.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/02/tianrang-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/09/tianrang-website.png"
+    },
+    {
+      "id": "1125",
+      "name": "Refly",
+      "source": "https://ai-bot.cn/sites/58318.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/07/Refly-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/07/Refly-website-1.png"
+    },
+    {
+      "id": "1127",
+      "name": "CREAO",
+      "source": "https://ai-bot.cn/sites/62299.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/09/creao.ai-logo.png"
+    },
+    {
+      "id": "1129",
+      "name": "蚂蚁百宝箱Tbox",
+      "source": "https://ai-bot.cn/sites/16414.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/09/8581725368494_.pic_.jpg"
+    },
+    {
+      "id": "1132",
+      "name": "LongCat开放平台",
+      "source": "https://ai-bot.cn/sites/62159.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/09/LongCat-icon.png"
+    },
+    {
+      "id": "1133",
+      "name": "X-All in one",
+      "source": "https://ai-bot.cn/sites/61576.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/09/X-All-in-one-icon.png"
+    },
+    {
+      "id": "1136",
+      "name": "智谱清流",
+      "source": "https://ai-bot.cn/sites/29524.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/11/qingliu-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/11/zhipuqingliu-website-1.png"
+    },
+    {
+      "id": "1138",
+      "name": "SkyAgents",
+      "source": "https://ai-bot.cn/sites/24351.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/08/tiangong-ai-search-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/10/skyagents-website1.png"
+    },
+    {
+      "id": "1148",
+      "name": "Scikit-learn",
+      "source": "https://ai-bot.cn/sites/60.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/scikit-learn-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/07/Scikit-Learn-website.png"
+    },
+    {
+      "id": "1151",
+      "name": "Chunkr",
+      "source": "https://ai-bot.cn/sites/16684.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/08/chunkr-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/08/Chunkr-website.png"
+    },
+    {
+      "id": "1158",
+      "name": "NLTK",
+      "source": "https://ai-bot.cn/sites/1273.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/04/nltk-icon.png"
+    },
+    {
+      "id": "1171",
+      "name": "PaLM 2",
+      "source": "https://ai-bot.cn/sites/1077.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/05/palm2-icon.png"
+    },
+    {
+      "id": "1162",
+      "name": "ChatDev",
+      "source": "https://ai-bot.cn/sites/5581.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/11/chatdev-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/11/chatdev-settings.png"
+    },
+    {
+      "id": "1163",
+      "name": "Anakin.ai",
+      "source": "https://ai-bot.cn/sites/8970.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/02/anakin-ai-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/02/anakin-ai-features.jpg"
+    },
+    {
+      "id": "1167",
+      "name": "Lamini",
+      "source": "https://ai-bot.cn/sites/2038.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/04/lamini-ai-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/04/lamini-ai-website.png"
+    },
+    {
+      "id": "1172",
+      "name": "Segment Anything（SAM）",
+      "source": "https://ai-bot.cn/sites/1351.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/meta-icon.png"
+    },
+    {
+      "id": "1174",
+      "name": "Imagen",
+      "source": "https://ai-bot.cn/sites/55.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/google-icon.png"
+    },
+    {
+      "id": "1179",
+      "name": "Replicate",
+      "source": "https://ai-bot.cn/sites/155.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/replicate-icon.png"
+    },
+    {
+      "id": "1180",
+      "name": "Evidently AI",
+      "source": "https://ai-bot.cn/sites/778.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/evidently-ai-icon.png"
+    },
+    {
+      "id": "1175",
+      "name": "StableVicuna",
+      "source": "https://ai-bot.cn/sites/2113.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/05/stablevicuna-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/05/stablevicuna-website.png"
+    },
+    {
+      "id": "1186",
+      "name": "茅茅虫降AI率",
+      "source": "https://ai-bot.cn/sites/67598.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/12/aigc.66paper-website2.png"
+    },
+    {
+      "id": "1193",
+      "name": "Sudowrite",
+      "source": "https://ai-bot.cn/sites/961.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/sudowrite-icon.png"
+    },
+    {
+      "id": "1181",
+      "name": "MOSS",
+      "source": "https://ai-bot.cn/sites/1858.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/04/moss-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/04/moss-fastnlp-website.jpeg"
+    },
+    {
+      "id": "1200",
+      "name": "ProWritingAid",
+      "source": "https://ai-bot.cn/sites/204.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/10/ProWritingAid-website1.png"
+    },
+    {
+      "id": "1196",
+      "name": "范文喵",
+      "source": "https://ai-bot.cn/sites/7364.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/01/openmao-ai-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/01/openmao-ai-homepage.png"
+    },
+    {
+      "id": "1197",
+      "name": "小微智能论文",
+      "source": "https://ai-bot.cn/sites/7512.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/01/xiaoweiai-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/01/xiaowei-ai-paper.png"
+    },
+    {
+      "id": "1201",
+      "name": "星火网文助手",
+      "source": "https://ai-bot.cn/sites/10977.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/04/writerdesk-icon.png"
+    },
+    {
+      "id": "1202",
+      "name": "通义灵眸",
+      "source": "https://ai-bot.cn/sites/63255.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/09/tongyi-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/09/lingmou-avatar-website-1.png"
+    },
+    {
+      "id": "1204",
+      "name": "Boba",
+      "source": "https://ai-bot.cn/sites/59515.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/08/Boba-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/08/Boba-website.png"
+    },
+    {
+      "id": "1210",
+      "name": "妙播",
+      "source": "https://ai-bot.cn/sites/50033.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/04/intelligent-live-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/04/intelligent-live-website1.png"
+    },
+    {
+      "id": "1211",
+      "name": "秒创",
+      "source": "https://ai-bot.cn/sites/1880.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/09/yizhentv-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/09/yizhentv-banner-1.png"
+    },
+    {
+      "id": "1214",
+      "name": "Flow Studio",
+      "source": "https://ai-bot.cn/sites/20030.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/09/Flow-Studio-website.png"
+    },
+    {
+      "id": "1213",
+      "name": "MOKI",
+      "source": "https://ai-bot.cn/sites/13399.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/06/moki-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/06/moki-ai-video-generator.png"
+    },
+    {
+      "id": "1221",
+      "name": "Stable Video",
+      "source": "https://ai-bot.cn/sites/8662.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/02/stable-video-ai-video-generator.png"
+    },
+    {
+      "id": "1219",
+      "name": "Humva",
+      "source": "https://ai-bot.cn/sites/18010.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/01/Humva-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/01/Humva-website.png"
+    },
+    {
+      "id": "1231",
+      "name": "飞影数字人",
+      "source": "https://ai-bot.cn/sites/24851.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/10/flyworks-website1.png"
+    },
+    {
+      "id": "1216",
+      "name": "寻光",
+      "source": "https://ai-bot.cn/sites/14162.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/07/ali-xunguang-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/07/xunguang-ai-video-generator.png"
+    },
+    {
+      "id": "1224",
+      "name": "Vimi",
+      "source": "https://ai-bot.cn/sites/14067.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/07/vimi-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/07/sensetime-vimi-ai.jpg"
+    },
+    {
+      "id": "1236",
+      "name": "Opus Clip",
+      "source": "https://ai-bot.cn/sites/16730.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/08/Opus-Clip-logo.png"
+    },
+    {
+      "id": "1233",
+      "name": "Pixfun",
+      "source": "https://ai-bot.cn/sites/16633.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/08/pixfun.jpg",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/08/Pixfun.png"
+    },
+    {
+      "id": "1235",
+      "name": "YoYo",
+      "source": "https://ai-bot.cn/sites/16242.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/08/yoyo-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/08/YoYo.png"
+    },
+    {
+      "id": "1240",
+      "name": "开拍",
+      "source": "https://ai-bot.cn/sites/7280.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/01/kaipai-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/01/kaipai-ai.png"
+    },
+    {
+      "id": "1241",
+      "name": "Duix",
+      "source": "https://ai-bot.cn/sites/13802.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/06/duix-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/06/duix-app-showcase.jpg"
+    },
+    {
+      "id": "1244",
+      "name": "Spikes Studio",
+      "source": "https://ai-bot.cn/sites/11245.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/04/spikes-studio-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/04/spikes-studio-ai-clip-generator.png"
+    },
+    {
+      "id": "1246",
+      "name": "DomoAI",
+      "source": "https://ai-bot.cn/sites/6983.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/12/domoai-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/07/DomoAI-website-3.png"
+    },
+    {
+      "id": "1247",
+      "name": "Gatekeep",
+      "source": "https://ai-bot.cn/sites/10195.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/03/gatekeep-ai-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/03/gatekeep-ai-video-generator.png"
+    },
+    {
+      "id": "1249",
+      "name": "Haiper",
+      "source": "https://ai-bot.cn/sites/9285.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/03/haiper-ai-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/03/haiper-ai-dashboard.png"
+    },
+    {
+      "id": "1250",
+      "name": "Showrunner",
+      "source": "https://ai-bot.cn/sites/13114.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/06/showrunner-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/06/showrunner-ai-video-maker.png"
+    },
+    {
+      "id": "1254",
+      "name": "Wonder Studio",
+      "source": "https://ai-bot.cn/sites/1424.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/04/wonder-dynamics-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/04/wonder-studio-demo.jpeg"
+    },
+    {
+      "id": "1256",
+      "name": "LTX Studio",
+      "source": "https://ai-bot.cn/sites/9071.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/02/ltx-studio-logo.png"
+    },
+    {
+      "id": "1265",
+      "name": "DreamFace",
+      "source": "https://ai-bot.cn/sites/361.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/08/DreamFace-website.png"
+    },
+    {
+      "id": "1260",
+      "name": "GoEnhance",
+      "source": "https://ai-bot.cn/sites/12248.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/05/goenhance-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/05/goenhance-ai-video-animator.png"
+    },
+    {
+      "id": "1262",
+      "name": "Unscreen",
+      "source": "https://ai-bot.cn/sites/40.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [
+        {
+          "kind": "cover",
+          "source": "https://ai-bot.cn/wp-content/uploads/2023/03/unscreen-website.png",
+          "code": "NOT_A_COVER_IMAGE"
+        }
+      ],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/unscreen-icon.png"
+    },
+    {
+      "id": "1263",
+      "name": "EbSynth",
+      "source": "https://ai-bot.cn/sites/1821.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/04/ebsynth-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/10/EbSynth-website1.png"
+    },
+    {
+      "id": "1266",
+      "name": "Mootion",
+      "source": "https://ai-bot.cn/sites/8525.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/07/Mootion-website-1-1.png"
+    },
+    {
+      "id": "1268",
+      "name": "奇妙元",
+      "source": "https://ai-bot.cn/sites/1926.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/04/weta365-website.png"
+    },
+    {
+      "id": "127",
+      "name": "Codex",
+      "source": "https://ai-bot.cn/sites/53.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/10/Codex-website-2.png"
+    },
+    {
+      "id": "1270",
+      "name": "Anylang.ai",
+      "source": "https://ai-bot.cn/sites/7162.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/01/anylang-ai-icon.png"
+    },
+    {
+      "id": "1267",
+      "name": "来画",
+      "source": "https://ai-bot.cn/sites/1497.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/12/laihua-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/12/laihua-website1.png"
+    },
+    {
+      "id": "1271",
+      "name": "万彩微影",
+      "source": "https://ai-bot.cn/sites/2599.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/05/animiz-microvideo-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/05/animiz-microvideo-website.png"
+    },
+    {
+      "id": "1277",
+      "name": "Veed Video Background Remover",
+      "source": "https://ai-bot.cn/sites/236.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": []
+    },
+    {
+      "id": "1272",
+      "name": "录咖",
+      "source": "https://ai-bot.cn/sites/9394.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/03/reccloud-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/03/reccloud-ai-caption.png"
+    },
+    {
+      "id": "1273",
+      "name": "怪兽AI数字人",
+      "source": "https://ai-bot.cn/sites/8805.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/02/guaishouai-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/02/guaishouai-digital-human.png"
+    },
+    {
+      "id": "1276",
+      "name": "模力视频",
+      "source": "https://ai-bot.cn/sites/12246.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/05/mooliv-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/05/mooliv-ai-video-generator.png"
+    },
+    {
+      "id": "1280",
+      "name": "Cutout.Pro",
+      "source": "https://ai-bot.cn/sites/237.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/09/cutout-pro-video-bg-remover.png"
+    },
+    {
+      "id": "1278",
+      "name": "BgRem",
+      "source": "https://ai-bot.cn/sites/239.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/bgrem-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/09/bgrem-website.png"
+    },
+    {
+      "id": "1282",
+      "name": "AVCLabs",
+      "source": "https://ai-bot.cn/sites/238.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/avclabs-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/03/avclabs.jpeg"
+    },
+    {
+      "id": "1283",
+      "name": "Rask",
+      "source": "https://ai-bot.cn/sites/1243.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/04/rask-ai-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/11/Rask-website.png"
+    },
+    {
+      "id": "1284",
+      "name": "Seele AI",
+      "source": "https://ai-bot.cn/sites/59644.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/08/Seele-AI-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/08/Seele-AI-website.png"
+    },
+    {
+      "id": "1285",
+      "name": "AnyGen",
+      "source": "https://ai-bot.cn/sites/69424.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/01/AnyGen-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/01/AnyGen-website2.png"
+    },
+    {
+      "id": "1286",
+      "name": "Tbox",
+      "source": "https://ai-bot.cn/sites/62355.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/09/Tbox-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/09/Tbox-website-1.png"
+    },
+    {
+      "id": "1290",
+      "name": "FlowMuse AI",
+      "source": "https://ai-bot.cn/sites/67911.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/12/FlowMuse-AI-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/12/FlowMuse-AI-website2.png"
+    },
+    {
+      "id": "1291",
+      "name": "NeoDomain",
+      "source": "https://ai-bot.cn/sites/67677.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [
+        {
+          "kind": "logo",
+          "source": "https://ai-bot.cn/wp-content/uploads/2025/12/NeoDomain-icon-1.png",
+          "code": "Input image exceeds pixel limit"
+        }
+      ],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/12/NeoDomain-website.png"
+    },
+    {
+      "id": "1293",
+      "name": "TabTab",
+      "source": "https://ai-bot.cn/sites/60949.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/08/tabtab-website-7.png"
+    },
+    {
+      "id": "1295",
+      "name": "月亮树AI选品",
+      "source": "https://ai-bot.cn/sites/64927.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/10/moonstatistics-icon.png"
+    },
+    {
+      "id": "1292",
+      "name": "Opera Neon",
+      "source": "https://ai-bot.cn/sites/64120.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/10/Opera-Neon-website-2.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/10/Opera-Neon-icon-1.png"
+    },
+    {
+      "id": "1294",
+      "name": "酷宣AI",
+      "source": "https://ai-bot.cn/sites/60693.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/10/kuxuanai-website-3.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/10/kuxuanai-website-4.png"
+    },
+    {
+      "id": "1296",
+      "name": "如此AI员工",
+      "source": "https://ai-bot.cn/sites/60115.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/08/ruciapp-logo.png"
+    },
+    {
+      "id": "1298",
+      "name": "SciMaster",
+      "source": "https://ai-bot.cn/sites/58991.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/08/scimaster_icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/07/SciMaster-website.png"
+    },
+    {
+      "id": "1301",
+      "name": "FinGenius",
+      "source": "https://ai-bot.cn/sites/57411.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/07/FinGenius-website.png"
+    },
+    {
+      "id": "1299",
+      "name": "Zeabur",
+      "source": "https://ai-bot.cn/sites/58176.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/07/zeabur-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/07/Zeabur-webiste.png"
+    },
+    {
+      "id": "139",
+      "name": "MiMo Code",
+      "source": "https://ai-bot.cn/sites/79441.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/06/MiMo-Code-website.png"
+    },
+    {
+      "id": "1302",
+      "name": "混沌Deep Innovation",
+      "source": "https://ai-bot.cn/sites/62815.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/09/Deep-Innovation-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/09/Deep-Innovation-website.png"
+    },
+    {
+      "id": "1305",
+      "name": "灵动AI",
+      "source": "https://ai-bot.cn/sites/6749.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/12/redoon-ai-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/12/redoon-ai-official-website.jpeg"
+    },
+    {
+      "id": "1300",
+      "name": "MyShell",
+      "source": "https://ai-bot.cn/sites/58058.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/07/MyShell-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/07/MyShell-website.png"
+    },
+    {
+      "id": "142",
+      "name": "Lovable",
+      "source": "https://ai-bot.cn/sites/60798.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/08/Lovable-webiste2.png"
+    },
+    {
+      "id": "15",
+      "name": "新华妙笔",
+      "source": "https://ai-bot.cn/sites/6498.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/12/xinhua-miaobi-icon.png"
+    },
+    {
+      "id": "141",
+      "name": "CodeBuddy IDE",
+      "source": "https://ai-bot.cn/sites/57753.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/07/codebuddy-logo-1.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/07/CodeBuddy-IDE-website-1.png"
+    },
+    {
+      "id": "155",
+      "name": "FastGPT",
+      "source": "https://ai-bot.cn/sites/65189.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/10/FastGPT-website1.png"
+    },
+    {
+      "id": "150",
+      "name": "CodeFlicker",
+      "source": "https://ai-bot.cn/sites/64617.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/10/CodeFlicker-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/10/CodeFlicker-website.png"
+    },
+    {
+      "id": "162",
+      "name": "扣子",
+      "source": "https://ai-bot.cn/sites/6791.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/01/Coze-website-2.png"
+    },
+    {
+      "id": "164",
+      "name": "千问云",
+      "source": "https://ai-bot.cn/sites/77621.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/05/qianwenai-website.png"
+    },
+    {
+      "id": "160",
+      "name": "Wanaka Studio",
+      "source": "https://ai-bot.cn/sites/89335.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/11/Canva-Brush-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/11/Canva-Brush-website-3.png"
+    },
+    {
+      "id": "165",
+      "name": "StreamLake",
+      "source": "https://ai-bot.cn/sites/81062.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/07/StreamLake-logo.png"
+    },
+    {
+      "id": "173",
+      "name": "QMuse",
+      "source": "https://ai-bot.cn/sites/81559.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/07/QMuse-logo.png"
+    },
+    {
+      "id": "179",
+      "name": "Figma AI",
+      "source": "https://ai-bot.cn/sites/13896.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/06/figma-ai-designer.png"
+    },
+    {
+      "id": "197",
+      "name": "Interiorize",
+      "source": "https://ai-bot.cn/sites/78158.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/05/Interiorize-website.png"
+    },
+    {
+      "id": "201",
+      "name": "魔力工作室",
+      "source": "https://ai-bot.cn/sites/15196.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/08/canva-magic-website.png"
+    },
+    {
+      "id": "177",
+      "name": "妙呀",
+      "source": "https://ai-bot.cn/sites/83281.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/08/miaoyaai-website.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/08/miaoyaai-website1.png"
+    },
+    {
+      "id": "192",
+      "name": "Ardot",
+      "source": "https://ai-bot.cn/sites/73831.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/03/Ardot-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/03/Ardot-website.png"
+    },
+    {
+      "id": "202",
+      "name": "魔音工坊",
+      "source": "https://ai-bot.cn/sites/1924.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/09/moyin-website.png"
+    },
+    {
+      "id": "224",
+      "name": "TurboScribe",
+      "source": "https://ai-bot.cn/sites/69917.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/01/TurboScribe-website-01.png"
+    },
+    {
+      "id": "227",
+      "name": "Perplexity",
+      "source": "https://ai-bot.cn/sites/65226.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/10/Perplexity-website.png"
+    },
+    {
+      "id": "211",
+      "name": "miya.fm",
+      "source": "https://ai-bot.cn/sites/87385.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/10/miya.fm-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/10/miya.fm-website.png"
+    },
+    {
+      "id": "229",
+      "name": "AMiner",
+      "source": "https://ai-bot.cn/sites/14355.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/07/aminer-logo.png"
+    },
+    {
+      "id": "23",
+      "name": "Midjourney",
+      "source": "https://ai-bot.cn/sites/56.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/03/midjourney-discord.png"
+    },
+    {
+      "id": "235",
+      "name": "蜜崽检索",
+      "source": "https://ai-bot.cn/sites/80024.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/06/mizai-website.png"
+    },
+    {
+      "id": "241",
+      "name": "WisPaper",
+      "source": "https://ai-bot.cn/sites/62394.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/09/WisPaper-website-1.png"
+    },
+    {
+      "id": "231",
+      "name": "元宝搜索",
+      "source": "https://ai-bot.cn/sites/89563.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/11/so.qq-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/11/so.qq-website.png"
+    },
+    {
+      "id": "237",
+      "name": "百度AI探索版",
+      "source": "https://ai-bot.cn/sites/28907.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/08/baidu-zuojia-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/11/baiduaitansuo-website.png"
+    },
+    {
+      "id": "254",
+      "name": "AI分享圈",
+      "source": "https://ai-bot.cn/sites/59568.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/08/Sharenet.ai-logo.png"
+    },
+    {
+      "id": "245",
+      "name": "博简智慧专利",
+      "source": "https://ai-bot.cn/sites/61089.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/08/pagentia-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/08/pagentia-website.png"
+    },
+    {
+      "id": "249",
+      "name": "Dexa AI",
+      "source": "https://ai-bot.cn/sites/15211.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/08/dexa-ai-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/08/Dexa-website02.png"
+    },
+    {
+      "id": "250",
+      "name": "XAnswer",
+      "source": "https://ai-bot.cn/sites/15156.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/08/XAnswer-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/08/XAnswer-website.png"
+    },
+    {
+      "id": "256",
+      "name": "fast.ai",
+      "source": "https://ai-bot.cn/sites/1356.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/04/fast-ai-icon.png"
+    },
+    {
+      "id": "264",
+      "name": "Coursera",
+      "source": "https://ai-bot.cn/sites/22.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/07/Coursera-webiste-1.png"
+    },
+    {
+      "id": "281",
+      "name": "txyz",
+      "source": "https://ai-bot.cn/sites/11135.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/04/txyz-ai-icon.png"
+    },
+    {
+      "id": "290",
+      "name": "Jan",
+      "source": "https://ai-bot.cn/sites/7412.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/01/jan-ai-homepage.png"
+    },
+    {
+      "id": "292",
+      "name": "OpenBMB",
+      "source": "https://ai-bot.cn/sites/1129.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/04/openbmb-icon.png"
+    },
+    {
+      "id": "280",
+      "name": "ShowMeAI知识社区",
+      "source": "https://ai-bot.cn/sites/1444.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/04/showmeai-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/05/ShowMeAI-website.png"
+    },
+    {
+      "id": "293",
+      "name": "Llama 3",
+      "source": "https://ai-bot.cn/sites/11341.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/meta-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/04/meta-llama-3-model-1.png"
+    },
+    {
+      "id": "295",
+      "name": "腾讯混元大模型",
+      "source": "https://ai-bot.cn/sites/4558.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/08/hunyuan.tencent-website.png"
+    },
+    {
+      "id": "296",
+      "name": "书生大模型",
+      "source": "https://ai-bot.cn/sites/53308.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/06/intern-ai-website.png"
+    },
+    {
+      "id": "299",
+      "name": "悟道",
+      "source": "https://ai-bot.cn/sites/1083.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/03/wudao-website.jpeg"
+    },
+    {
+      "id": "300",
+      "name": "MiracleVision奇想智能",
+      "source": "https://ai-bot.cn/sites/6279.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/12/miraclevison-homepage.png"
+    },
+    {
+      "id": "309",
+      "name": "SuperCLUE",
+      "source": "https://ai-bot.cn/sites/5437.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/11/superclue-icon.png"
+    },
+    {
+      "id": "302",
+      "name": "DeepFloyd IF",
+      "source": "https://ai-bot.cn/sites/2141.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/05/deepfloyd-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/05/deepfloyd-if-website.png"
+    },
+    {
+      "id": "305",
+      "name": "MMLU",
+      "source": "https://ai-bot.cn/sites/5434.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/11/mmlu-benchmark-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/11/mmlu-benchmark-website.png"
+    },
+    {
+      "id": "307",
+      "name": "C-Eval",
+      "source": "https://ai-bot.cn/sites/5433.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/11/c-eval-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/07/C-Eval-website.png"
+    },
+    {
+      "id": "310",
+      "name": "AGI-Eval",
+      "source": "https://ai-bot.cn/sites/34764.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/12/AGI-Eval-logo.png"
+    },
+    {
+      "id": "318",
+      "name": "PubMedQA",
+      "source": "https://ai-bot.cn/sites/5477.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/11/pubmedqa-icon.png"
+    },
+    {
+      "id": "317",
+      "name": "H2O EvalGPT",
+      "source": "https://ai-bot.cn/sites/5446.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/11/h2o-evalgpt-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/11/h2o-llm-evalgpt-rankings.png"
+    },
+    {
+      "id": "314",
+      "name": "HELM",
+      "source": "https://ai-bot.cn/sites/5447.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/11/helm-benchmark.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/07/HELM-webiste.png"
+    },
+    {
+      "id": "325",
+      "name": "Smodin AI Content Detector",
+      "source": "https://ai-bot.cn/sites/406.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/10/Smodin-AI-Content-Detector-website-1.png"
+    },
+    {
+      "id": "321",
+      "name": "StudyCorgi ChatGPT Detector",
+      "source": "https://ai-bot.cn/sites/411.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/studycorgi-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/11/studycorgi-chatgpt-detector-results.png"
+    },
+    {
+      "id": "331",
+      "name": "Originality.AI",
+      "source": "https://ai-bot.cn/sites/180.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/originality-ai-icon.png"
+    },
+    {
+      "id": "334",
+      "name": "PromptPilot",
+      "source": "https://ai-bot.cn/sites/69602.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/01/PromptPilot-website2.png"
+    },
+    {
+      "id": "335",
+      "name": "幂简AI提示词商城",
+      "source": "https://ai-bot.cn/sites/68309.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/12/prompts.explinks-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/12/prompts.explinks-website.png"
+    },
+    {
+      "id": "339",
+      "name": "PromptPerfect",
+      "source": "https://ai-bot.cn/sites/4963.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/10/promptperfect-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/10/promptperfect-demo.png"
+    },
+    {
+      "id": "340",
+      "name": "Stable Diffusion Prompt Book",
+      "source": "https://ai-bot.cn/sites/767.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/openart-ai-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/07/Stable-Diffusion-Prompt-Book-website.png"
+    },
+    {
+      "id": "343",
+      "name": "ClickPrompt",
+      "source": "https://ai-bot.cn/sites/756.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/clickprompt-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/07/ClickPrompt-website.png"
+    },
+    {
+      "id": "348",
+      "name": "PublicPrompts",
+      "source": "https://ai-bot.cn/sites/795.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/11/PublicPrompts-website.png"
+    },
+    {
+      "id": "352",
+      "name": "AI Prompt Genius",
+      "source": "https://ai-bot.cn/sites/748.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/chatgpt-prompt-genius-icon.png"
+    },
+    {
+      "id": "355",
+      "name": "Learning Prompt",
+      "source": "https://ai-bot.cn/sites/744.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/07/Learning-Prompt-website.png"
+    },
+    {
+      "id": "351",
+      "name": "PromptFolder",
+      "source": "https://ai-bot.cn/sites/760.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/07/PromptFolder-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/07/PromptFolder-webiste-1.png"
+    },
+    {
+      "id": "357",
+      "name": "模兜",
+      "source": "https://ai-bot.cn/sites/84390.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/08/modoudance-website.png"
+    },
+    {
+      "id": "356",
+      "name": "CakeGrowth",
+      "source": "https://ai-bot.cn/sites/75822.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/04/CakeGrowth-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/04/CakeGrowth-website1.png"
+    },
+    {
+      "id": "36",
+      "name": "Krene",
+      "source": "https://ai-bot.cn/sites/78196.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/05/Krene-website2-2.png"
+    },
+    {
+      "id": "358",
+      "name": "Linktree",
+      "source": "https://ai-bot.cn/sites/75834.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/04/Linktree-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/04/Linktree-website.png"
+    },
+    {
+      "id": "359",
+      "name": "Bitly",
+      "source": "https://ai-bot.cn/sites/76271.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/04/UniClaw-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/04/未命名-5-1.png"
+    },
+    {
+      "id": "363",
+      "name": "Antom",
+      "source": "https://ai-bot.cn/sites/88348.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/10/Antom-website2.png"
+    },
+    {
+      "id": "360",
+      "name": "PartnerStack",
+      "source": "https://ai-bot.cn/sites/75809.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/04/PartnerStack-website-2.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/04/PartnerStack-website2-1.png"
+    },
+    {
+      "id": "367",
+      "name": "稀土掘金",
+      "source": "https://ai-bot.cn/sites/77138.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/05/juejin-website.png"
+    },
+    {
+      "id": "364",
+      "name": "微信公众平台",
+      "source": "https://ai-bot.cn/sites/75826.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/04/mp.weixin.qq-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/04/mp.weixin.qq-website.png"
+    },
+    {
+      "id": "365",
+      "name": "头条号",
+      "source": "https://ai-bot.cn/sites/76370.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/04/toutiao-website3.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/04/toutiao-website4.png"
+    },
+    {
+      "id": "369",
+      "name": "CSDN",
+      "source": "https://ai-bot.cn/sites/77062.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/05/csdn-website.png"
+    },
+    {
+      "id": "368",
+      "name": "知乎",
+      "source": "https://ai-bot.cn/sites/77056.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/05/zhihu.creator-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/05/zhihu.creator-website1.png"
+    },
+    {
+      "id": "37",
+      "name": "AI改图神器",
+      "source": "https://ai-bot.cn/sites/1412.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/09/aidesigntools-website.png"
+    },
+    {
+      "id": "371",
+      "name": "小红书创作服务平台",
+      "source": "https://ai-bot.cn/sites/77134.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/05/creator.xiaohongshu-website.png"
+    },
+    {
+      "id": "375",
+      "name": "材料星AI",
+      "source": "https://ai-bot.cn/sites/70397.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/01/AIcailiaoxing-website1.png"
+    },
+    {
+      "id": "382",
+      "name": "YouMind",
+      "source": "https://ai-bot.cn/sites/61208.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/10/YouMind-website1.png"
+    },
+    {
+      "id": "370",
+      "name": "百家号",
+      "source": "https://ai-bot.cn/sites/76339.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/04/baijiahao-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/04/baijiahao-website.png"
+    },
+    {
+      "id": "384",
+      "name": "Muset",
+      "source": "https://ai-bot.cn/sites/62139.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/10/muset-website.png"
+    },
+    {
+      "id": "379",
+      "name": "QuillBot",
+      "source": "https://ai-bot.cn/sites/597.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/quillbot-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/09/QuillBot-website.png"
+    },
+    {
+      "id": "395",
+      "name": "彩云小梦",
+      "source": "https://ai-bot.cn/sites/913.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/11/xiaomengai-website.png"
+    },
+    {
+      "id": "398",
+      "name": "灵犀速写",
+      "source": "https://ai-bot.cn/sites/59700.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/08/lingxisuxie-website.png"
+    },
+    {
+      "id": "393",
+      "name": "橙篇",
+      "source": "https://ai-bot.cn/sites/12962.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/05/chengpian-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/05/chengpian-ai-document-tools.png"
+    },
+    {
+      "id": "394",
+      "name": "深言达意",
+      "source": "https://ai-bot.cn/sites/6044.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/11/shenyandayi-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/08/shenyandayi-website-1.png"
+    },
+    {
+      "id": "40",
+      "name": "视觉工厂",
+      "source": "https://ai-bot.cn/sites/70659.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/01/d.aijuh-website.png"
+    },
+    {
+      "id": "400",
+      "name": "库宝AI工作助手",
+      "source": "https://ai-bot.cn/sites/14618.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/07/588tool-website.png"
+    },
+    {
+      "id": "402",
+      "name": "文状元",
+      "source": "https://ai-bot.cn/sites/26114.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/10/wenzhuangyuan-website1.png"
+    },
+    {
+      "id": "399",
+      "name": "茅茅虫",
+      "source": "https://ai-bot.cn/sites/7381.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/09/mmc.cc-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/09/mmc.cc-website.png"
+    },
+    {
+      "id": "414",
+      "name": "百度作家平台",
+      "source": "https://ai-bot.cn/sites/4430.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/10/zuojia.baidu-logo.png"
+    },
+    {
+      "id": "403",
+      "name": "晓语台",
+      "source": "https://ai-bot.cn/sites/6316.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/12/xiaoyutai-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/12/xiaoyutai-ai-writer.png"
+    },
+    {
+      "id": "407",
+      "name": "有道翻译·AI写作",
+      "source": "https://ai-bot.cn/sites/23116.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/01/youdao-new-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/10/youdao-website1.png"
+    },
+    {
+      "id": "410",
+      "name": "灵构AI笔记",
+      "source": "https://ai-bot.cn/sites/5572.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/11/88lingo-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/11/88lingo-ai-writing.png"
+    },
+    {
+      "id": "419",
+      "name": "万彩AI",
+      "source": "https://ai-bot.cn/sites/2388.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/10/ai.kezhan365-website1.png"
+    },
+    {
+      "id": "415",
+      "name": "爱创作",
+      "source": "https://ai-bot.cn/sites/2404.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/05/ai-zaker-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/05/how-to-use-zaker-ai-writer.png"
+    },
+    {
+      "id": "425",
+      "name": "HyperWrite",
+      "source": "https://ai-bot.cn/sites/577.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/hyperwriteai-icon.png"
+    },
+    {
+      "id": "420",
+      "name": "WritingPal",
+      "source": "https://ai-bot.cn/sites/9744.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/03/writingpal-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/03/writingpal-ai.png"
+    },
+    {
+      "id": "423",
+      "name": "奇妙文",
+      "source": "https://ai-bot.cn/sites/1930.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/04/wen-mobvoi-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/04/wen-mobvoi-website.png"
+    },
+    {
+      "id": "436",
+      "name": "悟智AI",
+      "source": "https://ai-bot.cn/sites/7575.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/10/wuz-website.png"
+    },
+    {
+      "id": "428",
+      "name": "文涌Effidit",
+      "source": "https://ai-bot.cn/sites/37.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/effidit-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/11/tencent-effidit-ai-writer.png"
+    },
+    {
+      "id": "435",
+      "name": "创作王",
+      "source": "https://ai-bot.cn/sites/1333.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/04/aiapp-cc-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/04/aiapp-cc-banner.jpeg"
+    },
+    {
+      "id": "442",
+      "name": "秒画",
+      "source": "https://ai-bot.cn/sites/4749.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/09/miaohua-logo.png"
+    },
+    {
+      "id": "439",
+      "name": "快文CopyDone",
+      "source": "https://ai-bot.cn/sites/1295.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [
+        {
+          "kind": "cover",
+          "source": "https://ai-bot.cn/wp-content/uploads/2026/11/copyai-website-2.png",
+          "code": "HTTP_404"
+        }
+      ],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/11/copyai-website1.png"
+    },
+    {
+      "id": "448",
+      "name": "Canva AI图像生成",
+      "source": "https://ai-bot.cn/sites/58.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/10/Canva-website.png"
+    },
+    {
+      "id": "444",
+      "name": "奇域AI",
+      "source": "https://ai-bot.cn/sites/12769.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/05/qiyu-ai-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/05/qiyuai-ai-art-generator.png"
+    },
+    {
+      "id": "449",
+      "name": "超能画布",
+      "source": "https://ai-bot.cn/sites/10982.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/04/photasy-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/04/photasy-ai-image-generator.png"
+    },
+    {
+      "id": "456",
+      "name": "创客贴AI画匠",
+      "source": "https://ai-bot.cn/sites/1818.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/04/chuangkit-aiart-icon.png"
+    },
+    {
+      "id": "450",
+      "name": "Bing Image Creator",
+      "source": "https://ai-bot.cn/sites/912.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/new-bing-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/03/bing-image-creator-chat.jpeg"
+    },
+    {
+      "id": "455",
+      "name": "6pen Art",
+      "source": "https://ai-bot.cn/sites/2342.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/05/6pen-art-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/05/6pen-art-website.png"
+    },
+    {
+      "id": "457",
+      "name": "360智绘",
+      "source": "https://ai-bot.cn/sites/6840.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/12/360-aigc-website.jpeg"
+    },
+    {
+      "id": "461",
+      "name": "Freepik AI Image Generator",
+      "source": "https://ai-bot.cn/sites/2762.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/06/freepik-ai-image-generator-demo.png"
+    },
+    {
+      "id": "460",
+      "name": "Morisot",
+      "source": "https://ai-bot.cn/sites/67190.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/11/Morisot-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/11/Morisot-website.png"
+    },
+    {
+      "id": "473",
+      "name": "Zyro AI Image Upscaler",
+      "source": "https://ai-bot.cn/sites/216.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/zyro-icon.png"
+    },
+    {
+      "id": "463",
+      "name": "Upscayl",
+      "source": "https://ai-bot.cn/sites/1531.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/04/upscayl-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/04/upscayl-website.jpeg"
+    },
+    {
+      "id": "485",
+      "name": "IOPaint",
+      "source": "https://ai-bot.cn/sites/9056.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/02/iopaint-icon.png"
+    },
+    {
+      "id": "467",
+      "name": "Magnific AI",
+      "source": "https://ai-bot.cn/sites/7402.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/09/Magnific-AI-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/09/Magnific-website.png"
+    },
+    {
+      "id": "518",
+      "name": "莱诺鸟",
+      "source": "https://ai-bot.cn/sites/86660.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/09/lainuoniao-website.png"
+    },
+    {
+      "id": "496",
+      "name": "Facet",
+      "source": "https://ai-bot.cn/sites/976.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/facet-ai-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/03/facet-website.jpg"
+    },
+    {
+      "id": "509",
+      "name": "transpic",
+      "source": "https://ai-bot.cn/sites/4246.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/08/transpic-ai-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/08/transpic-ai-website.png"
+    },
+    {
+      "id": "516",
+      "name": "绘蛙AI",
+      "source": "https://ai-bot.cn/sites/9195.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/03/ihuiwa-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/03/ihuiwa-ai-tool.png"
+    },
+    {
+      "id": "519",
+      "name": "PixoLet",
+      "source": "https://ai-bot.cn/sites/87281.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/09/PixoLet-webiste.png"
+    },
+    {
+      "id": "525",
+      "name": "GemHues",
+      "source": "https://ai-bot.cn/sites/79056.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/06/GemHues-website.png"
+    },
+    {
+      "id": "526",
+      "name": "PhotoStudio AI",
+      "source": "https://ai-bot.cn/sites/12165.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/05/photostudio-ai-product-photo.png"
+    },
+    {
+      "id": "528",
+      "name": "千鹿AI",
+      "source": "https://ai-bot.cn/sites/24841.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/08/qianluai-website-1.png"
+    },
+    {
+      "id": "523",
+      "name": "莓图AI",
+      "source": "https://ai-bot.cn/sites/81218.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/07/meitu-ai-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/07/meitu-ai-website.png"
+    },
+    {
+      "id": "530",
+      "name": "美间AI商拍",
+      "source": "https://ai-bot.cn/sites/25529.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/10/meijian-e-commerce-website1.png"
+    },
+    {
+      "id": "534",
+      "name": "Mokker AI",
+      "source": "https://ai-bot.cn/sites/173.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/mokker-ai-icon.png"
+    },
+    {
+      "id": "531",
+      "name": "Cliclic AI",
+      "source": "https://ai-bot.cn/sites/13023.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/05/cliclic-ai-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/05/cliclic-ai-product-photo-1.png"
+    },
+    {
+      "id": "532",
+      "name": "创自由",
+      "source": "https://ai-bot.cn/sites/17398.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/08/chuangziyou-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/08/chuangziyou-website.png"
+    },
+    {
+      "id": "539",
+      "name": "Neural4D",
+      "source": "https://ai-bot.cn/sites/70251.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/01/Neural4D-website.png"
+    },
+    {
+      "id": "535",
+      "name": "花生图像",
+      "source": "https://ai-bot.cn/sites/11541.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/04/hsphoto-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/04/hsphoto-ai-product-photo-generator.png"
+    },
+    {
+      "id": "543",
+      "name": "绘蛙AI转3D",
+      "source": "https://ai-bot.cn/sites/61408.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/08/huiwa-to3d-website1.png"
+    },
+    {
+      "id": "546",
+      "name": "造好物",
+      "source": "https://ai-bot.cn/sites/59706.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/08/zaohaowu-website.png"
+    },
+    {
+      "id": "541",
+      "name": "Fast3D",
+      "source": "https://ai-bot.cn/sites/57279.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/07/Fast3D-logo1.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/07/Fast3D-website.png"
+    },
+    {
+      "id": "55",
+      "name": "likli",
+      "source": "https://ai-bot.cn/sites/90133.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/11/likli-logo.png"
+    },
+    {
+      "id": "547",
+      "name": "Hitems",
+      "source": "https://ai-bot.cn/sites/38477.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/01/hitems-logo-2.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/01/Hitems-website.png"
+    },
+    {
+      "id": "549",
+      "name": "LuxReal",
+      "source": "https://ai-bot.cn/sites/69990.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/01/LuxReal-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/01/LuxReal-website-2.png"
+    },
+    {
+      "id": "552",
+      "name": "美图抠图",
+      "source": "https://ai-bot.cn/sites/1991.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/12/cutout-meitu-website.png"
+    },
+    {
+      "id": "550",
+      "name": "VoxCraft",
+      "source": "https://ai-bot.cn/sites/11164.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/04/voxcraft-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/04/voxcraft-ai-3d-generator.png"
+    },
+    {
+      "id": "555",
+      "name": "抠抠图",
+      "source": "https://ai-bot.cn/sites/70008.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/01/koukoutu-webiste2-1.png"
+    },
+    {
+      "id": "551",
+      "name": "Meshy",
+      "source": "https://ai-bot.cn/sites/6080.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/10/Meshy-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/10/Meshy-website1.png"
+    },
+    {
+      "id": "563",
+      "name": "Adobe Image Background Remover",
+      "source": "https://ai-bot.cn/sites/313.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/adobe-express-icon.png"
+    },
+    {
+      "id": "571",
+      "name": "Zyro AI Background Remover",
+      "source": "https://ai-bot.cn/sites/302.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/zyro-icon.png"
+    },
+    {
+      "id": "572",
+      "name": "PhotoScissors",
+      "source": "https://ai-bot.cn/sites/284.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": []
+    },
+    {
+      "id": "564",
+      "name": "Removal.AI",
+      "source": "https://ai-bot.cn/sites/87.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": [
+        {
+          "kind": "cover",
+          "source": "https://ai-bot.cn/wp-content/uploads/2023/03/removal-ai-website.png",
+          "code": "NOT_A_COVER_IMAGE"
+        }
+      ]
+    },
+    {
+      "id": "556",
+      "name": "光子AI抠图",
+      "source": "https://ai-bot.cn/sites/61292.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/07/photonaiclub-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/08/photonaiclub-cutout-2.png"
+    },
+    {
+      "id": "569",
+      "name": "BGremover",
+      "source": "https://ai-bot.cn/sites/304.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/vance-ai-bgremover-icon.png"
+    },
+    {
+      "id": "576",
+      "name": "Stylized",
+      "source": "https://ai-bot.cn/sites/174.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/stylized-icon.png"
+    },
+    {
+      "id": "577",
+      "name": "Booth.ai",
+      "source": "https://ai-bot.cn/sites/178.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/booth-ai-icon.png"
+    },
+    {
+      "id": "581",
+      "name": "海艺剧场",
+      "source": "https://ai-bot.cn/sites/84670.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/08/seavideo-website.png"
+    },
+    {
+      "id": "584",
+      "name": "RHTV",
+      "source": "https://ai-bot.cn/sites/76657.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/05/RHTV-website.png"
+    },
+    {
+      "id": "597",
+      "name": "TDream",
+      "source": "https://ai-bot.cn/sites/81153.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/07/TDream-website.png"
+    },
+    {
+      "id": "608",
+      "name": "YOCO智能制课",
+      "source": "https://ai-bot.cn/sites/78997.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/06/yoco-icon.png"
+    },
+    {
+      "id": "594",
+      "name": "Lumina",
+      "source": "https://ai-bot.cn/sites/82755.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/07/Lumina-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/07/Lumina-website.png"
+    },
+    {
+      "id": "62",
+      "name": "稿定PPT",
+      "source": "https://ai-bot.cn/sites/35715.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/12/gaoding-PPT-website.png"
+    },
+    {
+      "id": "611",
+      "name": "交织 Weave",
+      "source": "https://ai-bot.cn/sites/78597.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/06/Weave-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/06/Weave-website.png"
+    },
+    {
+      "id": "621",
+      "name": "Topview",
+      "source": "https://ai-bot.cn/sites/76205.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/04/Topview-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/04/Topview-website.png"
+    },
+    {
+      "id": "627",
+      "name": "千问创作",
+      "source": "https://ai-bot.cn/sites/63437.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/09/create.qianwen-webiste-2.png"
+    },
+    {
+      "id": "622",
+      "name": "万镜一刻",
+      "source": "https://ai-bot.cn/sites/75094.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/04/yikeai-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/02/yikeai-website.png"
+    },
+    {
+      "id": "624",
+      "name": "灵绘AI",
+      "source": "https://ai-bot.cn/sites/75762.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/04/linghuiai-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/04/linghuiai-website.png"
+    },
+    {
+      "id": "628",
+      "name": "造次",
+      "source": "https://ai-bot.cn/sites/66554.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/11/zaoci-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/11/zaoci-website1.png"
+    },
+    {
+      "id": "631",
+      "name": "MochiAni",
+      "source": "https://ai-bot.cn/sites/69647.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/01/MochiAni-logo.jpg",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/01/MochiAni-website.png"
+    },
+    {
+      "id": "633",
+      "name": "NextCut AI",
+      "source": "https://ai-bot.cn/sites/69946.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/01/NextCut-icon-1.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/01/NextCut-website.png"
+    },
+    {
+      "id": "635",
+      "name": "萌动AI",
+      "source": "https://ai-bot.cn/sites/63694.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/09/Animon-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/09/Animon-website-4.png"
+    },
+    {
+      "id": "639",
+      "name": "智谱清影",
+      "source": "https://ai-bot.cn/sites/59040.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/08/chatglm-video-website2.png"
+    },
+    {
+      "id": "641",
+      "name": "磁力开创",
+      "source": "https://ai-bot.cn/sites/62311.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/09/kc-kuaishou-icon.png"
+    },
+    {
+      "id": "642",
+      "name": "A2E",
+      "source": "https://ai-bot.cn/sites/69913.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/01/A2E-icon.png"
+    },
+    {
+      "id": "638",
+      "name": "即创",
+      "source": "https://ai-bot.cn/sites/5560.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/11/aic-oceanengine-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/11/aic-oceanengine-ai-avatar.png"
+    },
+    {
+      "id": "648",
+      "name": "求职方舟",
+      "source": "https://ai-bot.cn/sites/64294.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/10/qiuzhifangzhou-website.png"
+    },
+    {
+      "id": "652",
+      "name": "AskCc",
+      "source": "https://ai-bot.cn/sites/84400.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/08/AskCc-logo.png"
+    },
+    {
+      "id": "647",
+      "name": "SekoTalk",
+      "source": "https://ai-bot.cn/sites/63158.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/07/Seko-logo-1.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/09/SekoTalk-website.png"
+    },
+    {
+      "id": "65",
+      "name": "百度文库AI助手",
+      "source": "https://ai-bot.cn/sites/5037.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/01/baidu-wenku-website2.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/01/baidu-wenku-website.png"
+    },
+    {
+      "id": "651",
+      "name": "面团AI",
+      "source": "https://ai-bot.cn/sites/62337.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/09/miantuan-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/09/miantuan-website-1.png"
+    },
+    {
+      "id": "659",
+      "name": "理聘AI",
+      "source": "https://ai-bot.cn/sites/66201.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/11/lipinai-icon.png"
+    },
+    {
+      "id": "653",
+      "name": "不繁简历",
+      "source": "https://ai-bot.cn/sites/83051.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/07/bufancv-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/07/bufancv-website1.png"
+    },
+    {
+      "id": "658",
+      "name": "AI面试帮",
+      "source": "https://ai-bot.cn/sites/67371.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/11/aimianshibang-icon-1.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/11/aimianshibang-website.png"
+    },
+    {
+      "id": "66",
+      "name": "Gamma",
+      "source": "https://ai-bot.cn/sites/995.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/01/Gamma-logo-1-1.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/04/Gamma-website.png"
+    },
+    {
+      "id": "662",
+      "name": "TelehireAI面试",
+      "source": "https://ai-bot.cn/sites/63291.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/09/Telehire-AI-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/09/Telehire-AI-website.png"
+    },
+    {
+      "id": "668",
+      "name": "神笔简历",
+      "source": "https://ai-bot.cn/sites/26894.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/10/shenbijianli-website.png"
+    },
+    {
+      "id": "666",
+      "name": "职得简历",
+      "source": "https://ai-bot.cn/sites/26884.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/10/zhidejianli-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/10/zhidejianli-website.png"
+    },
+    {
+      "id": "667",
+      "name": "蓝字典AI求职",
+      "source": "https://ai-bot.cn/sites/26782.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/10/lanzidian-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/10/lanzidian-website1.png"
+    },
+    {
+      "id": "674",
+      "name": "Otter.ai",
+      "source": "https://ai-bot.cn/sites/720.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/otter-ai-icon.png"
+    },
+    {
+      "id": "671",
+      "name": "通义听悟",
+      "source": "https://ai-bot.cn/sites/2026.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/09/tingwu-website.png"
+    },
+    {
+      "id": "680",
+      "name": "Noty.ai",
+      "source": "https://ai-bot.cn/sites/1147.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/04/noty-ai-icon.png"
+    },
+    {
+      "id": "670",
+      "name": "简单听记",
+      "source": "https://ai-bot.cn/sites/28201.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/11/listennote-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/11/listennote-website.png"
+    },
+    {
+      "id": "683",
+      "name": "TinyWow",
+      "source": "https://ai-bot.cn/sites/605.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/07/TinyWow-website.png"
+    },
+    {
+      "id": "681",
+      "name": "Airgram",
+      "source": "https://ai-bot.cn/sites/1807.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/04/airgram-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/04/airgram-website.jpeg"
+    },
+    {
+      "id": "682",
+      "name": "ima.copilot",
+      "source": "https://ai-bot.cn/sites/26420.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/10/ima-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/10/ima-website.png"
+    },
+    {
+      "id": "686",
+      "name": "我来wolai",
+      "source": "https://ai-bot.cn/sites/59463.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/08/wolai-website1.png"
+    },
+    {
+      "id": "685",
+      "name": "Ponder AI",
+      "source": "https://ai-bot.cn/sites/58413.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/07/ponder-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/07/Ponder-AI-website.png"
+    },
+    {
+      "id": "692",
+      "name": "你好星识",
+      "source": "https://ai-bot.cn/sites/59889.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/08/HiStella-webiste.png"
+    },
+    {
+      "id": "69",
+      "name": "Swishy",
+      "source": "https://ai-bot.cn/sites/76133.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/04/Swishy-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/04/Swishy-website.png"
+    },
+    {
+      "id": "690",
+      "name": "Loom",
+      "source": "https://ai-bot.cn/sites/69878.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/01/Loom-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/01/Loom-website.png"
+    },
+    {
+      "id": "693",
+      "name": "飞书多维表格",
+      "source": "https://ai-bot.cn/sites/46015.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/03/feishu-ai-register-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/03/feishuduoweibiaoge-website.png"
+    },
+    {
+      "id": "696",
+      "name": "猫头鹰AI网页订阅",
+      "source": "https://ai-bot.cn/sites/68533.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/12/mtywatch-ai-website.png"
+    },
+    {
+      "id": "694",
+      "name": "Briefly",
+      "source": "https://ai-bot.cn/sites/71074.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/01/Briefly-icon-1.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/01/Briefly-website.png"
+    },
+    {
+      "id": "695",
+      "name": "EasyClaw",
+      "source": "https://ai-bot.cn/sites/71587.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/02/EasyClaw-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/02/EasyClaw-website.png"
+    },
+    {
+      "id": "698",
+      "name": "找我呀",
+      "source": "https://ai-bot.cn/sites/63755.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/09/Findme-website-1.png"
+    },
+    {
+      "id": "697",
+      "name": "秒言AI语音输入法",
+      "source": "https://ai-bot.cn/sites/68449.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/12/miaoyan-ai-icon-1-1.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/12/miaoyan-ai-website1.png"
+    },
+    {
+      "id": "700",
+      "name": "WPS灵犀",
+      "source": "https://ai-bot.cn/sites/17620.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/08/lingxi.wps-logo.png"
+    },
+    {
+      "id": "70",
+      "name": "ChartGen",
+      "source": "https://ai-bot.cn/sites/69545.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/01/chartgen_icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/01/ChartGen-zh-1.png"
+    },
+    {
+      "id": "702",
+      "name": "奇觅",
+      "source": "https://ai-bot.cn/sites/13394.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/09/qimi-website.png"
+    },
+    {
+      "id": "701",
+      "name": "Glif",
+      "source": "https://ai-bot.cn/sites/13979.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/07/glif-app-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/07/glif-ai-nocode-workflow.png"
+    },
+    {
+      "id": "703",
+      "name": "云一朵",
+      "source": "https://ai-bot.cn/sites/3921.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/08/baidu-aipan-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/08/baidu-aipan-website.jpeg"
+    },
+    {
+      "id": "704",
+      "name": "苏打办公",
+      "source": "https://ai-bot.cn/sites/23449.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/10/suda-bangong-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/10/soda-website-1.png"
+    },
+    {
+      "id": "705",
+      "name": "Lightfield",
+      "source": "https://ai-bot.cn/sites/482.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/07/Lightfield-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/07/Lightfield-website.png"
+    },
+    {
+      "id": "706",
+      "name": "Hoarder",
+      "source": "https://ai-bot.cn/sites/13103.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/06/hoarder-app-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/06/hoarder-app-bookmark.png"
+    },
+    {
+      "id": "708",
+      "name": "奇妙问",
+      "source": "https://ai-bot.cn/sites/11524.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/04/aiask365-avatar-employee.png"
+    },
+    {
+      "id": "707",
+      "name": "通义晓蜜",
+      "source": "https://ai-bot.cn/sites/19653.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/04/tongyi-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/09/tongyixiaomi-website1.png"
+    },
+    {
+      "id": "713",
+      "name": "沉浸式翻译",
+      "source": "https://ai-bot.cn/sites/16725.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/08/immersivetranslate-logo.jpg",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/08/immersivetranslate-website.png"
+    },
+    {
+      "id": "722",
+      "name": "腾讯交互翻译",
+      "source": "https://ai-bot.cn/sites/26673.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/10/qqtransmart-website-2.png"
+    },
+    {
+      "id": "715",
+      "name": "Google翻译",
+      "source": "https://ai-bot.cn/sites/1381.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/04/google-translate-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/08/google-translate-website1.png"
+    },
+    {
+      "id": "72",
+      "name": "PicDoc",
+      "source": "https://ai-bot.cn/sites/53412.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/06/PicDoc-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/06/PicDoc-website.png"
+    },
+    {
+      "id": "735",
+      "name": "飞书智能伙伴",
+      "source": "https://ai-bot.cn/sites/5947.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/11/feishu-ai-companion-assistant.jpeg"
+    },
+    {
+      "id": "738",
+      "name": "WPS AI",
+      "source": "https://ai-bot.cn/sites/1737.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/07/wps-ai-features.jpg"
+    },
+    {
+      "id": "725",
+      "name": "Toby",
+      "source": "https://ai-bot.cn/sites/16079.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/08/toby-logo1.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/08/Toby-website01.png"
+    },
+    {
+      "id": "734",
+      "name": "金山快译",
+      "source": "https://ai-bot.cn/sites/1854.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/04/wps-kuaiyi-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/04/kuaiyi-wps-website.jpeg"
+    },
+    {
+      "id": "740",
+      "name": "吾律AI律师",
+      "source": "https://ai-bot.cn/sites/62107.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/09/wulv-website1.png"
+    },
+    {
+      "id": "741",
+      "name": "元典智库",
+      "source": "https://ai-bot.cn/sites/13593.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/06/chinese-law-ai-search-engine.png"
+    },
+    {
+      "id": "743",
+      "name": "法行宝",
+      "source": "https://ai-bot.cn/sites/11432.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/04/baidu-ai-legal-assistant.png"
+    },
+    {
+      "id": "74",
+      "name": "夸克PPT",
+      "source": "https://ai-bot.cn/sites/66082.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/11/quark-logo-1.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/11/ppt.quark-website3-1.png"
+    },
+    {
+      "id": "748",
+      "name": "ChatLaw",
+      "source": "https://ai-bot.cn/sites/11444.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/04/chatlaw-ai-legal-assistant.png"
+    },
+    {
+      "id": "749",
+      "name": "得理法搜",
+      "source": "https://ai-bot.cn/sites/11442.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/04/deli-legal-search.png"
+    },
+    {
+      "id": "744",
+      "name": "iTerms",
+      "source": "https://ai-bot.cn/sites/64973.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/10/iTerms-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/10/iTerms-website.png"
+    },
+    {
+      "id": "753",
+      "name": "ChatExcel",
+      "source": "https://ai-bot.cn/sites/69072.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/12/ChatExcel-website.png"
+    },
+    {
+      "id": "754",
+      "name": "marmos",
+      "source": "https://ai-bot.cn/sites/84461.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/08/marmos-website2.png"
+    },
+    {
+      "id": "751",
+      "name": "海瑞智法",
+      "source": "https://ai-bot.cn/sites/11443.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/04/hairuilegal-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/04/hairuilegal-ai-assistant.png"
+    },
+    {
+      "id": "755",
+      "name": "数以轻舟Agent",
+      "source": "https://ai-bot.cn/sites/77034.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/05/Dify-ai-icon.png"
+    },
+    {
+      "id": "76",
+      "name": "美图AI PPT",
+      "source": "https://ai-bot.cn/sites/1744.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/07/ppt.designkit-webiste1.png"
+    },
+    {
+      "id": "762",
+      "name": "ChatSPSS",
+      "source": "https://ai-bot.cn/sites/81550.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/07/ChatSPSS-website.png"
+    },
+    {
+      "id": "757",
+      "name": "Tomoro",
+      "source": "https://ai-bot.cn/sites/63302.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/09/Tomoro-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/09/Tomoro-website1.png"
+    },
+    {
+      "id": "763",
+      "name": "爱图表",
+      "source": "https://ai-bot.cn/sites/59717.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/03/aitubiao-website.png"
+    },
+    {
+      "id": "764",
+      "name": "ChartinAI",
+      "source": "https://ai-bot.cn/sites/70851.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/01/ChartinAI-website1.png"
+    },
+    {
+      "id": "768",
+      "name": "Sheet+",
+      "source": "https://ai-bot.cn/sites/373.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": []
+    },
+    {
+      "id": "759",
+      "name": "XCell",
+      "source": "https://ai-bot.cn/sites/84806.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/08/XCell-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/08/XCell-website.png"
+    },
+    {
+      "id": "765",
+      "name": "vika维格云",
+      "source": "https://ai-bot.cn/sites/11865.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/05/viak-ai-spreadsheet.jpeg"
+    },
+    {
+      "id": "769",
+      "name": "轻云图",
+      "source": "https://ai-bot.cn/sites/14533.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/07/cloud-yoo-ai-website.png"
+    },
+    {
+      "id": "77",
+      "name": "飞象老师",
+      "source": "https://ai-bot.cn/sites/67628.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/08/feixianglaoshi-website.png"
+    },
+    {
+      "id": "776",
+      "name": "Excel Formularizer",
+      "source": "https://ai-bot.cn/sites/1149.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/04/excel-formularizer-icon.png"
+    },
+    {
+      "id": "766",
+      "name": "百度GBI",
+      "source": "https://ai-bot.cn/sites/16121.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/05/baidu-xiling-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/08/baidu-website.png"
+    },
+    {
+      "id": "778",
+      "name": "小绿鲸",
+      "source": "https://ai-bot.cn/sites/53977.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/06/xljsci-website2.png"
+    },
+    {
+      "id": "774",
+      "name": "Excelly-AI",
+      "source": "https://ai-bot.cn/sites/1146.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/04/excelly-ai-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/07/Excelly-AI-webiste1.png"
+    },
+    {
+      "id": "779",
+      "name": "Lantay",
+      "source": "https://ai-bot.cn/sites/75337.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/04/Lantay-website.png"
+    },
+    {
+      "id": "784",
+      "name": "智写流程",
+      "source": "https://ai-bot.cn/sites/59743.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/08/igenflow-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/08/igenflow-website3.png"
+    },
+    {
+      "id": "786",
+      "name": "Acrobat AI Assistant",
+      "source": "https://ai-bot.cn/sites/8594.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/02/adobe-acrobat-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/02/adobe-acrobat-ai-assistant.png"
+    },
+    {
+      "id": "787",
+      "name": "腾讯文档智能助手",
+      "source": "https://ai-bot.cn/sites/8079.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/01/qq-docs-ai-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/01/qq-docs-ai-content-creator.png"
+    },
+    {
+      "id": "789",
+      "name": "Quivr",
+      "source": "https://ai-bot.cn/sites/8353.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/02/quivr-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/02/quivr-ai-website.png"
+    },
+    {
+      "id": "79",
+      "name": "NarraLand",
+      "source": "https://ai-bot.cn/sites/72530.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/02/NarraLand-website1.png"
+    },
+    {
+      "id": "790",
+      "name": "Coda",
+      "source": "https://ai-bot.cn/sites/2957.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/06/coda-icon.png"
+    },
+    {
+      "id": "792",
+      "name": "腾讯问卷",
+      "source": "https://ai-bot.cn/sites/8584.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/02/wj-qq-ai.png"
+    },
+    {
+      "id": "794",
+      "name": "通义智文",
+      "source": "https://ai-bot.cn/sites/5273.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/10/tongyi-zhiwen-demo.png"
+    },
+    {
+      "id": "796",
+      "name": "星火文档问答",
+      "source": "https://ai-bot.cn/sites/5564.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/11/xfyun-chatdoc-ai.png"
+    },
+    {
+      "id": "793",
+      "name": "匡优AI",
+      "source": "https://ai-bot.cn/sites/19652.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/09/ai.kyou-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/09/ai.kyou-website-1.png"
+    },
+    {
+      "id": "8",
+      "name": "光速写作",
+      "source": "https://ai-bot.cn/sites/7244.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/09/guangsuxie-website-2.png"
+    },
+    {
+      "id": "795",
+      "name": "字语智能",
+      "source": "https://ai-bot.cn/sites/2106.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/05/getgetai-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/05/getgetai-workspace.png"
+    },
+    {
+      "id": "798",
+      "name": "PDF.ai",
+      "source": "https://ai-bot.cn/sites/6251.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/12/pdf-ai-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/12/pdf-ai-summarizer.png"
+    },
+    {
+      "id": "801",
+      "name": "星火科研助手",
+      "source": "https://ai-bot.cn/sites/6468.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/12/paper-iflytek-website.png"
+    },
+    {
+      "id": "800",
+      "name": "知我AI",
+      "source": "https://ai-bot.cn/sites/6765.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/12/knowme-ai-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/12/knowme-ai-reader.png"
+    },
+    {
+      "id": "802",
+      "name": "印象AI",
+      "source": "https://ai-bot.cn/sites/1734.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/04/yinxiang-ai-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/04/yinxiang-ai-website.png"
+    },
+    {
+      "id": "803",
+      "name": "Craft AI Assistant",
+      "source": "https://ai-bot.cn/sites/3488.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/07/craft-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/07/craft-ai-assistant-document.png"
+    },
+    {
+      "id": "804",
+      "name": "TreeMind树图",
+      "source": "https://ai-bot.cn/sites/1570.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/04/treemind-shutu-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/10/shutu-website.png"
+    },
+    {
+      "id": "805",
+      "name": "博思白板",
+      "source": "https://ai-bot.cn/sites/1534.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/04/boardmix-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/07/boardmix-ai-whiteboard.png"
+    },
+    {
+      "id": "806",
+      "name": "畅图AI",
+      "source": "https://ai-bot.cn/sites/57154.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/07/fluig-logo-1.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/07/fluig-website.png"
+    },
+    {
+      "id": "807",
+      "name": "可赞AI",
+      "source": "https://ai-bot.cn/sites/60383.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/08/kezign-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/08/kezign-website-1.png"
+    },
+    {
+      "id": "808",
+      "name": "ProcessOn",
+      "source": "https://ai-bot.cn/sites/6235.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/12/processon-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/12/processon-ai-flowchart-maker.png"
+    },
+    {
+      "id": "809",
+      "name": "自由画布",
+      "source": "https://ai-bot.cn/sites/29570.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/11/freeBoard-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/11/freeBoard-website-3.png"
+    },
+    {
+      "id": "810",
+      "name": "亿图脑图",
+      "source": "https://ai-bot.cn/sites/2621.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/05/mindmaster-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/08/MindMaster-webiste1.png"
+    },
+    {
+      "id": "811",
+      "name": "妙办画板",
+      "source": "https://ai-bot.cn/sites/24687.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/10/imiaoban-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/10/imiaoban-website-3.png"
+    },
+    {
+      "id": "812",
+      "name": "Mapify",
+      "source": "https://ai-bot.cn/sites/13028.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/05/mapify-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/05/mapify-ai-mindmap-generator.png"
+    },
+    {
+      "id": "813",
+      "name": "小画桌",
+      "source": "https://ai-bot.cn/sites/6811.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/12/xiaohuazhuo-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/12/xiaohuazuo-whiteboard.png"
+    },
+    {
+      "id": "814",
+      "name": "印象图记",
+      "source": "https://ai-bot.cn/sites/2179.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/05/yinxiang-tuji-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/05/ai-evermind-2.png"
+    },
+    {
+      "id": "815",
+      "name": "知犀AI",
+      "source": "https://ai-bot.cn/sites/6551.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/12/zhixi-ai-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/12/zhixi-ai-mindmap.jpeg"
+    },
+    {
+      "id": "816",
+      "name": "Xmind AI",
+      "source": "https://ai-bot.cn/sites/1869.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/07/Xmind-AI-logo1.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/07/Xmind-AI-webiste1.png"
+    },
+    {
+      "id": "817",
+      "name": "GitMind思乎",
+      "source": "https://ai-bot.cn/sites/1155.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/07/GitMind-website.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/07/GitMind-websiteq.png"
+    },
+    {
+      "id": "818",
+      "name": "亿图图示AI",
+      "source": "https://ai-bot.cn/sites/23013.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/10/EdrawMaxAI-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/10/EdrawMaxAI-website-1.png"
+    },
+    {
+      "id": "819",
+      "name": "Whimsical",
+      "source": "https://ai-bot.cn/sites/464.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/ezgif-5-22ff7a7f5f.gif",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/03/whimsical-ai-mind-map.jpeg"
+    },
+    {
+      "id": "820",
+      "name": "AmyMind",
+      "source": "https://ai-bot.cn/sites/952.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/amymind-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/03/amymind-screenshot.png"
+    },
+    {
+      "id": "821",
+      "name": "Taskade",
+      "source": "https://ai-bot.cn/sites/709.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/taskade-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/07/Taskade-website.png"
+    },
+    {
+      "id": "822",
+      "name": "Miro AI",
+      "source": "https://ai-bot.cn/sites/1157.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/04/miro-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/03/Miro-AI-website.png"
+    },
+    {
+      "id": "823",
+      "name": "Ayoa Ultimate",
+      "source": "https://ai-bot.cn/sites/1156.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/04/ayoa-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/07/Ayoa-Ultimate-webiste.png"
+    },
+    {
+      "id": "824",
+      "name": "QwenPaw",
+      "source": "https://ai-bot.cn/sites/83760.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/08/QwenPaw-logo1.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/08/QwenPaw-website.png"
+    },
+    {
+      "id": "826",
+      "name": "WaClaw",
+      "source": "https://ai-bot.cn/sites/81921.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/03/ihuiwa-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/07/WaClaw-website.png"
+    },
+    {
+      "id": "825",
+      "name": "Bobby AI",
+      "source": "https://ai-bot.cn/sites/87624.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/10/Bobby-AI-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/10/Bobby-AI-website.png"
+    },
+    {
+      "id": "83",
+      "name": "Claude",
+      "source": "https://ai-bot.cn/sites/460.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/05/Claude-website.png"
+    },
+    {
+      "id": "827",
+      "name": "Hellome",
+      "source": "https://ai-bot.cn/sites/86707.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/09/hellome-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/09/hellome-website.jpg"
+    },
+    {
+      "id": "828",
+      "name": "特赞",
+      "source": "https://ai-bot.cn/sites/86505.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/09/tezign-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/09/tezign-website.png"
+    },
+    {
+      "id": "829",
+      "name": "文朵朵AI办公",
+      "source": "https://ai-bot.cn/sites/85932.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/09/wenduoduo-website7.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/09/wenduoduo-website-2.png"
+    },
+    {
+      "id": "830",
+      "name": "Tokera AI",
+      "source": "https://ai-bot.cn/sites/85338.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/09/Tokera-logo2.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/09/Tokera-AI-website3.png"
+    },
+    {
+      "id": "831",
+      "name": "Floatboat",
+      "source": "https://ai-bot.cn/sites/84116.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/08/Floatboat-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/08/Floatboat-website2.png"
+    },
+    {
+      "id": "832",
+      "name": "千问办公",
+      "source": "https://ai-bot.cn/sites/82742.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/07/qwenwork-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/07/qwenwork-website.png"
+    },
+    {
+      "id": "833",
+      "name": "ByteCP",
+      "source": "https://ai-bot.cn/sites/85042.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/08/ByteCP-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/08/ByteCP-website2.png"
+    },
+    {
+      "id": "834",
+      "name": "TipKay",
+      "source": "https://ai-bot.cn/sites/84190.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/08/TipKay-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/08/TipKay-website1.png"
+    },
+    {
+      "id": "835",
+      "name": "纳米Work",
+      "source": "https://ai-bot.cn/sites/82909.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/07/work.n-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/07/work.n-website.png"
+    },
+    {
+      "id": "836",
+      "name": "KroWork",
+      "source": "https://ai-bot.cn/sites/81608.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/07/KroWork-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/07/KroWork-website1.png"
+    },
+    {
+      "id": "837",
+      "name": "觅游",
+      "source": "https://ai-bot.cn/sites/80528.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/06/meyo-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/06/meyo-website1.png"
+    },
+    {
+      "id": "838",
+      "name": "虾345",
+      "source": "https://ai-bot.cn/sites/80809.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/06/xia345-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/06/xia345-website.png"
+    },
+    {
+      "id": "839",
+      "name": "Sophclaw",
+      "source": "https://ai-bot.cn/sites/82838.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/07/Sophclaw-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/07/Sophclaw-website1.png"
+    },
+    {
+      "id": "84",
+      "name": "Gemini",
+      "source": "https://ai-bot.cn/sites/736.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/10/Gemini-website-1.png"
+    },
+    {
+      "id": "840",
+      "name": "LobsterAI",
+      "source": "https://ai-bot.cn/sites/80501.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/06/LobsterAI-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/06/LobsterAI-website.png"
+    },
+    {
+      "id": "841",
+      "name": "Nile",
+      "source": "https://ai-bot.cn/sites/82145.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/07/Nile-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/07/Nile-website1.png"
+    },
+    {
+      "id": "842",
+      "name": "Kevvee",
+      "source": "https://ai-bot.cn/sites/80509.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/06/Kevvee-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/06/Kevvee-website.png"
+    },
+    {
+      "id": "843",
+      "name": "Matrix",
+      "source": "https://ai-bot.cn/sites/80377.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/06/Matrix-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/06/Matrix-website.png"
+    },
+    {
+      "id": "845",
+      "name": "腾讯Marvis",
+      "source": "https://ai-bot.cn/sites/77977.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/05/Marvis-website-2.png"
+    },
+    {
+      "id": "844",
+      "name": "Manus",
+      "source": "https://ai-bot.cn/sites/69322.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/03/Manus-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/12/Manus-website3-1.png"
+    },
+    {
+      "id": "846",
+      "name": "灵犀",
+      "source": "https://ai-bot.cn/sites/86664.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/09/lingxi-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/09/lingxi-website.png"
+    },
+    {
+      "id": "847",
+      "name": "讯飞星辰Agent",
+      "source": "https://ai-bot.cn/sites/50068.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/04/xunfei-xingchen-agent-logo-1.jpg",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/04/xfyun-agent-website.png"
+    },
+    {
+      "id": "848",
+      "name": "Hermes Agent",
+      "source": "https://ai-bot.cn/sites/78174.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/05/Hermes-Agent-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/05/Hermes-Agent-website.png"
+    },
+    {
+      "id": "86",
+      "name": "Z.ai",
+      "source": "https://ai-bot.cn/sites/62950.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/09/Z.ai-website.png"
+    },
+    {
+      "id": "849",
+      "name": "happycapy",
+      "source": "https://ai-bot.cn/sites/71899.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/02/HappyCapy-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/02/HappyCapy-website.png"
+    },
+    {
+      "id": "863",
+      "name": "MaxHermes",
+      "source": "https://ai-bot.cn/sites/75430.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/04/MaxHermes-website.png"
+    },
+    {
+      "id": "851",
+      "name": "AutoClaw",
+      "source": "https://ai-bot.cn/sites/73229.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/03/AutoClaw-logo1.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/03/AutoClaw-website.png"
+    },
+    {
+      "id": "87",
+      "name": "腾讯元宝",
+      "source": "https://ai-bot.cn/sites/12946.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/03/txyuanbao-website3.png"
+    },
+    {
+      "id": "88",
+      "name": "Grok",
+      "source": "https://ai-bot.cn/sites/5368.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/10/Grok-website.png"
+    },
+    {
+      "id": "873",
+      "name": "库库AI",
+      "source": "https://ai-bot.cn/sites/66596.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/11/GenFlow-website.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/08/GenFlow-website.png"
+    },
+    {
+      "id": "878",
+      "name": "Leewow",
+      "source": "https://ai-bot.cn/sites/71972.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/02/Leewow-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/02/Leewow-webiste-1.png"
+    },
+    {
+      "id": "887",
+      "name": "Copilot",
+      "source": "https://ai-bot.cn/sites/6019.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/11/microsoft-copilot-icon.png"
+    },
+    {
+      "id": "886",
+      "name": "Poe",
+      "source": "https://ai-bot.cn/sites/459.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/10/Poe-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/10/Poe-website.png"
+    },
+    {
+      "id": "890",
+      "name": "通义星尘",
+      "source": "https://ai-bot.cn/sites/14310.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/04/tongyi-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/10/tongyi.aliyun-website.png"
+    },
+    {
+      "id": "888",
+      "name": "Meta AI助手",
+      "source": "https://ai-bot.cn/sites/11358.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/12/imagine-with-meta.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/04/meta-ai-chatbot.png"
+    },
+    {
+      "id": "893",
+      "name": "小悟空",
+      "source": "https://ai-bot.cn/sites/4841.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/09/wukong-ai-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/10/wukong-website.png"
+    },
+    {
+      "id": "897",
+      "name": "Wanderboat",
+      "source": "https://ai-bot.cn/sites/14297.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/10/Wanderboat-website.png"
+    },
+    {
+      "id": "895",
+      "name": "Dola",
+      "source": "https://ai-bot.cn/sites/14574.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/08/Dola-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/08/Dola-website1.png"
+    },
+    {
+      "id": "896",
+      "name": "Le Chat",
+      "source": "https://ai-bot.cn/sites/8874.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/07/Le-Chat-logo1.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/07/Le-Chat-website.png"
+    },
+    {
+      "id": "899",
+      "name": "Luca面壁露卡",
+      "source": "https://ai-bot.cn/sites/4362.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/08/luca-modelbest-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/08/modelbest-luca-ai-chatbot.png"
+    },
+    {
+      "id": "901",
+      "name": "ChitChop",
+      "source": "https://ai-bot.cn/sites/6101.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/11/chitchop-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/11/chitchop-ai-conversation.png"
+    },
+    {
+      "id": "903",
+      "name": "Forefront",
+      "source": "https://ai-bot.cn/sites/2034.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/10/Forefront-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/10/Forefront-website3.png"
+    },
+    {
+      "id": "904",
+      "name": "Stable Chat",
+      "source": "https://ai-bot.cn/sites/3973.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/08/stable-chat-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/08/stable-chat-website.jpeg"
+    },
+    {
+      "id": "905",
+      "name": "Jasper Chat",
+      "source": "https://ai-bot.cn/sites/141.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/10/Jasper-Chat-logo.png"
+    },
+    {
+      "id": "91",
+      "name": "MiniMax",
+      "source": "https://ai-bot.cn/sites/8835.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/05/MiniMax-website1.png"
+    },
+    {
+      "id": "908",
+      "name": "Pi",
+      "source": "https://ai-bot.cn/sites/2122.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/10/Pi-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/10/Pi-website.png"
+    },
+    {
+      "id": "909",
+      "name": "Inworld",
+      "source": "https://ai-bot.cn/sites/1710.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2026/10/Inworld-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/10/Inworld-website.png"
+    },
+    {
+      "id": "918",
+      "name": "DevChat",
+      "source": "https://ai-bot.cn/sites/7582.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/01/devchat-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/01/devchat-ai-coding-assistant.png"
+    },
+    {
+      "id": "92",
+      "name": "讯飞星火",
+      "source": "https://ai-bot.cn/sites/1909.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/10/xinghuo.xfyun-website1.png"
+    },
+    {
+      "id": "920",
+      "name": "文心快码",
+      "source": "https://ai-bot.cn/sites/4099.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/08/comate-baidu-website.png"
+    },
+    {
+      "id": "919",
+      "name": "JoyCode",
+      "source": "https://ai-bot.cn/sites/57642.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/07/JoyCode-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/07/JoyCode-website.png"
+    },
+    {
+      "id": "921",
+      "name": "iFlyCode",
+      "source": "https://ai-bot.cn/sites/4055.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/08/iflycode-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/07/iFlyCode-website.png"
+    },
+    {
+      "id": "922",
+      "name": "Twinny",
+      "source": "https://ai-bot.cn/sites/22307.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/09/twinny-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/09/Twinny-website.png"
+    },
+    {
+      "id": "924",
+      "name": "华为云码道",
+      "source": "https://ai-bot.cn/sites/55229.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/06/CodeArts-Doer-logo1.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/02/CodeArts-website.png"
+    },
+    {
+      "id": "93",
+      "name": "LongCat",
+      "source": "https://ai-bot.cn/sites/61432.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/09/LongCat-icon.png"
+    },
+    {
+      "id": "925",
+      "name": "Sketch2Code",
+      "source": "https://ai-bot.cn/sites/938.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/sketch2code-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/03/sketch2code-page.webp"
+    },
+    {
+      "id": "926",
+      "name": "CodeFuse",
+      "source": "https://ai-bot.cn/sites/5256.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/10/codefuse-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/10/codefuse-ai-website.png"
+    },
+    {
+      "id": "928",
+      "name": "C知道",
+      "source": "https://ai-bot.cn/sites/11812.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/05/so-csdn-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/05/so-csdn-chat.png"
+    },
+    {
+      "id": "932",
+      "name": "Devin",
+      "source": "https://ai-bot.cn/sites/9533.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/03/devin-ai.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/03/devin-ai-software-developer.png"
+    },
+    {
+      "id": "934",
+      "name": "Fitten Code",
+      "source": "https://ai-bot.cn/sites/7587.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/01/fitten-code-icon.png"
+    },
+    {
+      "id": "933",
+      "name": "Plandex",
+      "source": "https://ai-bot.cn/sites/10880.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/04/plandex-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/04/plandex-ai-coding.png"
+    },
+    {
+      "id": "937",
+      "name": "JetBrains AI",
+      "source": "https://ai-bot.cn/sites/6557.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/12/jetbrains-ai-coding-assistant.jpeg"
+    },
+    {
+      "id": "935",
+      "name": "BLACKBOX AI",
+      "source": "https://ai-bot.cn/sites/1908.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/04/blackbox-ai-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/04/blackbox-ai-website.jpeg"
+    },
+    {
+      "id": "936",
+      "name": "Solo",
+      "source": "https://ai-bot.cn/sites/6690.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/12/solo-ai-website-composer-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/12/solo-ai-website-composer-demo.png"
+    },
+    {
+      "id": "94",
+      "name": "文心一言",
+      "source": "https://ai-bot.cn/sites/669.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/baidu-yiyan-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/10/yiyan.baidu-webiste.png"
+    },
+    {
+      "id": "943",
+      "name": "JamGPT",
+      "source": "https://ai-bot.cn/sites/2192.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/05/jamgpt-icon.png"
+    },
+    {
+      "id": "940",
+      "name": "Boxy",
+      "source": "https://ai-bot.cn/sites/2610.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/05/codesandbox-boxy-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/05/codesandbox-boxy-website.png"
+    },
+    {
+      "id": "944",
+      "name": "aiXcoder",
+      "source": "https://ai-bot.cn/sites/1774.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/04/aixcoder-website.png"
+    },
+    {
+      "id": "941",
+      "name": "Quest AI",
+      "source": "https://ai-bot.cn/sites/3051.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/06/quest-ai-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/06/quest-ai-quick-start.png"
+    },
+    {
+      "id": "947",
+      "name": "Deco",
+      "source": "https://ai-bot.cn/sites/2051.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/05/deco-icon.png"
+    },
+    {
+      "id": "95",
+      "name": "智谱清言",
+      "source": "https://ai-bot.cn/sites/2005.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/08/zhipu-chatglm-chatbot.png"
+    },
+    {
+      "id": "953",
+      "name": "Tabnine",
+      "source": "https://ai-bot.cn/sites/110.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/tabnine-icon.png"
+    },
+    {
+      "id": "948",
+      "name": "Ghostwriter",
+      "source": "https://ai-bot.cn/sites/853.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/replit-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/04/replit-ghostwriter-website.jpg"
+    },
+    {
+      "id": "956",
+      "name": "Fig",
+      "source": "https://ai-bot.cn/sites/114.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/fig-icon.png"
+    },
+    {
+      "id": "957",
+      "name": "CodeSnippets",
+      "source": "https://ai-bot.cn/sites/113.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/codesnippets-icon.png"
+    },
+    {
+      "id": "954",
+      "name": "Debuild",
+      "source": "https://ai-bot.cn/sites/1493.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/04/debuild-app-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/04/debuild-app-website.jpeg"
+    },
+    {
+      "id": "960",
+      "name": "AI Code Reviewer",
+      "source": "https://ai-bot.cn/sites/479.html",
+      "logoAdded": true,
+      "coverAdded": false,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/ai-code-reviewer-icon.png"
+    },
+    {
+      "id": "958",
+      "name": "Hocoos",
+      "source": "https://ai-bot.cn/sites/2127.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/05/hocoos-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/05/hocoos-website.jpeg"
+    },
+    {
+      "id": "96",
+      "name": "逗逗AI",
+      "source": "https://ai-bot.cn/sites/14769.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/12/doudou-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/08/doudou-website.png"
+    },
+    {
+      "id": "966",
+      "name": "爱设计",
+      "source": "https://ai-bot.cn/sites/24811.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/10/isheji-website.png"
+    },
+    {
+      "id": "964",
+      "name": "蚂上有创意",
+      "source": "https://ai-bot.cn/sites/28903.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/11/mashangyouchuangyi-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/11/mashangyouchuangyi-website-2.png"
+    },
+    {
+      "id": "967",
+      "name": "PagePop Work",
+      "source": "https://ai-bot.cn/sites/72579.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/10/PagePop-Work-website-2.png"
+    },
+    {
+      "id": "968",
+      "name": "小墨鹰编辑器",
+      "source": "https://ai-bot.cn/sites/71123.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/01/xmyeditor-website1.png"
+    },
+    {
+      "id": "97",
+      "name": "SealReply",
+      "source": "https://ai-bot.cn/sites/89731.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/11/SealReply-website.png"
+    },
+    {
+      "id": "974",
+      "name": "Looka",
+      "source": "https://ai-bot.cn/sites/595.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/07/looka-ai-logo-maker.jpeg"
+    },
+    {
+      "id": "970",
+      "name": "Microsoft Designer",
+      "source": "https://ai-bot.cn/sites/945.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/03/microsoft-designer-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/03/microsoft-designer-image.png"
+    },
+    {
+      "id": "972",
+      "name": "燕雀光年",
+      "source": "https://ai-bot.cn/sites/54629.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/06/yanque-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/06/yanqueguangnian-website.png"
+    },
+    {
+      "id": "973",
+      "name": "标小智LOGO生成器",
+      "source": "https://ai-bot.cn/sites/1414.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/09/logosc-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/09/logosc-website1.png"
+    },
+    {
+      "id": "975",
+      "name": "智绘设计",
+      "source": "https://ai-bot.cn/sites/1954.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/04/taishan-qq-website.png"
+    },
+    {
+      "id": "978",
+      "name": "鹿班",
+      "source": "https://ai-bot.cn/sites/1986.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/04/luban-aliyun-website.png"
+    },
+    {
+      "id": "979",
+      "name": "Magic Design",
+      "source": "https://ai-bot.cn/sites/1087.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/03/canva-magic-design-features.jpeg"
+    },
+    {
+      "id": "976",
+      "name": "MasterGo AI",
+      "source": "https://ai-bot.cn/sites/2733.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/06/mastergo-ai-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/11/MasterGo-AI-website.png"
+    },
+    {
+      "id": "983",
+      "name": "Logoai",
+      "source": "https://ai-bot.cn/sites/27582.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/07/logoai-website.png"
+    },
+    {
+      "id": "980",
+      "name": "简单设计",
+      "source": "https://ai-bot.cn/sites/17815.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/08/jiandan.link-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/08/jiandan-link-website.png"
+    },
+    {
+      "id": "981",
+      "name": "笔格设计",
+      "source": "https://ai-bot.cn/sites/14748.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/07/bige-website01-副本.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/07/bige-website02.png"
+    },
+    {
+      "id": "982",
+      "name": "AI设计神器",
+      "source": "https://ai-bot.cn/sites/61515.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2025/09/aidesigntools-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2025/09/logosc.design-website.png"
+    },
+    {
+      "id": "984",
+      "name": "豆绘AI",
+      "source": "https://ai-bot.cn/sites/24579.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/10/douhuiai-website1.png"
+    },
+    {
+      "id": "985",
+      "name": "千图网",
+      "source": "https://ai-bot.cn/sites/29186.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/11/58pic-logo-1.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/11/58pic-website.png"
+    },
+    {
+      "id": "986",
+      "name": "Pictographic",
+      "source": "https://ai-bot.cn/sites/12673.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/05/pictographic-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/05/pictographic-ai-illustration.png"
+    },
+    {
+      "id": "987",
+      "name": "Fable Prism",
+      "source": "https://ai-bot.cn/sites/10172.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/03/fable-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/03/fable-prism-motion.png"
+    },
+    {
+      "id": "989",
+      "name": "Collov AI",
+      "source": "https://ai-bot.cn/sites/9977.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/03/collov-ai-interior-designer.jpg"
+    },
+    {
+      "id": "988",
+      "name": "匠紫",
+      "source": "https://ai-bot.cn/sites/16181.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/08/匠紫AI-logo.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/08/匠紫AI-website01.png"
+    },
+    {
+      "id": "99",
+      "name": "知达AI",
+      "source": "https://ai-bot.cn/sites/79107.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/06/zhida-website.png"
+    },
+    {
+      "id": "991",
+      "name": "易可图",
+      "source": "https://ai-bot.cn/sites/25213.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2026/09/yiketu-website.png"
+    },
+    {
+      "id": "993",
+      "name": "Creatie",
+      "source": "https://ai-bot.cn/sites/9772.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/03/creatie-ai-dashboard.png"
+    },
+    {
+      "id": "992",
+      "name": "笔魂AI",
+      "source": "https://ai-bot.cn/sites/33149.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2024/08/ibihun-logo-1.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2024/12/bihunAI-website.png"
+    },
+    {
+      "id": "997",
+      "name": "酷家乐AI",
+      "source": "https://ai-bot.cn/sites/6309.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/12/kujiale-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/12/kujiale-ai-image-creator.png"
+    },
+    {
+      "id": "998",
+      "name": "Framer AI",
+      "source": "https://ai-bot.cn/sites/2891.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/06/framer-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/06/framer-ai-demo.png"
+    },
+    {
+      "id": "999",
+      "name": "LogoliveryAI",
+      "source": "https://ai-bot.cn/sites/3006.html",
+      "logoAdded": true,
+      "coverAdded": true,
+      "failures": [],
+      "logoSource": "https://ai-bot.cn/wp-content/uploads/2023/06/logoliveryai-icon.png",
+      "coverSource": "https://ai-bot.cn/wp-content/uploads/2023/06/logoliveryai-demo.png"
+    }
+  ]
+}

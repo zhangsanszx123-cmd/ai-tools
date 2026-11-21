@@ -1,17 +1,104 @@
 {
-  "verifiedAt": "2026-11-20T04:50:00.919Z",
+  "verifiedAt": "2026-11-20T06:25:03.792Z",
   "tools": 1306,
-  "logos": 931,
-  "covers": 841,
+  "logos": 1306,
+  "covers": 1291,
   "binary_logos": 0,
   "binary_covers": 0,
-  "privateStats": {
-    "binary_logos": 0,
-    "binary_covers": 0
-  },
   "base": "/",
-  "uniqueFilesVerified": 1696,
-  "uniqueFileBytes": 46354208,
+  "uniqueFilesVerified": 2515,
+  "uniqueFileBytes": 64744380,
   "root": "D:\\VibeCoding\\ai-tools\\storage\\media",
-  "directImageHttp": 200
+  "missingCovers": [
+    {
+      "id": "292",
+      "slug": "openbmb-org-ab-1129",
+      "name": "OpenBMB",
+      "website": "https://www.openbmb.org/home"
+    },
+    {
+      "id": "956",
+      "slug": "fig-io-ab-114",
+      "name": "Fig",
+      "website": "https://fig.io/"
+    },
+    {
+      "id": "960",
+      "slug": "ai-code-reviewer-com-ab-479",
+      "name": "AI Code Reviewer",
+      "website": "https://ai-code-reviewer.com/"
+    },
+    {
+      "id": "1074",
+      "slug": "play-ht-ab-253",
+      "name": "Play.ht",
+      "website": "https://play.ht/"
+    },
+    {
+      "id": "1083",
+      "slug": "themetavoice-xyz-ab-404",
+      "name": "MetaVoice",
+      "website": "https://themetavoice.xyz/"
+    },
+    {
+      "id": "776",
+      "slug": "excelformularizer-com-ab-1149",
+      "name": "Excel Formularizer",
+      "website": "https://excelformularizer.com/"
+    },
+    {
+      "id": "953",
+      "slug": "tabnine-com-ab-110",
+      "name": "Tabnine",
+      "website": "https://www.tabnine.com/"
+    },
+    {
+      "id": "1024",
+      "slug": "magician-design-ab-148",
+      "name": "Magician",
+      "website": "https://magician.design/"
+    },
+    {
+      "id": "577",
+      "slug": "booth-ai-ab-178",
+      "name": "Booth.ai",
+      "website": "https://www.booth.ai/"
+    },
+    {
+      "id": "569",
+      "slug": "bgremover-vanceai-com-ab-304",
+      "name": "BGremover",
+      "website": "https://bgremover.vanceai.com/"
+    },
+    {
+      "id": "1068",
+      "slug": "beatbot-fm-ab-1965",
+      "name": "BeatBot",
+      "website": "https://beatbot.fm/"
+    },
+    {
+      "id": "572",
+      "slug": "photoscissors-com-ab-284",
+      "name": "PhotoScissors",
+      "website": "https://photoscissors.com/"
+    },
+    {
+      "id": "563",
+      "slug": "adobe-com-ab-313",
+      "name": "Adobe Image Background Remover",
+      "website": "https://www.adobe.com/express/feature/image/remove-background"
+    },
+    {
+      "id": "1017",
+      "slug": "withpoly-com-ab-701",
+      "name": "Poly",
+      "website": "https://withpoly.com/browse/textures"
+    },
+    {
+      "id": "768",
+      "slug": "sheetplus-ai-ab-373",
+      "name": "Sheet+",
+      "website": "https://sheetplus.ai/"
+    }
+  ]
 }

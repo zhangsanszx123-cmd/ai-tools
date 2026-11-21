@@ -1,0 +1,264 @@
+{
+  "verifiedAt": "2026-11-20T06:24:19.222Z",
+  "checked": 19,
+  "logosAdded": 0,
+  "coversAdded": 4,
+  "paused": false,
+  "counts": {
+    "total": 1306,
+    "logos": 1306,
+    "covers": 1291
+  },
+  "results": [
+    {
+      "id": "1074",
+      "name": "Play.ht",
+      "source": "https://ai-bot.cn/sites/253.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": [
+        {
+          "kind": "official-cover",
+          "source": "https://play.ht/",
+          "code": "page.goto: net::ERR_CONNECTION_CLOSED at https://play.ht/"
+        }
+      ]
+    },
+    {
+      "id": "1017",
+      "name": "Poly",
+      "source": "https://ai-bot.cn/sites/701.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": [
+        {
+          "kind": "official-cover",
+          "source": "https://withpoly.com/browse/textures",
+          "code": "page.goto: Timeout 15000ms exceeded."
+        }
+      ]
+    },
+    {
+      "id": "1068",
+      "name": "BeatBot",
+      "source": "https://ai-bot.cn/sites/1965.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": [
+        {
+          "kind": "official-cover",
+          "source": "https://beatbot.fm/",
+          "code": "page.goto: Timeout 15000ms exceeded."
+        }
+      ]
+    },
+    {
+      "id": "1024",
+      "name": "Magician",
+      "source": "https://ai-bot.cn/sites/148.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": [
+        {
+          "kind": "official-cover",
+          "source": "https://magician.design/",
+          "code": "page.goto: Timeout 15000ms exceeded."
+        }
+      ]
+    },
+    {
+      "id": "1083",
+      "name": "MetaVoice",
+      "source": "https://ai-bot.cn/sites/404.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": [
+        {
+          "kind": "official-cover",
+          "source": "https://themetavoice.xyz/",
+          "code": "WEBSITE_HTTP_525"
+        }
+      ]
+    },
+    {
+      "id": "1277",
+      "name": "Veed Video Background Remover",
+      "source": "https://ai-bot.cn/sites/236.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://www.veed.io/zh-CN/tools/video-background-remover",
+      "coverMethod": "official-browser-screenshot"
+    },
+    {
+      "id": "473",
+      "name": "Zyro AI Image Upscaler",
+      "source": "https://ai-bot.cn/sites/216.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://www.hostinger.com/blog/zyro-joins-forces-with-hostinger/",
+      "coverMethod": "official-browser-screenshot"
+    },
+    {
+      "id": "563",
+      "name": "Adobe Image Background Remover",
+      "source": "https://ai-bot.cn/sites/313.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": [
+        {
+          "kind": "official-cover",
+          "source": "https://www.adobe.com/express/feature/image/remove-background",
+          "code": "WEBSITE_HTTP_403"
+        }
+      ]
+    },
+    {
+      "id": "292",
+      "name": "OpenBMB",
+      "source": "https://ai-bot.cn/sites/1129.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": [
+        {
+          "kind": "official-cover",
+          "source": "https://www.openbmb.org/home",
+          "code": "page.goto: Timeout 15000ms exceeded."
+        }
+      ]
+    },
+    {
+      "id": "571",
+      "name": "Zyro AI Background Remover",
+      "source": "https://ai-bot.cn/sites/302.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://www.hostinger.com/blog/zyro-joins-forces-with-hostinger/",
+      "coverMethod": "official-browser-screenshot"
+    },
+    {
+      "id": "534",
+      "name": "Mokker AI",
+      "source": "https://ai-bot.cn/sites/173.html",
+      "logoAdded": false,
+      "coverAdded": true,
+      "failures": [],
+      "coverSource": "https://mokker.ai/",
+      "coverMethod": "official-browser-screenshot"
+    },
+    {
+      "id": "569",
+      "name": "BGremover",
+      "source": "https://ai-bot.cn/sites/304.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": [
+        {
+          "kind": "official-cover",
+          "source": "https://bgremover.vanceai.com/",
+          "code": "WEBSITE_HTTP_502"
+        }
+      ]
+    },
+    {
+      "id": "572",
+      "name": "PhotoScissors",
+      "source": "https://ai-bot.cn/sites/284.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": [
+        {
+          "kind": "official-cover",
+          "source": "https://photoscissors.com/",
+          "code": "page.goto: Timeout 15000ms exceeded."
+        }
+      ]
+    },
+    {
+      "id": "577",
+      "name": "Booth.ai",
+      "source": "https://ai-bot.cn/sites/178.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": [
+        {
+          "kind": "official-cover",
+          "source": "https://www.booth.ai/",
+          "code": "WEBSITE_HTTP_403"
+        }
+      ]
+    },
+    {
+      "id": "768",
+      "name": "Sheet+",
+      "source": "https://ai-bot.cn/sites/373.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": [
+        {
+          "kind": "official-cover",
+          "source": "https://sheetplus.ai/",
+          "code": "WEBSITE_BRAND_CHANGED"
+        }
+      ]
+    },
+    {
+      "id": "776",
+      "name": "Excel Formularizer",
+      "source": "https://ai-bot.cn/sites/1149.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": [
+        {
+          "kind": "official-cover",
+          "source": "https://excelformularizer.com/",
+          "code": "WEBSITE_HTTP_403"
+        }
+      ]
+    },
+    {
+      "id": "956",
+      "name": "Fig",
+      "source": "https://ai-bot.cn/sites/114.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": [
+        {
+          "kind": "official-cover",
+          "source": "https://fig.io/",
+          "code": "page.goto: net::ERR_CONNECTION_CLOSED at https://fig.io/"
+        }
+      ]
+    },
+    {
+      "id": "953",
+      "name": "Tabnine",
+      "source": "https://ai-bot.cn/sites/110.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": [
+        {
+          "kind": "official-cover",
+          "source": "https://www.tabnine.com/",
+          "code": "WEBSITE_BRAND_CHANGED"
+        }
+      ]
+    },
+    {
+      "id": "960",
+      "name": "AI Code Reviewer",
+      "source": "https://ai-bot.cn/sites/479.html",
+      "logoAdded": false,
+      "coverAdded": false,
+      "failures": [
+        {
+          "kind": "official-cover",
+          "source": "https://ai-code-reviewer.com/",
+          "code": "page.goto: net::ERR_CONNECTION_CLOSED at https://ai-code-reviewer.com/"
+        }
+      ]
+    }
+  ]
+}

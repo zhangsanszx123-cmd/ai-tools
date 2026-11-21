@@ -1,0 +1,258 @@
+{
+  "operation": "soft-delete-coverless-tools",
+  "status": "committed",
+  "at": "2026-11-20T06:36:14.624Z",
+  "requested": 15,
+  "deleted": 15,
+  "before": [
+    {
+      "id": "1017",
+      "slug": "withpoly-com-ab-701",
+      "name": "Poly",
+      "status": "published",
+      "deleted_at": null,
+      "updated_at": "2026-11-20T04:00:44.085Z",
+      "logo_url": "/media/7df03a5df260c6f56f6eaf998e92d0a68a376793f7e72e0c5697638203667e4f.webp",
+      "cover_url": null
+    },
+    {
+      "id": "1024",
+      "slug": "magician-design-ab-148",
+      "name": "Magician",
+      "status": "published",
+      "deleted_at": null,
+      "updated_at": "2026-11-20T06:15:26.080Z",
+      "logo_url": "/media/6f6048fdf15ba0835add55ad433dc60d6434efebac150d085ed61d80912d2802.webp",
+      "cover_url": null
+    },
+    {
+      "id": "1068",
+      "slug": "beatbot-fm-ab-1965",
+      "name": "BeatBot",
+      "status": "published",
+      "deleted_at": null,
+      "updated_at": "2026-11-20T06:15:30.321Z",
+      "logo_url": "/media/db3a4599e847da043c4221a3b024a37ef7a2f0d3b2dcbb73159ef5ccc5e79ecd.webp",
+      "cover_url": null
+    },
+    {
+      "id": "1074",
+      "slug": "play-ht-ab-253",
+      "name": "Play.ht",
+      "status": "published",
+      "deleted_at": null,
+      "updated_at": "2026-11-20T06:15:30.559Z",
+      "logo_url": "/media/509a429cc05c2de05e779c819804cbf502bbd8e1aed348efa8dcd4ef26e038ac.webp",
+      "cover_url": null
+    },
+    {
+      "id": "1083",
+      "slug": "themetavoice-xyz-ab-404",
+      "name": "MetaVoice",
+      "status": "published",
+      "deleted_at": null,
+      "updated_at": "2026-11-20T06:15:31.583Z",
+      "logo_url": "/media/d2b6df71b12dc30b85adcae1d3e5c6721b0ca79a7a008551bb7dd108880b30e2.webp",
+      "cover_url": null
+    },
+    {
+      "id": "292",
+      "slug": "openbmb-org-ab-1129",
+      "name": "OpenBMB",
+      "status": "published",
+      "deleted_at": null,
+      "updated_at": "2026-11-20T06:16:26.816Z",
+      "logo_url": "/media/e7935feceb515376a7da8c5116f7981f9eef8766cb2eec10e67e3275824d532e.webp",
+      "cover_url": null
+    },
+    {
+      "id": "563",
+      "slug": "adobe-com-ab-313",
+      "name": "Adobe Image Background Remover",
+      "status": "published",
+      "deleted_at": null,
+      "updated_at": "2026-11-20T06:17:06.318Z",
+      "logo_url": "/media/014176717138c4c1a11cc01d4ce1b95fadb50def2f95b2178c750e9a535735e1.webp",
+      "cover_url": null
+    },
+    {
+      "id": "569",
+      "slug": "bgremover-vanceai-com-ab-304",
+      "name": "BGremover",
+      "status": "published",
+      "deleted_at": null,
+      "updated_at": "2026-11-20T06:17:07.074Z",
+      "logo_url": "/media/187f45d948cbd28326dbc85bb612a7894e82051a487b126cf428daa72c44ea83.webp",
+      "cover_url": null
+    },
+    {
+      "id": "572",
+      "slug": "photoscissors-com-ab-284",
+      "name": "PhotoScissors",
+      "status": "published",
+      "deleted_at": null,
+      "updated_at": "2026-11-20T04:00:23.580Z",
+      "logo_url": "/media/ed33e2ff0cc6f5a76fce19371430dc00fd493980b8550cec4eb7c31fe2bed445.webp",
+      "cover_url": null
+    },
+    {
+      "id": "577",
+      "slug": "booth-ai-ab-178",
+      "name": "Booth.ai",
+      "status": "published",
+      "deleted_at": null,
+      "updated_at": "2026-11-20T06:17:07.569Z",
+      "logo_url": "/media/6610667e9ca35573a7f8a536107aae35f7aadfe20d25845bd083635fcc8113e8.webp",
+      "cover_url": null
+    },
+    {
+      "id": "768",
+      "slug": "sheetplus-ai-ab-373",
+      "name": "Sheet+",
+      "status": "published",
+      "deleted_at": null,
+      "updated_at": "2026-11-20T04:00:26.682Z",
+      "logo_url": "/media/5612a6ef010bf2cb5e9877192ea87ede6dfb052c195397d1e1b813522b8fa5c4.webp",
+      "cover_url": null
+    },
+    {
+      "id": "776",
+      "slug": "excelformularizer-com-ab-1149",
+      "name": "Excel Formularizer",
+      "status": "published",
+      "deleted_at": null,
+      "updated_at": "2026-11-20T06:17:42.067Z",
+      "logo_url": "/media/79124e86bde7bbf7576cd73307a1f019d8b6be085bfbe723d47f238931de2a69.webp",
+      "cover_url": null
+    },
+    {
+      "id": "953",
+      "slug": "tabnine-com-ab-110",
+      "name": "Tabnine",
+      "status": "published",
+      "deleted_at": null,
+      "updated_at": "2026-11-20T06:18:31.840Z",
+      "logo_url": "/media/ff225038968e010dc977d03ac9d7bd2a33e6fb5d17481349b6b7e409c873d4fa.webp",
+      "cover_url": null
+    },
+    {
+      "id": "956",
+      "slug": "fig-io-ab-114",
+      "name": "Fig",
+      "status": "published",
+      "deleted_at": null,
+      "updated_at": "2026-11-20T06:18:32.561Z",
+      "logo_url": "/media/c33c3c9b0ba6582917db6ebeffc126deb1ad28455a64a11d494080da1d9f98eb.webp",
+      "cover_url": null
+    },
+    {
+      "id": "960",
+      "slug": "ai-code-reviewer-com-ab-479",
+      "name": "AI Code Reviewer",
+      "status": "published",
+      "deleted_at": null,
+      "updated_at": "2026-11-20T06:18:33.815Z",
+      "logo_url": "/media/c96a368cdcf2f27d2f48899d126b8456c7043f90b9581939f23a1f3da87a175e.webp",
+      "cover_url": null
+    }
+  ],
+  "changed": [
+    {
+      "id": "292",
+      "slug": "openbmb-org-ab-1129",
+      "name": "OpenBMB",
+      "deleted_at": "2026-11-20T06:36:15.274Z"
+    },
+    {
+      "id": "956",
+      "slug": "fig-io-ab-114",
+      "name": "Fig",
+      "deleted_at": "2026-11-20T06:36:15.274Z"
+    },
+    {
+      "id": "960",
+      "slug": "ai-code-reviewer-com-ab-479",
+      "name": "AI Code Reviewer",
+      "deleted_at": "2026-11-20T06:36:15.274Z"
+    },
+    {
+      "id": "1074",
+      "slug": "play-ht-ab-253",
+      "name": "Play.ht",
+      "deleted_at": "2026-11-20T06:36:15.274Z"
+    },
+    {
+      "id": "1083",
+      "slug": "themetavoice-xyz-ab-404",
+      "name": "MetaVoice",
+      "deleted_at": "2026-11-20T06:36:15.274Z"
+    },
+    {
+      "id": "776",
+      "slug": "excelformularizer-com-ab-1149",
+      "name": "Excel Formularizer",
+      "deleted_at": "2026-11-20T06:36:15.274Z"
+    },
+    {
+      "id": "953",
+      "slug": "tabnine-com-ab-110",
+      "name": "Tabnine",
+      "deleted_at": "2026-11-20T06:36:15.274Z"
+    },
+    {
+      "id": "1024",
+      "slug": "magician-design-ab-148",
+      "name": "Magician",
+      "deleted_at": "2026-11-20T06:36:15.274Z"
+    },
+    {
+      "id": "577",
+      "slug": "booth-ai-ab-178",
+      "name": "Booth.ai",
+      "deleted_at": "2026-11-20T06:36:15.274Z"
+    },
+    {
+      "id": "569",
+      "slug": "bgremover-vanceai-com-ab-304",
+      "name": "BGremover",
+      "deleted_at": "2026-11-20T06:36:15.274Z"
+    },
+    {
+      "id": "1068",
+      "slug": "beatbot-fm-ab-1965",
+      "name": "BeatBot",
+      "deleted_at": "2026-11-20T06:36:15.274Z"
+    },
+    {
+      "id": "572",
+      "slug": "photoscissors-com-ab-284",
+      "name": "PhotoScissors",
+      "deleted_at": "2026-11-20T06:36:15.274Z"
+    },
+    {
+      "id": "563",
+      "slug": "adobe-com-ab-313",
+      "name": "Adobe Image Background Remover",
+      "deleted_at": "2026-11-20T06:36:15.274Z"
+    },
+    {
+      "id": "1017",
+      "slug": "withpoly-com-ab-701",
+      "name": "Poly",
+      "deleted_at": "2026-11-20T06:36:15.274Z"
+    },
+    {
+      "id": "768",
+      "slug": "sheetplus-ai-ab-373",
+      "name": "Sheet+",
+      "deleted_at": "2026-11-20T06:36:15.274Z"
+    }
+  ],
+  "verification": {
+    "publicCatalogExcludesAll": true,
+    "allDetailLookupsUnavailable": true,
+    "active": 1291,
+    "active_missing_covers": 0,
+    "active_missing_logos": 0
+  }
+}
