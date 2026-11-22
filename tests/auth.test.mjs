@@ -89,3 +89,41 @@ test('URL parameters cannot disable SSL certificate verification', () => {
   assert.ok(config.ssl.ca.includes('\n'))
   assert.ok(!config.connectionString.includes('sslmode'))
 })
+
+test('database routing hostname can differ from an explicitly verified certificate IP', () => {
+  const ca = '-----BEGIN CERTIFICATE-----\nexample\n-----END CERTIFICATE-----'
+  const config = postgresConfig({
+    DATABASE_URL: 'postgresql://test:example@postgresql/db',
+    DB_CA_CERT: ca,
+    DB_TLS_IDENTITY: '43.143.85.207',
+  })
+  assert.equal(new URL(config.connectionString).hostname, 'postgresql')
+  assert.equal(config.ssl.rejectUnauthorized, true)
+  assert.equal(config.ssl.ca, ca)
+  assert.equal(config.ssl.checkServerIdentity('postgresql', {
+    subjectaltname: 'IP Address:43.143.85.207',
+  }), undefined)
+})
+
+test('explicit database TLS identity rejects a certificate for a different IP', () => {
+  const config = postgresConfig({
+    DATABASE_URL: 'postgresql://test:example@postgresql/db',
+    DB_TLS_IDENTITY: '43.143.85.208',
+  })
+  assert.equal(config.ssl.rejectUnauthorized, true)
+  const error = config.ssl.checkServerIdentity('postgresql', {
+    subjectaltname: 'IP Address:43.143.85.207',
+  })
+  assert.equal(error?.code, 'ERR_TLS_CERT_ALTNAME_INVALID')
+})
+
+test('database TLS identity verification keeps native hostname checking by default', () => {
+  for (const identity of [undefined, '', '   ']) {
+    const config = postgresConfig({
+      DATABASE_URL: 'postgresql://test:example@postgresql/db',
+      DB_TLS_IDENTITY: identity,
+    })
+    assert.equal(config.ssl.rejectUnauthorized, true)
+    assert.equal(config.ssl.checkServerIdentity, undefined)
+  }
+})

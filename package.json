@@ -8,6 +8,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "deploy:setup": "node deploy/setup-production.mjs",
     "test:auth": "node --test tests/auth.test.mjs",
     "test:auth-pages": "node --test tests/auth-pages.test.mjs",
     "test:directory": "node --test tests/directory-validation.test.mjs tests/admin-pagination.test.mjs",

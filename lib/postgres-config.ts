@@ -1,5 +1,6 @@
 import { readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
+import { checkServerIdentity, type PeerCertificate } from 'node:tls'
 import type { PoolConfig } from 'pg'
 
 // pg URL options must not override the explicit CA and verification settings.
@@ -11,9 +12,15 @@ export function postgresConfig(env: NodeJS.ProcessEnv = process.env): PoolConfig
   const ca = certificate
     ? certificate.includes('-----BEGIN CERTIFICATE-----') ? certificate : readFileSync(resolve(certificate), 'utf8')
     : undefined
+  // Keep certificate-chain verification; optionally verify an identity distinct from routing DNS.
+  const identity = env.DB_TLS_IDENTITY?.trim()
   return {
     connectionString: url.toString(),
-    ssl: { rejectUnauthorized: true, ...(ca ? { ca } : {}) },
+    ssl: {
+      rejectUnauthorized: true,
+      ...(ca ? { ca } : {}),
+      ...(identity ? { checkServerIdentity: (_hostname: string, peerCertificate: PeerCertificate) => checkServerIdentity(identity, peerCertificate) } : {}),
+    },
     max: 4, connectionTimeoutMillis: 10000, statement_timeout: 15000, idleTimeoutMillis: 30000,
   }
 }

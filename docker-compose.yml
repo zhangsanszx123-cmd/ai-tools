@@ -1,0 +1,45 @@
+name: ai-tools
+services:
+  app:
+    image: ${APP_IMAGE:?Set APP_IMAGE to a verified immutable image reference}
+    restart: unless-stopped
+    init: true
+    # Host-network OpenResty reaches the app through loopback only.
+    ports:
+      - '127.0.0.1:13000:3000'
+    env_file:
+      - path: ./deploy/runtime.env
+        format: raw
+    environment:
+      NODE_ENV: production
+      HOSTNAME: 0.0.0.0
+      PORT: '3000'
+      DB_CA_CERT: /run/secrets/postgres-ca.pem
+      MEDIA_STORAGE_DIR: /app/storage/media
+    volumes:
+      - type: bind
+        source: ./storage/media
+        target: /app/storage/media
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ./deploy/secrets/postgres-ca.pem
+        target: /run/secrets/postgres-ca.pem
+        read_only: true
+        bind:
+          create_host_path: false
+    networks:
+      database:
+        aliases: [ai-tools-app]
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+    stop_grace_period: 30s
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: '3'
+networks:
+  database:
+    external: true
+    name: 1panel-network

@@ -30,3 +30,14 @@ next-env.d.ts
 # Persistent uploaded media: back up and deploy separately from application source.
 /storage/
 __pycache__/
+/deploy/runtime.env
+/deploy/secrets/
+/deploy/releases/
+/deploy/current-image*
+/deploy/previous-image
+/deploy/.deploy.lock
+/deploy/release-config.tar.gz
+/deploy/.setup.*/
+/release-image/
+/dist/image.tar.gz
+/dist/metadata.json

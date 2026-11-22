@@ -74,7 +74,7 @@
 
 数据库集成测试需要当前数据库角色具备创建自有 schema 的权限。测试只在本次随机创建的 schema 中生成临时账号/内容并清理，不修改实际用户、角色或业务记录。端到端测试前先执行 `pnpm build`。`pnpm exec tsc --noEmit` 可单独检查类型。
 
-部署时将 `BETTER_AUTH_URL` 设置为实际 HTTPS 域名，配置 `DATABASE_URL`、`DB_CA_CERT` 和稳定的 `BETTER_AUTH_SECRET`。本地生产预览不加载 Vercel 专用分析脚本；只有 Vercel 环境才启用该集成。
+正式部署时将 `BETTER_AUTH_URL` 设置为实际 HTTPS origin；当前仅 IP 预览使用 `http://43.143.85.207`，HTTPS 就绪前不使用真实账号或后台凭据。配置 `DATABASE_URL`、`DB_CA_CERT` 和稳定的 `BETTER_AUTH_SECRET`。本地生产预览不加载 Vercel 专用分析脚本；只有 Vercel 环境才启用该集成。
 
 ## 排查目录无法加载
 
@@ -85,3 +85,20 @@
 - 代码 `ECONNREFUSED`、`ENOTFOUND` 或连接超时：检查主机、端口、网络和数据库状态。
 
 连接失败时页面保留不可用提示；不会将失败伪装成空目录或演示数据。服务端只记录错误代码，避免泄露 SQL、连接字符串和用户数据。
+
+
+## 生产部署
+
+GitHub Actions 在 main push 或手动触发后执行测试、Docker 构建，并通过 SSH 直接传输压缩镜像自动发布，避免服务器慢速拉取 GHCR。服务器通过 1Panel OpenResty 访问应用，数据库迁移独立执行。
+
+当前 IP 预览地址为 `http://43.143.85.207`。1Panel 绑定该 IP、端口 80，反向代理协议选 http，地址框填写 `127.0.0.1:13000`。应用端口仅绑定本机。
+
+首次环境初始化命令如下；当前服务器已经完成初始化并校验同步 2,515 个素材文件，后续代码发布不需要重复执行：
+
+```powershell
+pnpm deploy:setup --origin http://43.143.85.207
+```
+
+脚本自动准备服务器 `deploy/runtime.env`、CA 公有证书和上传文件。后续提交代码后只需 `git push origin main`。HTTP 仅用于公开页面预览，HTTPS 配置完成后再使用真实账号和后台。
+
+完整的一次性设置、环境变量、首次部署验证、HTTPS 切换和回滚命令见 [生产部署说明](docs/production-deployment.md)。

@@ -1,0 +1,136 @@
+name: Test, build and deploy
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ai-tools-production
+  cancel-in-progress: false
+jobs:
+  build:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: npm install --global pnpm@12.3.4
+      - run: pnpm install --frozen-lockfile
+      - name: Unit tests (no production database)
+        run: node --test tests/auth.test.mjs tests/directory-validation.test.mjs tests/admin-pagination.test.mjs tests/media-storage.test.mjs tests/admin-create.test.mjs tests/homepage-curation.test.mjs tests/deployment-config.test.mjs tests/deployment-tls.test.mjs tests/deployment-transfer.test.mjs tests/image-config-id.test.mjs
+      - run: pnpm exec tsc --noEmit
+      - name: Validate deployment shell script
+        run: for script in deploy/deploy.sh deploy/remote-release.sh deploy/setup-server.sh deploy/seed-media.sh deploy/receive-release.sh; do bash -n "$script"; done; python3 -m py_compile deploy/image-config-id.py
+      - uses: docker/setup-buildx-action@v3
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - uses: docker/build-push-action@v6
+        id: docker
+        with:
+          context: .
+          push: true
+          load: true
+          platforms: linux/amd64
+          tags: ghcr.io/zhangsanszx123-cmd/ai-tools:${{ github.sha }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+      - name: Package verified image for SSH delivery
+        run: |
+          set -euo pipefail
+          SOURCE_IMAGE="ghcr.io/zhangsanszx123-cmd/ai-tools:$GITHUB_SHA"
+          # Hash raw config bytes so Runner and server image-store IDs can differ safely.
+          mkdir -p dist
+          trap 'rm -f -- dist/source-image.tar' EXIT
+          docker image save "$SOURCE_IMAGE" --output dist/source-image.tar
+          IMAGE_ID=$(python3 deploy/image-config-id.py dist/source-image.tar)
+          [[ "$IMAGE_ID" =~ ^sha256:[a-f0-9]{64}$ ]]
+          rm -f -- dist/source-image.tar
+          trap - EXIT
+          IMAGE="ghcr.io/zhangsanszx123-cmd/ai-tools:sha256-${IMAGE_ID#sha256:}"
+          docker tag "$SOURCE_IMAGE" "$IMAGE"
+          docker save "$IMAGE" | gzip -1 > dist/image.tar.gz
+          ARCHIVE_SHA256=$(sha256sum dist/image.tar.gz | cut -d ' ' -f 1)
+          export IMAGE IMAGE_ID ARCHIVE_SHA256
+          node --input-type=module <<'NODE'
+          import {writeFileSync} from 'node:fs'
+          const {IMAGE: image, IMAGE_ID: imageId, ARCHIVE_SHA256: archiveSha256} = process.env
+          writeFileSync('dist/metadata.json', JSON.stringify({image, imageId, archiveSha256}) + '\n')
+          NODE
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ai-tools-production-image
+          path: |
+            dist/image.tar.gz
+            dist/metadata.json
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 1
+          overwrite: true
+  deploy:
+    needs: build
+    runs-on: ubuntu-24.04
+    environment: ai_site
+    permissions:
+      contents: read
+    timeout-minutes: 60
+    steps:
+      - name: Validate deployment secrets
+        env:
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_PORT: ${{ secrets.SSH_PORT }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }}
+        run: |
+          missing=0
+          for name in SSH_HOST SSH_PORT SSH_USER SSH_PRIVATE_KEY SSH_KNOWN_HOSTS; do
+            if [[ -z "${!name}" ]]; then
+              echo "::error::Environment ai_site is missing secret: $name"
+              missing=1
+            fi
+          done
+          exit "$missing"
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Configure SSH
+        env:
+          SSH_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }}
+        run: |
+          install -d -m 700 ~/.ssh
+          printf '%s\n' "$SSH_KEY" > ~/.ssh/id_ed25519
+          printf '%s\n' "$KNOWN_HOSTS" > ~/.ssh/known_hosts
+          chmod 600 ~/.ssh/id_ed25519 ~/.ssh/known_hosts
+      - uses: actions/download-artifact@v4
+        with:
+          name: ai-tools-production-image
+          path: release-image
+      - name: Optimize runner TCP for high-latency SSH
+        run: |
+          sudo modprobe tcp_bbr 2>/dev/null || true
+          if sudo sysctl -w net.ipv4.tcp_congestion_control=bbr; then
+            echo "TCP BBR enabled for this temporary runner."
+          else
+            echo "::notice::BBR unavailable; keeping the runner default TCP settings."
+          fi
+      - name: Send verified image over SSH and deploy
+        env:
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_PORT: ${{ secrets.SSH_PORT }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+        run: node deploy/send-image.mjs --directory release-image
+      - name: Remove SSH credentials
+        if: always()
+        run: rm -f ~/.ssh/id_ed25519
